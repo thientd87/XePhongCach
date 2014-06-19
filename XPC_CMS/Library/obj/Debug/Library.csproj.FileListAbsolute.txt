@@ -1,0 +1,40 @@
+F:\MDSI\Gafin CMS\Portal\Library\bin\Debug\Library.dll
+F:\MDSI\Gafin CMS\Portal\Library\bin\Debug\Library.pdb
+F:\MDSI\Gafin CMS\Portal\Library\obj\Debug\ResolveAssemblyReference.cache
+F:\MDSI\Gafin CMS\Portal\Library\obj\Debug\Library.dll
+F:\MDSI\Gafin CMS\Portal\Library\obj\Debug\Library.pdb
+E:\NextCom\Gafin\Portal\Library\bin\Debug\Library.dll
+E:\NextCom\Gafin\Portal\Library\bin\Debug\Library.pdb
+E:\NextCom\Gafin\Portal\Library\obj\Debug\ResolveAssemblyReference.cache
+E:\NextCom\Gafin\Portal\Library\obj\Debug\Library.dll
+E:\NextCom\Gafin\Portal\Library\obj\Debug\Library.pdb
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\Library\bin\Debug\Library.dll
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\Library\bin\Debug\Library.pdb
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\Library\obj\Debug\ResolveAssemblyReference.cache
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\Library\obj\Debug\Library.dll
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\Library\obj\Debug\Library.pdb
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\Library\bin\Debug\Library.dll
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\Library\bin\Debug\Library.pdb
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\Library\obj\Debug\ResolveAssemblyReference.cache
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\Library\obj\Debug\Library.dll
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\Library\obj\Debug\Library.pdb
+E:\NextCom\Nextcom.CRV\CMS\Portal\Library\bin\Debug\Library.dll
+E:\NextCom\Nextcom.CRV\CMS\Portal\Library\bin\Debug\Library.pdb
+E:\NextCom\Nextcom.CRV\CMS\Portal\Library\obj\Debug\ResolveAssemblyReference.cache
+E:\NextCom\Nextcom.CRV\CMS\Portal\Library\obj\Debug\Library.dll
+E:\NextCom\Nextcom.CRV\CMS\Portal\Library\obj\Debug\Library.pdb
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\Library\bin\Debug\Library.dll
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\Library\bin\Debug\Library.pdb
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\Library\obj\Debug\ResolveAssemblyReference.cache
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\Library\obj\Debug\Library.dll
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\Library\obj\Debug\Library.pdb
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\Library\bin\Debug\Library.dll
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\Library\bin\Debug\Library.pdb
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\Library\obj\Debug\ResolveAssemblyReference.cache
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\Library\obj\Debug\Library.dll
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\Library\obj\Debug\Library.pdb
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Library\bin\Debug\Library.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Library\bin\Debug\Library.pdb
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Library\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Library\obj\Debug\Library.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Library\obj\Debug\Library.pdb

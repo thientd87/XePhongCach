@@ -1,0 +1,15 @@
+F:\MDSI\Tin tuc\SolrIndexer\bin\Debug\SolrIndexer.dll
+F:\MDSI\Tin tuc\SolrIndexer\bin\Debug\SolrIndexer.pdb
+F:\MDSI\Tin tuc\SolrIndexer\obj\Debug\ResolveAssemblyReference.cache
+F:\MDSI\Tin tuc\SolrIndexer\obj\Debug\SolrIndexer.dll
+F:\MDSI\Tin tuc\SolrIndexer\obj\Debug\SolrIndexer.pdb
+F:\MDSI\Gafin CMS\SolrIndexer\bin\Debug\SolrIndexer.dll
+F:\MDSI\Gafin CMS\SolrIndexer\bin\Debug\SolrIndexer.pdb
+F:\MDSI\Gafin CMS\SolrIndexer\obj\Debug\ResolveAssemblyReference.cache
+F:\MDSI\Gafin CMS\SolrIndexer\obj\Debug\SolrIndexer.dll
+F:\MDSI\Gafin CMS\SolrIndexer\obj\Debug\SolrIndexer.pdb
+E:\NextCom\Gafin\SolrIndexer\bin\Debug\SolrIndexer.dll
+E:\NextCom\Gafin\SolrIndexer\bin\Debug\SolrIndexer.pdb
+E:\NextCom\Gafin\SolrIndexer\obj\Debug\ResolveAssemblyReference.cache
+E:\NextCom\Gafin\SolrIndexer\obj\Debug\SolrIndexer.dll
+E:\NextCom\Gafin\SolrIndexer\obj\Debug\SolrIndexer.pdb

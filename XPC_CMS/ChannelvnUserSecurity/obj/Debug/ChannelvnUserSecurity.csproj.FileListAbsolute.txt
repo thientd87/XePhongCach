@@ -1,0 +1,72 @@
+F:\MDSI\Gafin CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Security.dll
+F:\MDSI\Gafin CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Security.pdb
+F:\MDSI\Gafin CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.API.dll
+F:\MDSI\Gafin CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Db.dll
+F:\MDSI\Gafin CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Db.pdb
+F:\MDSI\Gafin CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.API.pdb
+F:\MDSI\Gafin CMS\Portal\ChannelvnUserSecurity\obj\Debug\ResolveAssemblyReference.cache
+F:\MDSI\Gafin CMS\Portal\ChannelvnUserSecurity\obj\Debug\Portal.User.Security.dll
+F:\MDSI\Gafin CMS\Portal\ChannelvnUserSecurity\obj\Debug\Portal.User.Security.pdb
+E:\NextCom\Gafin\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Security.dll
+E:\NextCom\Gafin\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Security.pdb
+E:\NextCom\Gafin\Portal\ChannelvnUserSecurity\bin\Debug\Portal.API.dll
+E:\NextCom\Gafin\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Db.dll
+E:\NextCom\Gafin\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Db.pdb
+E:\NextCom\Gafin\Portal\ChannelvnUserSecurity\bin\Debug\Portal.API.pdb
+E:\NextCom\Gafin\Portal\ChannelvnUserSecurity\obj\Debug\ResolveAssemblyReference.cache
+E:\NextCom\Gafin\Portal\ChannelvnUserSecurity\obj\Debug\Portal.User.Security.dll
+E:\NextCom\Gafin\Portal\ChannelvnUserSecurity\obj\Debug\Portal.User.Security.pdb
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Security.dll
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Security.pdb
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.API.dll
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Db.dll
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Db.pdb
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.API.pdb
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\ChannelvnUserSecurity\obj\Debug\ResolveAssemblyReference.cache
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\ChannelvnUserSecurity\obj\Debug\Portal.User.Security.dll
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\ChannelvnUserSecurity\obj\Debug\Portal.User.Security.pdb
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Security.dll
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Security.pdb
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.API.dll
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Db.dll
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Db.pdb
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.API.pdb
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\ChannelvnUserSecurity\obj\Debug\ResolveAssemblyReference.cache
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\ChannelvnUserSecurity\obj\Debug\Portal.User.Security.dll
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\ChannelvnUserSecurity\obj\Debug\Portal.User.Security.pdb
+E:\NextCom\Nextcom.CRV\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Security.dll
+E:\NextCom\Nextcom.CRV\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Security.pdb
+E:\NextCom\Nextcom.CRV\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.API.dll
+E:\NextCom\Nextcom.CRV\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Db.dll
+E:\NextCom\Nextcom.CRV\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Db.pdb
+E:\NextCom\Nextcom.CRV\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.API.pdb
+E:\NextCom\Nextcom.CRV\CMS\Portal\ChannelvnUserSecurity\obj\Debug\ResolveAssemblyReference.cache
+E:\NextCom\Nextcom.CRV\CMS\Portal\ChannelvnUserSecurity\obj\Debug\Portal.User.Security.dll
+E:\NextCom\Nextcom.CRV\CMS\Portal\ChannelvnUserSecurity\obj\Debug\Portal.User.Security.pdb
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Security.dll
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Security.pdb
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.API.dll
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Db.dll
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Db.pdb
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.API.pdb
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\ChannelvnUserSecurity\obj\Debug\ResolveAssemblyReference.cache
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\ChannelvnUserSecurity\obj\Debug\Portal.User.Security.dll
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\ChannelvnUserSecurity\obj\Debug\Portal.User.Security.pdb
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Security.dll
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Security.pdb
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.API.dll
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Db.dll
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Db.pdb
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.API.pdb
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\ChannelvnUserSecurity\obj\Debug\ResolveAssemblyReference.cache
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\ChannelvnUserSecurity\obj\Debug\Portal.User.Security.dll
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\ChannelvnUserSecurity\obj\Debug\Portal.User.Security.pdb
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Security.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Security.pdb
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.API.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Db.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.User.Db.pdb
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\ChannelvnUserSecurity\bin\Debug\Portal.API.pdb
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\ChannelvnUserSecurity\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\ChannelvnUserSecurity\obj\Debug\Portal.User.Security.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\ChannelvnUserSecurity\obj\Debug\Portal.User.Security.pdb

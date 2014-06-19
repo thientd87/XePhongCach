@@ -1,0 +1,72 @@
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Security.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Security.pdb
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\ChannelvnUserSecurity\bin\Debug\DFISYS.API.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Db.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Db.pdb
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\ChannelvnUserSecurity\bin\Debug\DFISYS.API.pdb
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\ChannelvnUserSecurity\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.pdb
+D:\Project\NC\Portal_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Security.dll
+D:\Project\NC\Portal_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Security.pdb
+D:\Project\NC\Portal_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.API.dll
+D:\Project\NC\Portal_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Db.dll
+D:\Project\NC\Portal_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Db.pdb
+D:\Project\NC\Portal_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.API.pdb
+D:\Project\NC\Portal_CMS\ChannelvnUserSecurity\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\NC\Portal_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.dll
+D:\Project\NC\Portal_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.pdb
+F:\MyProjects\DollyLens\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Security.dll
+F:\MyProjects\DollyLens\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Security.pdb
+F:\MyProjects\DollyLens\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.API.dll
+F:\MyProjects\DollyLens\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Db.dll
+F:\MyProjects\DollyLens\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Db.pdb
+F:\MyProjects\DollyLens\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.API.pdb
+F:\MyProjects\DollyLens\DollyLens_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.csprojResolveAssemblyReference.cache
+F:\MyProjects\DollyLens\DollyLens_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.dll
+F:\MyProjects\DollyLens\DollyLens_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.pdb
+F:\GoogleDrive\Projects\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Security.dll
+F:\GoogleDrive\Projects\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Security.pdb
+F:\GoogleDrive\Projects\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.API.dll
+F:\GoogleDrive\Projects\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Db.dll
+F:\GoogleDrive\Projects\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Db.pdb
+F:\GoogleDrive\Projects\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.API.pdb
+F:\GoogleDrive\Projects\DollyLens_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.csprojResolveAssemblyReference.cache
+F:\GoogleDrive\Projects\DollyLens_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.dll
+F:\GoogleDrive\Projects\DollyLens_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.pdb
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Security.dll
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Security.pdb
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.API.dll
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Db.dll
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Db.pdb
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.API.pdb
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.csprojResolveAssemblyReference.cache
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.dll
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.pdb
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Security.dll
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Security.pdb
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.API.dll
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Db.dll
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Db.pdb
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.API.pdb
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.csprojResolveAssemblyReference.cache
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.dll
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.pdb
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Security.dll
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Security.pdb
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.API.dll
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Db.dll
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Db.pdb
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.API.pdb
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.csprojResolveAssemblyReference.cache
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.dll
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.pdb
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Security.dll
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Security.pdb
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.API.dll
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Db.dll
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.User.Db.pdb
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\ChannelvnUserSecurity\bin\Debug\DFISYS.API.pdb
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.csprojResolveAssemblyReference.cache
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.dll
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\ChannelvnUserSecurity\obj\Debug\DFISYS.User.Security.pdb

@@ -1,0 +1,58 @@
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\coreDb\bin\Debug\DFISYS.Core.DAL.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\coreDb\bin\Debug\DFISYS.Core.DAL.pdb
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\coreDb\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\coreDb\obj\Debug\DFISYS.Core.DAL.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\coreDb\obj\Debug\DFISYS.Core.DAL.pdb
+D:\Project\NC\Portal_CMS\coreDb\bin\Debug\DFISYS.Core.DAL.dll
+D:\Project\NC\Portal_CMS\coreDb\bin\Debug\DFISYS.Core.DAL.pdb
+D:\Project\NC\Portal_CMS\coreDb\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\NC\Portal_CMS\coreDb\obj\Debug\DFISYS.Core.DAL.dll
+D:\Project\NC\Portal_CMS\coreDb\obj\Debug\DFISYS.Core.DAL.pdb
+F:\MyProjects\DollyLens\DollyLens_CMS\coreDb\bin\Debug\DFISYS.Core.DAL.dll
+F:\MyProjects\DollyLens\DollyLens_CMS\coreDb\bin\Debug\DFISYS.Core.DAL.pdb
+F:\MyProjects\DollyLens\DollyLens_CMS\coreDb\bin\Debug\System.Data.dll
+F:\MyProjects\DollyLens\DollyLens_CMS\coreDb\obj\Debug\DFISYS.Core.DAL.dll
+F:\MyProjects\DollyLens\DollyLens_CMS\coreDb\obj\Debug\DFISYS.Core.DAL.pdb
+F:\MyProjects\DollyLens\DollyLens_CMS\coreDb\obj\Debug\DFISYS.Db.csprojResolveAssemblyReference.cache
+C:\Users\thien.trinh\Google Drive\Projects\DollyLens_CMS\coreDb\bin\Debug\DFISYS.Core.DAL.dll
+C:\Users\thien.trinh\Google Drive\Projects\DollyLens_CMS\coreDb\bin\Debug\DFISYS.Core.DAL.pdb
+C:\Users\thien.trinh\Google Drive\Projects\DollyLens_CMS\coreDb\bin\Debug\System.Data.dll
+C:\Users\thien.trinh\Google Drive\Projects\DollyLens_CMS\coreDb\obj\Debug\DFISYS.Db.csprojResolveAssemblyReference.cache
+C:\Users\thien.trinh\Google Drive\Projects\DollyLens_CMS\coreDb\obj\Debug\DFISYS.Core.DAL.dll
+C:\Users\thien.trinh\Google Drive\Projects\DollyLens_CMS\coreDb\obj\Debug\DFISYS.Core.DAL.pdb
+F:\GoogleDrive\Projects\DollyLens_CMS\coreDb\bin\Debug\DFISYS.Core.DAL.dll
+F:\GoogleDrive\Projects\DollyLens_CMS\coreDb\bin\Debug\DFISYS.Core.DAL.pdb
+F:\GoogleDrive\Projects\DollyLens_CMS\coreDb\bin\Debug\System.Data.dll
+F:\GoogleDrive\Projects\DollyLens_CMS\coreDb\obj\Debug\DFISYS.Db.csprojResolveAssemblyReference.cache
+F:\GoogleDrive\Projects\DollyLens_CMS\coreDb\obj\Debug\DFISYS.Core.DAL.dll
+F:\GoogleDrive\Projects\DollyLens_CMS\coreDb\obj\Debug\DFISYS.Core.DAL.pdb
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\coreDb\bin\Debug\DFISYS.Core.DAL.dll
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\coreDb\bin\Debug\DFISYS.Core.DAL.pdb
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\coreDb\bin\Debug\System.Data.dll
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\coreDb\obj\Debug\DFISYS.Db.csprojResolveAssemblyReference.cache
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\coreDb\obj\Debug\DFISYS.Core.DAL.dll
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\coreDb\obj\Debug\DFISYS.Core.DAL.pdb
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\coreDb\bin\Debug\DFISYS.Core.DAL.dll
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\coreDb\bin\Debug\DFISYS.Core.DAL.pdb
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\coreDb\bin\Debug\System.Data.dll
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\coreDb\obj\Debug\DFISYS.Db.csprojResolveAssemblyReference.cache
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\coreDb\obj\Debug\DFISYS.Core.DAL.dll
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\coreDb\obj\Debug\DFISYS.Core.DAL.pdb
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\coreDb\bin\Debug\DFISYS.Core.DAL.dll
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\coreDb\bin\Debug\DFISYS.Core.DAL.pdb
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\coreDb\bin\Debug\System.Data.dll
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\coreDb\obj\Debug\DFISYS.Db.csprojResolveAssemblyReference.cache
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\coreDb\obj\Debug\DFISYS.Core.DAL.dll
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\coreDb\obj\Debug\DFISYS.Core.DAL.pdb
+C:\Dropbox\Dropbox\Projects\SanPhamSangTao\SPST_CMS\coreDb\bin\Debug\DFISYS.Core.DAL.dll
+C:\Dropbox\Dropbox\Projects\SanPhamSangTao\SPST_CMS\coreDb\bin\Debug\DFISYS.Core.DAL.pdb
+C:\Dropbox\Dropbox\Projects\SanPhamSangTao\SPST_CMS\coreDb\bin\Debug\System.Data.dll
+C:\Dropbox\Dropbox\Projects\SanPhamSangTao\SPST_CMS\coreDb\obj\Debug\DFISYS.Db.csprojResolveAssemblyReference.cache
+C:\Dropbox\Dropbox\Projects\SanPhamSangTao\SPST_CMS\coreDb\obj\Debug\DFISYS.Core.DAL.dll
+C:\Dropbox\Dropbox\Projects\SanPhamSangTao\SPST_CMS\coreDb\obj\Debug\DFISYS.Core.DAL.pdb
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\coreDb\bin\Debug\DFISYS.Core.DAL.dll
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\coreDb\bin\Debug\DFISYS.Core.DAL.pdb
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\coreDb\bin\Debug\System.Data.dll
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\coreDb\obj\Debug\DFISYS.Db.csprojResolveAssemblyReference.cache
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\coreDb\obj\Debug\DFISYS.Core.DAL.dll
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\coreDb\obj\Debug\DFISYS.Core.DAL.pdb

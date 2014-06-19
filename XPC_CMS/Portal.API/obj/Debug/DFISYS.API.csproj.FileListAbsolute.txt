@@ -1,0 +1,40 @@
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Portal.API\bin\Debug\DFISYS.API.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Portal.API\bin\Debug\DFISYS.API.pdb
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Portal.API\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Portal.API\obj\Debug\DFISYS.API.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Portal.API\obj\Debug\DFISYS.API.pdb
+D:\Project\NC\Portal_CMS\Portal.API\bin\Debug\DFISYS.API.dll
+D:\Project\NC\Portal_CMS\Portal.API\bin\Debug\DFISYS.API.pdb
+D:\Project\NC\Portal_CMS\Portal.API\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\NC\Portal_CMS\Portal.API\obj\Debug\DFISYS.API.dll
+D:\Project\NC\Portal_CMS\Portal.API\obj\Debug\DFISYS.API.pdb
+F:\MyProjects\DollyLens\DollyLens_CMS\Portal.API\bin\Debug\DFISYS.API.dll
+F:\MyProjects\DollyLens\DollyLens_CMS\Portal.API\bin\Debug\DFISYS.API.pdb
+F:\MyProjects\DollyLens\DollyLens_CMS\Portal.API\obj\Debug\DFISYS.API.dll
+F:\MyProjects\DollyLens\DollyLens_CMS\Portal.API\obj\Debug\DFISYS.API.pdb
+F:\MyProjects\DollyLens\DollyLens_CMS\Portal.API\obj\Debug\DFISYS.API.csprojResolveAssemblyReference.cache
+F:\GoogleDrive\Projects\DollyLens_CMS\Portal.API\bin\Debug\DFISYS.API.dll
+F:\GoogleDrive\Projects\DollyLens_CMS\Portal.API\bin\Debug\DFISYS.API.pdb
+F:\GoogleDrive\Projects\DollyLens_CMS\Portal.API\obj\Debug\DFISYS.API.csprojResolveAssemblyReference.cache
+F:\GoogleDrive\Projects\DollyLens_CMS\Portal.API\obj\Debug\DFISYS.API.dll
+F:\GoogleDrive\Projects\DollyLens_CMS\Portal.API\obj\Debug\DFISYS.API.pdb
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\Portal.API\bin\Debug\DFISYS.API.dll
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\Portal.API\bin\Debug\DFISYS.API.pdb
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\Portal.API\obj\Debug\DFISYS.API.csprojResolveAssemblyReference.cache
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\Portal.API\obj\Debug\DFISYS.API.dll
+C:\CloudStorages\GoogleDrive\Projects\DollyLens_CMS\Portal.API\obj\Debug\DFISYS.API.pdb
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\Portal.API\bin\Debug\DFISYS.API.dll
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\Portal.API\bin\Debug\DFISYS.API.pdb
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\Portal.API\obj\Debug\DFISYS.API.csprojResolveAssemblyReference.cache
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\Portal.API\obj\Debug\DFISYS.API.dll
+F:\CloudStorages\Dropbox\Projects\DollyLens\DollyLens_CMS\Portal.API\obj\Debug\DFISYS.API.pdb
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\Portal.API\bin\Debug\DFISYS.API.dll
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\Portal.API\bin\Debug\DFISYS.API.pdb
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\Portal.API\obj\Debug\DFISYS.API.csprojResolveAssemblyReference.cache
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\Portal.API\obj\Debug\DFISYS.API.dll
+E:\CloudStorages\Dropbox\Projects\SanPhamSangTao\SPST_CMS\Portal.API\obj\Debug\DFISYS.API.pdb
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\Portal.API\bin\Debug\DFISYS.API.dll
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\Portal.API\bin\Debug\DFISYS.API.pdb
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\Portal.API\obj\Debug\DFISYS.API.csprojResolveAssemblyReference.cache
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\Portal.API\obj\Debug\DFISYS.API.dll
+C:\Projects\MyProjects\SanPhamSangTao\SPST_CMS\Portal.API\obj\Debug\DFISYS.API.pdb

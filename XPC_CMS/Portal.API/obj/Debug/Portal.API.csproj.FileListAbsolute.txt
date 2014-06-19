@@ -1,0 +1,40 @@
+F:\MDSI\Gafin CMS\Portal\Portal.API\bin\Debug\Portal.API.dll
+F:\MDSI\Gafin CMS\Portal\Portal.API\bin\Debug\Portal.API.pdb
+F:\MDSI\Gafin CMS\Portal\Portal.API\obj\Debug\ResolveAssemblyReference.cache
+F:\MDSI\Gafin CMS\Portal\Portal.API\obj\Debug\Portal.API.dll
+F:\MDSI\Gafin CMS\Portal\Portal.API\obj\Debug\Portal.API.pdb
+E:\NextCom\Gafin\Portal\Portal.API\bin\Debug\Portal.API.dll
+E:\NextCom\Gafin\Portal\Portal.API\bin\Debug\Portal.API.pdb
+E:\NextCom\Gafin\Portal\Portal.API\obj\Debug\ResolveAssemblyReference.cache
+E:\NextCom\Gafin\Portal\Portal.API\obj\Debug\Portal.API.dll
+E:\NextCom\Gafin\Portal\Portal.API\obj\Debug\Portal.API.pdb
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\Portal.API\bin\Debug\Portal.API.dll
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\Portal.API\bin\Debug\Portal.API.pdb
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\Portal.API\obj\Debug\ResolveAssemblyReference.cache
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\Portal.API\obj\Debug\Portal.API.dll
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\Portal.API\obj\Debug\Portal.API.pdb
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\Portal.API\bin\Debug\Portal.API.dll
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\Portal.API\bin\Debug\Portal.API.pdb
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\Portal.API\obj\Debug\ResolveAssemblyReference.cache
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\Portal.API\obj\Debug\Portal.API.dll
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\Portal.API\obj\Debug\Portal.API.pdb
+E:\NextCom\Nextcom.CRV\CMS\Portal\Portal.API\bin\Debug\Portal.API.dll
+E:\NextCom\Nextcom.CRV\CMS\Portal\Portal.API\bin\Debug\Portal.API.pdb
+E:\NextCom\Nextcom.CRV\CMS\Portal\Portal.API\obj\Debug\ResolveAssemblyReference.cache
+E:\NextCom\Nextcom.CRV\CMS\Portal\Portal.API\obj\Debug\Portal.API.dll
+E:\NextCom\Nextcom.CRV\CMS\Portal\Portal.API\obj\Debug\Portal.API.pdb
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\Portal.API\bin\Debug\Portal.API.dll
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\Portal.API\bin\Debug\Portal.API.pdb
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\Portal.API\obj\Debug\ResolveAssemblyReference.cache
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\Portal.API\obj\Debug\Portal.API.dll
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\Portal.API\obj\Debug\Portal.API.pdb
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\Portal.API\bin\Debug\Portal.API.dll
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\Portal.API\bin\Debug\Portal.API.pdb
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\Portal.API\obj\Debug\ResolveAssemblyReference.cache
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\Portal.API\obj\Debug\Portal.API.dll
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\Portal.API\obj\Debug\Portal.API.pdb
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Portal.API\bin\Debug\Portal.API.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Portal.API\bin\Debug\Portal.API.pdb
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Portal.API\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Portal.API\obj\Debug\Portal.API.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Portal.API\obj\Debug\Portal.API.pdb

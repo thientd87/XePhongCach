@@ -1,0 +1,40 @@
+F:\MDSI\Gafin CMS\Portal\coreDb\bin\Debug\Portal.Core.DAL.dll
+F:\MDSI\Gafin CMS\Portal\coreDb\bin\Debug\Portal.Core.DAL.pdb
+F:\MDSI\Gafin CMS\Portal\coreDb\obj\Debug\ResolveAssemblyReference.cache
+F:\MDSI\Gafin CMS\Portal\coreDb\obj\Debug\Portal.Core.DAL.dll
+F:\MDSI\Gafin CMS\Portal\coreDb\obj\Debug\Portal.Core.DAL.pdb
+E:\NextCom\Gafin\Portal\coreDb\bin\Debug\Portal.Core.DAL.dll
+E:\NextCom\Gafin\Portal\coreDb\bin\Debug\Portal.Core.DAL.pdb
+E:\NextCom\Gafin\Portal\coreDb\obj\Debug\ResolveAssemblyReference.cache
+E:\NextCom\Gafin\Portal\coreDb\obj\Debug\Portal.Core.DAL.dll
+E:\NextCom\Gafin\Portal\coreDb\obj\Debug\Portal.Core.DAL.pdb
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\coreDb\bin\Debug\Portal.Core.DAL.dll
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\coreDb\bin\Debug\Portal.Core.DAL.pdb
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\coreDb\obj\Debug\ResolveAssemblyReference.cache
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\coreDb\obj\Debug\Portal.Core.DAL.dll
+T:\NextCom\SourceCode\RealProject\Nextcom.Vietpress.CMS\Portal\coreDb\obj\Debug\Portal.Core.DAL.pdb
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\coreDb\bin\Debug\Portal.Core.DAL.dll
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\coreDb\bin\Debug\Portal.Core.DAL.pdb
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\coreDb\obj\Debug\ResolveAssemblyReference.cache
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\coreDb\obj\Debug\Portal.Core.DAL.dll
+E:\NextCom\Nextcom.Vietpress.CMS\Portal\coreDb\obj\Debug\Portal.Core.DAL.pdb
+E:\NextCom\Nextcom.CRV\CMS\Portal\coreDb\bin\Debug\Portal.Core.DAL.dll
+E:\NextCom\Nextcom.CRV\CMS\Portal\coreDb\bin\Debug\Portal.Core.DAL.pdb
+E:\NextCom\Nextcom.CRV\CMS\Portal\coreDb\obj\Debug\ResolveAssemblyReference.cache
+E:\NextCom\Nextcom.CRV\CMS\Portal\coreDb\obj\Debug\Portal.Core.DAL.dll
+E:\NextCom\Nextcom.CRV\CMS\Portal\coreDb\obj\Debug\Portal.Core.DAL.pdb
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\coreDb\bin\Debug\Portal.Core.DAL.dll
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\coreDb\bin\Debug\Portal.Core.DAL.pdb
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\coreDb\obj\Debug\ResolveAssemblyReference.cache
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\coreDb\obj\Debug\Portal.Core.DAL.dll
+F:\NextCom_Project\SourceCode\RealProject\CRVCMS\CMS\Portal\coreDb\obj\Debug\Portal.Core.DAL.pdb
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\coreDb\bin\Debug\Portal.Core.DAL.dll
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\coreDb\bin\Debug\Portal.Core.DAL.pdb
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\coreDb\obj\Debug\ResolveAssemblyReference.cache
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\coreDb\obj\Debug\Portal.Core.DAL.dll
+F:\NextCom_Project\SourceCode\RealProject\Vistip\CMS\Portal\coreDb\obj\Debug\Portal.Core.DAL.pdb
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\coreDb\bin\Debug\Portal.Core.DAL.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\coreDb\bin\Debug\Portal.Core.DAL.pdb
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\coreDb\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\coreDb\obj\Debug\Portal.Core.DAL.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\coreDb\obj\Debug\Portal.Core.DAL.pdb

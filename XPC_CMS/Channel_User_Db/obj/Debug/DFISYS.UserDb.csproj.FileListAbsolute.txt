@@ -1,0 +1,5 @@
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Channel_User_Db\bin\Debug\Portal.User.Db.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Channel_User_Db\bin\Debug\Portal.User.Db.pdb
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Channel_User_Db\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Channel_User_Db\obj\Debug\Portal.User.Db.dll
+E:\Projects\Project NextCom\Bao ninh binh\CMS\CMS\Portal\Channel_User_Db\obj\Debug\Portal.User.Db.pdb
