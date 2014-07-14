@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <boxes>
-  <box checkpermission="true" isvisible="true">
+  <box checkpermission="true" isvisible="false">
     <name>Quản lý Sản phẩm</name>
     <id>05a7773b</id>
     <rows>
@@ -83,7 +83,7 @@
 
     </rows>
   </box>
-	<box checkpermission="true" isvisible="true">
+	<box checkpermission="true" isvisible="false">
 		<name>Quản lý đơn hàng</name>
     <id>05a7773b</id>
 		<rows>
