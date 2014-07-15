@@ -1,46 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <boxes>
-  <box checkpermission="true" isvisible="false">
-    <name>Quản lý Sản phẩm</name>
-    <id>05a7773b</id>
-    <rows>
-      <row>
-        <Permission_ID>14</Permission_ID>
-        <MenuName>Danh mục sản phẩm</MenuName>
-        <Cpmode>productcategorymanager</Cpmode>
-        <IsCount>False</IsCount>
-        <path>~/GUI/EditoralOffice/MainOffce/Product_Category/ListCategories.ascx</path>
-      </row>
-      <row>
-        <Permission_ID>14</Permission_ID>
-        <MenuName>Danh sách loại quà tặng</MenuName>
-        <Cpmode>gifttypemanager</Cpmode>
-        <IsCount>False</IsCount>
-        <path>~/GUI/EditoralOffice/MainOffce/ProductGiftManager/List.ascx</path>
-      </row>
-      <row>
-        <Permission_ID>14</Permission_ID>
-        <MenuName>Thêm sản phẩm</MenuName>
-        <Cpmode>addproduct</Cpmode>
-        <IsCount>False</IsCount>
-        <path>~/GUI/EditoralOffice/MainOffce/ProductManager/AddProduct.ascx</path>
-      </row>
-      <row>
-        <Permission_ID>14</Permission_ID>
-        <MenuName>Danh sách sản phẩm</MenuName>
-        <Cpmode>productlist</Cpmode>
-        <IsCount>False</IsCount>
-        <path>~/GUI/EditoralOffice/MainOffce/ProductManager/ListProduct.ascx</path>
-      </row>
-      <!--<row>
-        <Permission_ID>14</Permission_ID>
-        <MenuName>Quản lý layout</MenuName>
-        <Cpmode>layoutproductlist</Cpmode>
-        <IsCount>False</IsCount>
-        <path>~/GUI/EditoralOffice/MainOffce/ProductManager/LayoutListProduct.ascx</path>
-      </row>-->
-    </rows>
-  </box>
+  
   <box checkpermission="true" isvisible="true">
     <name>Quản lý tin bài</name>
     <id>05a7773b</id>
@@ -52,6 +12,14 @@
         <IsCount>False</IsCount>
         <HeadCpmode>add</HeadCpmode>
         <path>~/GUI/EditoralOffice/MainOffce/NewsCategoryManager/ListNewsCategory.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Quản lý nổi bật trang chủ</MenuName>
+        <Cpmode>quanlytopnew</Cpmode>
+        <IsCount>False</IsCount>
+        <HeadCpmode>add</HeadCpmode>
+        <path>~/GUI/EditoralOffice/MainOffce/QuanLyBaiNoiBat/quanlytopnew2.ascx</path>
       </row>
       <row>
         <Permission_ID>14</Permission_ID>
@@ -281,4 +249,45 @@
       </row>
 		</rows>
 	</box>
+  <box checkpermission="true" isvisible="false">
+    <name>Quản lý Sản phẩm</name>
+    <id>05a7773b</id>
+    <rows>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Danh mục sản phẩm</MenuName>
+        <Cpmode>productcategorymanager</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/Product_Category/ListCategories.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Danh sách loại quà tặng</MenuName>
+        <Cpmode>gifttypemanager</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/ProductGiftManager/List.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Thêm sản phẩm</MenuName>
+        <Cpmode>addproduct</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/ProductManager/AddProduct.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Danh sách sản phẩm</MenuName>
+        <Cpmode>productlist</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/ProductManager/ListProduct.ascx</path>
+      </row>
+      <!--<row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Quản lý layout</MenuName>
+        <Cpmode>layoutproductlist</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/ProductManager/LayoutListProduct.ascx</path>
+      </row>-->
+    </rows>
+  </box>
 </boxes>
