@@ -42,9 +42,13 @@
         {
             Session["EditionType"] = 1;
         }
-        else
+        else if(radioEN.Checked)
         {
             Session["EditionType"] = 2;
+        }
+        else
+        {
+            Session["EditionType"] = 1;
         }
         if (objUser.Login(account.Value, password.Value))
         {
@@ -122,7 +126,7 @@
 		<form action="dashboard.html">
 			<dl>
 				
-                <dt><label for="adminpassword">Ngôn ngữ</label> <asp:RadioButton ID="radioVI" runat="server" Text="Tiếng Việt" GroupName="rdLanguage" Checked/>
+                <dt><label for="adminpassword">Ngôn ngữ</label> <asp:RadioButton ID="radioVI" runat="server" Text="Tiếng Việt" GroupName="rdLanguage" Checked="True"/>
             <asp:RadioButton ID="radioEN" runat="server" Text="English" GroupName="rdLanguage"/></dt>
 			</dl>
 			

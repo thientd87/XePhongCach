@@ -58,6 +58,33 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.editnews {
         protected global::System.Web.UI.WebControls.TextBox txtInit;
         
         /// <summary>
+        /// cboIsHot control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList cboIsHot;
+        
+        /// <summary>
+        /// txtSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSource;
+        
+        /// <summary>
+        /// txtIcon control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtIcon;
+        
+        /// <summary>
         /// cboMedia control.
         /// </summary>
         /// <remarks>
@@ -121,15 +148,6 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.editnews {
         protected global::System.Web.UI.WebControls.CheckBox chkShowComment;
         
         /// <summary>
-        /// txtIcon control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIcon;
-        
-        /// <summary>
         /// txtImageTitle control.
         /// </summary>
         /// <remarks>
@@ -175,15 +193,6 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.editnews {
         protected global::System.Web.UI.WebControls.TextBox txtMaCP;
         
         /// <summary>
-        /// txtSource control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSource;
-        
-        /// <summary>
         /// ddlProvinces control.
         /// </summary>
         /// <remarks>
@@ -191,15 +200,6 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.editnews {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlProvinces;
-        
-        /// <summary>
-        /// cboIsHot control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cboIsHot;
         
         /// <summary>
         /// ddlAuthor control.
