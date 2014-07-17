@@ -927,5 +927,91 @@ namespace DFISYS.Core.DAL {
         }
 #endregion
 
+        public DataTable vc_SelectVote_Assign__NewsId_ByVoteId(int Vote_ID)
+        {
+            IDbCommand cmd = _db.CreateCommand("vc_SelectVote_Assign__NewsId_ByVoteId", true);
+            _db.AddParameter(cmd, "Vote_ID", DbType.Int32, Vote_ID);
+            DataTable dataTable = CreateDataTable(cmd);
+            return dataTable;
+        }
+
+        public DataTable vc_DeleteVote_Assigns_News_ByVote_ID(Int32 Vote_ID)
+        {
+            IDbCommand cmd = _db.CreateCommand("vc_DeleteVote_Assigns_News_ByVote_ID", true);
+            _db.AddParameter(cmd, "Vote_ID", DbType.Int32, Vote_ID);
+            DataTable dataTable = CreateDataTable(cmd);
+            return dataTable;
+        }
+        public DataTable vc_InsertVote_Assign(String News_ID, Int32 Vote_ID, String Vote_GenTag, Int32 Cat_ID)
+        {
+            IDbCommand cmd = _db.CreateCommand("vc_InsertVote_Assign", true);
+            _db.AddParameter(cmd, "News_ID", DbType.String, News_ID);
+            _db.AddParameter(cmd, "Vote_ID", DbType.Int32, Vote_ID);
+            _db.AddParameter(cmd, "Vote_GenTag", DbType.String, Vote_GenTag);
+            _db.AddParameter(cmd, "Cat_ID", DbType.Int32, Cat_ID);
+            DataTable dataTable = CreateDataTable(cmd);
+            return dataTable;
+        }
+        public DataTable vc_Vote_SelectList_Where(String sWhere)
+        {
+            IDbCommand cmd = _db.CreateCommand("vc_Vote_SelectList_Where", true);
+            _db.AddParameter(cmd, "sWhere", DbType.String, sWhere);
+            DataTable table = CreateDataTable(cmd);
+            return table;
+        }
+
+        public DataTable SetupVote_GetSetupVoteById(int voteid)
+        {
+            IDbCommand cmd = _db.CreateCommand("Vote_GetSetupVoteById", true);
+            _db.AddParameter(cmd, "Vote_ID", DbType.Int32, voteid);
+            DataTable dataTable = CreateDataTable(cmd);
+            return dataTable;
+        }
+
+        public DataTable SetupVote_Insert(int vote_id, string SetupVote_TitleColor, string SetupVote_FontSize, string SetupVote_BorderColor, string SetupVote_BackgroundColor, string GenCode, string Width, string Height)
+        {
+            IDbCommand cmd = _db.CreateCommand("SetupVote_Insert", true);
+            _db.AddParameter(cmd, "Vote_ID", DbType.Int32, vote_id);
+            _db.AddParameter(cmd, "SetupVote_TitleColor", DbType.String, SetupVote_TitleColor);
+            _db.AddParameter(cmd, "SetupVote_FontSize", DbType.String, SetupVote_FontSize);
+            _db.AddParameter(cmd, "SetupVote_BackgroundColor", DbType.String, SetupVote_BackgroundColor);
+            _db.AddParameter(cmd, "SetupVote_GenCode", DbType.String, GenCode);
+            _db.AddParameter(cmd, "SetupVote_Width", DbType.String, Width);
+            _db.AddParameter(cmd, "SetupVote_Height", DbType.String, Height);
+            DataTable dataTable = CreateDataTable(cmd);
+            return dataTable;
+        }
+
+        public DataTable SetupVote_Update(int vote_id, string SetupVote_TitleColor, string SetupVote_FontSize, string SetupVote_BorderColor, string SetupVote_BackgroundColor, string GenCode, string Width, string Height)
+        {
+            IDbCommand cmd = _db.CreateCommand("SetupVote_Update", true);
+            _db.AddParameter(cmd, "Vote_ID", DbType.Int32, vote_id);
+            _db.AddParameter(cmd, "SetupVote_TitleColor", DbType.String, SetupVote_TitleColor);
+            _db.AddParameter(cmd, "SetupVote_FontSize", DbType.String, SetupVote_FontSize);
+            _db.AddParameter(cmd, "SetupVote_BackgroundColor", DbType.String, SetupVote_BackgroundColor);
+            _db.AddParameter(cmd, "SetupVote_GenCode", DbType.String, GenCode);
+            _db.AddParameter(cmd, "SetupVote_Width", DbType.String, Width);
+            _db.AddParameter(cmd, "SetupVote_Height", DbType.String, Height);
+            DataTable dataTable = CreateDataTable(cmd);
+            return dataTable;
+        }
+
+        public DataTable vc_Vote_SelectList(String sWhere, Int32 iStartIndex, Int32 iPageSize)
+        {
+            IDbCommand cmd = _db.CreateCommand("vc_Vote_SelectList", true);
+            _db.AddParameter(cmd, "sWhere", DbType.String, sWhere);
+            _db.AddParameter(cmd, "iStartIndex", DbType.Int32, iStartIndex);
+            _db.AddParameter(cmd, "iPageSize", DbType.Int32, iPageSize);
+            DataTable table = CreateDataTable(cmd);
+            return table;
+        }
+
+        public DataTable vc_Vote_SelectList_Count(String sWhere)
+        {
+            IDbCommand cmd = _db.CreateCommand("vc_Vote_SelectList_Count", true);
+            _db.AddParameter(cmd, "sWhere", DbType.String, sWhere);
+            DataTable table = CreateDataTable(cmd);
+            return table;
+        }
     }
 }

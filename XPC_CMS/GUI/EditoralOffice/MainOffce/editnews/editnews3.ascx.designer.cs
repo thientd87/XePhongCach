@@ -58,6 +58,15 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.editnews {
         protected global::System.Web.UI.WebControls.TextBox txtInit;
         
         /// <summary>
+        /// chkIsFocus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chkIsFocus;
+        
+        /// <summary>
         /// cboIsHot control.
         /// </summary>
         /// <remarks>
@@ -209,15 +218,6 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.editnews {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlAuthor;
-        
-        /// <summary>
-        /// chkIsFocus control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkIsFocus;
         
         /// <summary>
         /// chkShowRate control.

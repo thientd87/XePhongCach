@@ -51,59 +51,7 @@
 
     </rows>
   </box>
-	<box checkpermission="true" isvisible="false">
-		<name>Quản lý đơn hàng</name>
-    <id>05a7773b</id>
-		<rows>
-      <row>
-        <Permission_ID>14</Permission_ID>
-        <MenuName>Đơn hàng vừa gửi</MenuName>
-        <Cpmode>listorder</Cpmode>
-        <IsCount>False</IsCount>
-        <HeadCpmode>add</HeadCpmode>
-        <path>~/GUI/EditoralOffice/MainOffce/OrderManager/ListOrders.ascx</path>
-      </row>
-      <row>
-        <Permission_ID>14</Permission_ID>
-        <MenuName>Đơn hàng đang chờ thanh toán</MenuName>
-        <Cpmode>listorderindate</Cpmode>
-        <IsCount>False</IsCount>
-        <HeadCpmode>add</HeadCpmode>
-        <path>~/GUI/EditoralOffice/MainOffce/OrderManager/ListOrderInDate.ascx</path>
-      </row>     		
-			<row>
-				<Permission_ID>20</Permission_ID>
-				<MenuName>Đơn hàng đang quá hạn</MenuName>
-				<Cpmode>listorderoverdate</Cpmode>
-				<IsCount>False</IsCount>
-				<path>~/GUI/EditoralOffice/MainOffce/OrderManager/ListOrderOverDate.ascx</path>
-				<ShortCutKey>Ctrl+Shift+P</ShortCutKey>
-			</row>
-     <row >
-        <Permission_ID>20</Permission_ID>
-        <MenuName>Đơn hàng đã thanh toán</MenuName>
-        <Cpmode>listorderispaid</Cpmode>
-        <IsCount>False</IsCount>
-        <path>~/GUI/EditoralOffice/MainOffce/OrderManager/ListOrderIsPaid.ascx</path>
-        <ShortCutKey>Ctrl+Shift+P</ShortCutKey>
-      </row>
-			<row isvisible="false">
-        <Permission_ID>16</Permission_ID>
-        <MenuName>Danh sách bài lưu tạm</MenuName>
-        <Cpmode>orderdetail</Cpmode>
-        <IsCount>False</IsCount>
-        <path>~/GUI/EditoralOffice/MainOffce/OrderManager/OrderDetails.ascx</path>
-      </row>
-      <row isvisible="false">
-        <Permission_ID>16</Permission_ID>
-        <MenuName>Danh sách bài lưu tạm</MenuName>
-        <Cpmode>orderdetailispaid</Cpmode>
-        <IsCount>False</IsCount>
-        <path>~/GUI/EditoralOffice/MainOffce/OrderManager/OrderDetailIsPaid.ascx</path>
-      </row>
-		
-    </rows>
-	</box>
+	
   <box checkpermission="true" isvisible="true">
     <name>Tiện ích khác</name>
     <id>05a7773b</id>
@@ -124,12 +72,19 @@
       </row>
       <row>
         <Permission_ID>14</Permission_ID>
+        <MenuName>Quản lý bình chọn</MenuName>
+        <Cpmode>votelist</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/Votes/VoteList.ascx</path>
+      </row>
+      <!--<row>
+        <Permission_ID>14</Permission_ID>
         <MenuName>Khách hàng liên hệ</MenuName>
         <Cpmode>feedbacklist</Cpmode>
         <IsCount>False</IsCount>
         <path>~/GUI/EditoralOffice/MainOffce/Feedback/FeedbackManger.ascx</path>
-      </row>
-       <row>
+      </row>-->
+      <row>
         <Permission_ID>14</Permission_ID>
         <MenuName>Hỗ trợ online</MenuName>
         <Cpmode>supportlist</Cpmode>
@@ -191,12 +146,12 @@
 			<row ownerCpMode="votemngr">
 				<Permission_ID>70</Permission_ID>
 				<Cpmode>voteadd</Cpmode>
-				<path>~/GUI/EditoralOffice/MainOffce/VoteEdit/VoteEdit.ascx</path>
+				<path>~/GUI/EditoralOffice/MainOffce/Votes/VoteEdit.ascx</path>
 			</row>
 			<row ownerCpMode="votemngr">
 				<Permission_ID>70</Permission_ID>
 				<Cpmode>voteitem</Cpmode>
-				<path>~/GUI/EditoralOffice/MainOffce/VoteEdit/VoteItem.ascx</path>
+				<path>~/GUI/EditoralOffice/MainOffce/Votes/VoteItem.ascx</path>
 			</row>				
 			<row>
 				<Permission_ID>14</Permission_ID>
@@ -288,6 +243,59 @@
         <IsCount>False</IsCount>
         <path>~/GUI/EditoralOffice/MainOffce/ProductManager/LayoutListProduct.ascx</path>
       </row>-->
+    </rows>
+  </box>
+  <box checkpermission="true" isvisible="false">
+    <name>Quản lý đơn hàng</name>
+    <id>05a7773b</id>
+    <rows>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Đơn hàng vừa gửi</MenuName>
+        <Cpmode>listorder</Cpmode>
+        <IsCount>False</IsCount>
+        <HeadCpmode>add</HeadCpmode>
+        <path>~/GUI/EditoralOffice/MainOffce/OrderManager/ListOrders.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Đơn hàng đang chờ thanh toán</MenuName>
+        <Cpmode>listorderindate</Cpmode>
+        <IsCount>False</IsCount>
+        <HeadCpmode>add</HeadCpmode>
+        <path>~/GUI/EditoralOffice/MainOffce/OrderManager/ListOrderInDate.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>20</Permission_ID>
+        <MenuName>Đơn hàng đang quá hạn</MenuName>
+        <Cpmode>listorderoverdate</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/OrderManager/ListOrderOverDate.ascx</path>
+        <ShortCutKey>Ctrl+Shift+P</ShortCutKey>
+      </row>
+      <row >
+        <Permission_ID>20</Permission_ID>
+        <MenuName>Đơn hàng đã thanh toán</MenuName>
+        <Cpmode>listorderispaid</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/OrderManager/ListOrderIsPaid.ascx</path>
+        <ShortCutKey>Ctrl+Shift+P</ShortCutKey>
+      </row>
+      <row isvisible="false">
+        <Permission_ID>16</Permission_ID>
+        <MenuName>Danh sách bài lưu tạm</MenuName>
+        <Cpmode>orderdetail</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/OrderManager/OrderDetails.ascx</path>
+      </row>
+      <row isvisible="false">
+        <Permission_ID>16</Permission_ID>
+        <MenuName>Danh sách bài lưu tạm</MenuName>
+        <Cpmode>orderdetailispaid</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/OrderManager/OrderDetailIsPaid.ascx</path>
+      </row>
+
     </rows>
   </box>
 </boxes>

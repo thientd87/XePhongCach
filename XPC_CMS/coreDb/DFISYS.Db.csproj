@@ -280,6 +280,14 @@
     <Compile Include="ThreadDetailsRow_Base.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="VoteCollection.cs" />
+    <Compile Include="VoteCollection_Base.cs" />
+    <Compile Include="VoteItemCollection.cs" />
+    <Compile Include="VoteItemCollection_Base.cs" />
+    <Compile Include="VoteItemRow.cs" />
+    <Compile Include="VoteItemRow_Base.cs" />
+    <Compile Include="VoteRow.cs" />
+    <Compile Include="VoteRow_Base.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

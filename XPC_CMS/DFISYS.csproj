@@ -308,6 +308,8 @@
     <Compile Include="BO\Editoral\SiteInformation\SiteInformationController.cs" />
     <Compile Include="BO\Editoral\SiteInformation\SiteInformationDAL.cs" />
     <Compile Include="BO\Editoral\SiteInformation\SiteInformationObject.cs" />
+    <Compile Include="BO\Editoral\Vote\VoteHelper.cs" />
+    <Compile Include="BO\Editoral\Vote\VoteItemHelper.cs" />
     <Compile Include="BO\GalleryHelper.cs" />
     <Compile Include="BO\CoreBO\Comment.cs" />
     <Compile Include="BO\CoreBO\Common.cs">
@@ -777,6 +779,27 @@
     </Compile>
     <Compile Include="GUI\EditoralOffice\MainOffce\Votes\List.ascx.designer.cs">
       <DependentUpon>List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\EditoralOffice\MainOffce\Votes\VoteEdit.ascx.cs">
+      <DependentUpon>VoteEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\EditoralOffice\MainOffce\Votes\VoteEdit.ascx.designer.cs">
+      <DependentUpon>VoteEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\EditoralOffice\MainOffce\Votes\VoteItem.ascx.cs">
+      <DependentUpon>VoteItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\EditoralOffice\MainOffce\Votes\VoteItem.ascx.designer.cs">
+      <DependentUpon>VoteItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\EditoralOffice\MainOffce\Votes\VoteList.ascx.cs">
+      <DependentUpon>VoteList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\EditoralOffice\MainOffce\Votes\VoteList.ascx.designer.cs">
+      <DependentUpon>VoteList.ascx</DependentUpon>
     </Compile>
     <Compile Include="GUI\EditoralOffice\MainOffce\WebLinks\List.ascx.cs">
       <DependentUpon>List.ascx</DependentUpon>
@@ -1304,6 +1327,9 @@
     <Content Include="GUI\EditoralOffice\MainOffce\Tool\Gallery1.ascx" />
     <Content Include="GUI\EditoralOffice\MainOffce\Tool\GalleryMng.aspx" />
     <Content Include="GUI\EditoralOffice\MainOffce\Votes\List.ascx" />
+    <Content Include="GUI\EditoralOffice\MainOffce\Votes\VoteEdit.ascx" />
+    <Content Include="GUI\EditoralOffice\MainOffce\Votes\VoteItem.ascx" />
+    <Content Include="GUI\EditoralOffice\MainOffce\Votes\VoteList.ascx" />
     <Content Include="GUI\EditoralOffice\MainOffce\WebLinks\List.ascx" />
     <Content Include="GUI\Share\AdminTab.ascx" />
     <Content Include="GUI\Share\CatList.ascx" />
@@ -2430,6 +2456,7 @@
     <Content Include="Filemanager\userfiles\web.config" />
     <Content Include="Filemanager\utils\generate-lang.py" />
     <Content Include="Filemanager\utils\minify.py" />
+    <Content Include="BO\Editoral\Vote\vssver2.scc" />
     <None Include="GUI\EditoralOffice\MainOffce\Media\UserControl\vssver2.scc" />
     <Content Include="Services\GetThumbNail.ashx" />
     <None Include="Styles\metronic\fonts\cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff" />

@@ -39,6 +39,9 @@ namespace DFISYS.Core.DAL {
         private ThreadDetailsCollection _threadDetails;
         private StoredProcedures_Family _storedProcedures_Family;
 
+        private VoteCollection _vote;
+        private VoteItemCollection _voteItem;
+
         protected MainDB_Base()
             : this(true) {
             // EMPTY
@@ -106,6 +109,28 @@ namespace DFISYS.Core.DAL {
         public IDbConnection Connection {
             get { return _connection; }
         }
+
+        public VoteCollection VoteCollection
+        {
+            get
+            {
+                if (null == _vote)
+                    _vote = new VoteCollection((MainDB)this);
+                return _vote;
+            }
+        }
+
+      
+        public VoteItemCollection VoteItemCollection
+        {
+            get
+            {
+                if (null == _voteItem)
+                    _voteItem = new VoteItemCollection((MainDB)this);
+                return _voteItem;
+            }
+        }
+
 
         public ActionCollection ActionCollection {
             get {
