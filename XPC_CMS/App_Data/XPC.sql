@@ -158,3 +158,23 @@ END
 
 GO
 
+Create PROCEDURE [dbo].[CMS_Gallery_Search]
+    @pageIndex int,
+    @pageSize int,
+    @keyword nvarchar(500)
+AS
+SET NOCOUNT ON;
+BEGIN
+    if (len(@keyword) = 0) 
+        set @keyword = '*'
+    SELECT *
+    FROM 
+    ( 
+        SELECT [ID], [Name],ROW_NUMBER() OVER (ORDER BY [ID] DESC ) Row   
+        FROM Gallery
+        WHERE (@keyword = '*' or Contains(*,@keyword)) 
+    )a 
+    WHERE   ROW Between (@PageIndex -1)*@PageSize + 1 AND @PageSize*@PageIndex
+END
+
+GO

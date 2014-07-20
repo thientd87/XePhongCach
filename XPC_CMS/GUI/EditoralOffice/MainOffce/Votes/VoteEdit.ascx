@@ -1,49 +1,90 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" Codebehind="VoteEdit.ascx.cs" Inherits="DFISYS.GUI.EditoralOffice.MainOffce.Votes.VoteEdit" %>
-
 <script src="/scripts/popcalendar.js" type="text/javascript" language="javascript"></script>
+<div class="container-fluid">
+				<!-- BEGIN PAGE HEADER-->   
+				<div class="row-fluid">
+					<div class="span12">
+						<h3 class="page-title">
+							Vote Manager <small>Quản lý bình chọn</small>
+						</h3>
+					</div>
+				</div>
+				<!-- END PAGE HEADER-->
+				<!-- BEGIN PAGE CONTENT-->
+				<div class="row-fluid">
+					<div class="span12">
+						<!-- BEGIN SAMPLE FORM PORTLET-->   
+						<div class="portlet box blue tabbable">
+							<div class="portlet-title">
+								<div class="caption">
+									<i class="icon-reorder"></i>
+									<span class="hidden-480">Vote detail</span>
+								</div>
+							</div>
+							<div class="portlet-body form">
+								<div class="tabbable portlet-tabs">
+									<div class="tab-content">
+										<div class="tab-pane active form-horizontal">
+										    <div class="control-group">
+											    <label class="control-label">Câu bình chọn</label>
+											    <div class="controls">
+												     <asp:TextBox CssClass="m-wrap larger" ID="txtVote" runat="server"></asp:TextBox>
+                                                        <asp:Label ID="lblMessage" runat="server" CssClass="ms-input" Font-Bold="True" ForeColor="Red"
+                                                            Text="Bạn chưa nhập câu bình chọn" Visible="False"></asp:Label>
+											    </div>
+										    </div>
+											 <div class="control-group">
+											    <label class="control-label">Ngày bắt đầu</label>
+											    <div class="controls">
+												     <asp:TextBox CssClass="m-wrap large" ID="txtStartDate" runat="server" Width="100"></asp:TextBox>
+                                                        <a onclick="if(self.gfPop)gfPop.fPopCalendar(document.RenderTable.<% = ClientID %>_txtStartDate);return false;"
+                                                            href="javascript:void(0)">
+                                                            <img class="PopcalTrigger" height="21" src="/Scripts/DatePicker/datepicker.gif" width="34"
+                                                                align="absMiddle" border="0">
+                                                        </a>
+											    </div>
+										    </div>
+                                             <div class="control-group">
+											    <label class="control-label"> Ngày kết thúc</label>
+											    <div class="controls">
+												    <asp:TextBox CssClass="m-wrap large" ID="txtEndDate" runat="server" Width="100"></asp:TextBox>
+                                                        <a onclick="if(self.gfPop)gfPop.fPopCalendar(document.RenderTable.<% = ClientID %>_txtEndDate);return false;"
+                                                            href="javascript:void(0)">
+                                                            <img class="PopcalTrigger" height="21" src="/Scripts/DatePicker/datepicker.gif" width="34"
+                                                                align="absMiddle" border="0">
+                                                        </a>
+											    </div>
+										    </div>
+                                             <div class="control-group">
+											    <label class="control-label">Lời dẫn</label>
+											    <div class="controls">
+												   <asp:TextBox ID="txtNote" CssClass="m-wrap larger" runat="server" TextMode="multiLine" Height="160"></asp:TextBox>
+											    </div>
+										    </div>
+                                            <div class="form-actions">
+                                            	    <asp:Button ID="txtSave" CssClass="btn blue" runat="server" Text="Save" OnClick="txtSave_Click" />
+                                                    <input type="reset" class="btn blue" value="Reset" />
+                                                    <asp:Button ID="txtCancel" CssClass="btn blue" runat="server" Text="Cancel" OnClick="txtCancel_Click" /> 
+                                            </div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- END SAMPLE FORM PORTLET-->
+					</div>
+				</div>
+				<!-- END PAGE CONTENT-->         
+			</div>
 
-<table width="100%">
-    <tr>
-        <td class="Edit_Head_Cell">Quản lý bình chọn</td>
-    </tr>    
-</table>
 
-<table cellpadding="0" cellspacing="5" border="0" width="100%">
-    <tr>
-        <td width="10%" class="ms-input">
-            Câu bình chọn
-        </td>
-        <td>
-            <asp:TextBox CssClass="ms-long" ID="txtVote" runat="server" Width="52%"></asp:TextBox>
-            <asp:Label ID="lblMessage" runat="server" CssClass="ms-input" Font-Bold="True" ForeColor="Red"
-                Text="Bạn chưa nhập câu bình chọn" Visible="False"></asp:Label></td>
-    </tr>
-    <tr>
-        <td valign="middle" class="ms-input">
-            Ngày bắt đầu
-        </td>
-        <td>
-            <asp:TextBox CssClass="ms-long" ID="txtStartDate" runat="server" Width="100"></asp:TextBox>
-            <a onclick="if(self.gfPop)gfPop.fPopCalendar(document.RenderTable.<% = ClientID %>_txtStartDate);return false;"
-                href="javascript:void(0)">
-                <img class="PopcalTrigger" height="21" src="/Scripts/DatePicker/datepicker.gif" width="34"
-                    align="absMiddle" border="0">
-            </a>
-        </td>
-    </tr>
-    <tr>
-        <td valign="middle" class="ms-input">
-            Ngày kết thúc
-        </td>
-        <td>
-            <asp:TextBox CssClass="ms-long" ID="txtEndDate" runat="server" Width="100"></asp:TextBox>
-            <a onclick="if(self.gfPop)gfPop.fPopCalendar(document.RenderTable.<% = ClientID %>_txtEndDate);return false;"
-                href="javascript:void(0)">
-                <img class="PopcalTrigger" height="21" src="/Scripts/DatePicker/datepicker.gif" width="34"
-                    align="absMiddle" border="0">
-            </a>
-        </td>
-    </tr>
+
+
+
+
+<table cellpadding="0" cellspacing="5" border="0" width="100%" style="display: none">
+   
     <tr>
         <td valign="middle" class="ms-input">
             Thuộc chuyên mục
@@ -73,20 +114,10 @@
                 style="cursor: pointer;" />
         </td>
     </tr>
-    <tr>
-        <td valign="top" class="ms-input">
-            Lời dẫn
-        </td>
-        <td>
-            <asp:TextBox ID="txtNote" CssClass="ms-long" runat="server" Width="75%" TextMode="multiLine"
-                Height="160"></asp:TextBox>
-        </td>
-    </tr>
+    
     <tr>
         <td colspan="2" class="Edit_Foot_Cell" align="center">
-            <asp:Button ID="txtSave" CssClass="ms-input" runat="server" Text="Cập nhật" OnClick="txtSave_Click" />
-            <input type="reset" class="ms-input" value="Nhập lại" />
-            <asp:Button ID="txtCancel" CssClass="ms-input" runat="server" Text="Quay lại" OnClick="txtCancel_Click" />
+           
         </td>
     </tr>
 </table>

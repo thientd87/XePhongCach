@@ -74,10 +74,18 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.Menu {
         private void getCurrentMenuItem() {
             string strMode = Request.QueryString["cpmode"];
             if (strMode.IndexOf(",") > 0) strMode = strMode.Substring(0, strMode.IndexOf(","));
-
+            //else if (strMode.IndexOf("_") > 0) strMode = strMode.Split('_')[1];
+               
             XmlDocument doc = MenuCommon.getXML();
             XmlNode ownerCpMode = (XmlNode)doc.SelectSingleNode("//Cpmode[text() ='" + strMode + "']");
-            if (ownerCpMode != null) CurrentMenuItem = strMode;
+            if (ownerCpMode != null)
+            {
+                CurrentMenuItem = strMode;
+                var parentNode = ownerCpMode.ParentNode;
+                if (parentNode != null && parentNode.Attributes["ownerCpMode"] !=null && !string.IsNullOrEmpty(parentNode.Attributes["ownerCpMode"].InnerText))
+                    CurrentMenuItem = parentNode.Attributes["ownerCpMode"].InnerText;
+            }
+        
         }
 
         protected void itemLogOut_Click(object sender, EventArgs e) {

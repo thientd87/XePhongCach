@@ -34,18 +34,23 @@
         <MenuName>Danh sách bài đã xuất bản</MenuName>
         <Cpmode>publishedlist</Cpmode>
         <IsCount>False</IsCount>
-
         <path>~/GUI/EditoralOffice/MainOffce/Newslist/Newslist2.ascx</path>
-
         <ShortCutKey>Ctrl+Shift+P</ShortCutKey>
       </row>
-
       <row>
         <Permission_ID>16</Permission_ID>
         <MenuName>Danh sách bài lưu tạm</MenuName>
         <Cpmode>templist</Cpmode>
         <IsCount>False</IsCount>
         <path>~/GUI/EditoralOffice/MainOffce/Newslist/Newslist2.ascx</path>
+      </row>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Quản lý album</MenuName>
+        <Cpmode>albumlist</Cpmode>
+        <IsCount>False</IsCount>
+        <HeadCpmode>albumlist</HeadCpmode>
+        <path>~/GUI/EditoralOffice/MainOffce/Album/ListGallery.ascx</path>
       </row>
 
 
@@ -103,27 +108,27 @@
 	<box checkpermission="true" isvisible="false">
 		<name></name>
 		<rows>
-      <row>
+      <row >
         <Permission_ID>14</Permission_ID>
         <MenuName>Add banner</MenuName>
         <Cpmode>addbanner</Cpmode>
         <IsCount>False</IsCount>
         <path>~/GUI/EditoralOffice/MainOffce/Advertisment/AddBanner.ascx</path>
       </row>
-      <row>
+      <row ownerCpMode="albumlist">
         <Permission_ID>96</Permission_ID>
         <MenuName>Add Gallery</MenuName>
         <Cpmode>addgallery</Cpmode>
         <IsCount>False</IsCount>
-        <path>~/GUI/EditoralOffice/MainOffce/Tool/Gallery1.ascx</path>
+        <path>~/GUI/EditoralOffice/MainOffce/Album/Gallery1.ascx</path>
       </row>
 
-      <row>
+      <row ownerCpMode="albumlist">
         <Permission_ID>96</Permission_ID>
         <MenuName>GalleryMng</MenuName>
         <Cpmode>gallerymng</Cpmode>
         <IsCount>False</IsCount>
-        <path>~/GUI/EditoralOffice/MainOffce/Tool/GalleryMng.aspx</path>
+        <path>~/GUI/EditoralOffice/MainOffce/Album/GalleryMng.aspx</path>
       </row>
       
       <row>
@@ -143,12 +148,12 @@
 				<Cpmode>newsletter-statistic</Cpmode>
 				<path>~/GUI/EditoralOffice/MainOffce/UserStatistic/UserStatistic.ascx</path>
 			</row>			
-			<row ownerCpMode="votemngr">
+			<row ownerCpMode="votelist">
 				<Permission_ID>70</Permission_ID>
 				<Cpmode>voteadd</Cpmode>
 				<path>~/GUI/EditoralOffice/MainOffce/Votes/VoteEdit.ascx</path>
 			</row>
-			<row ownerCpMode="votemngr">
+			<row ownerCpMode="votelist">
 				<Permission_ID>70</Permission_ID>
 				<Cpmode>voteitem</Cpmode>
 				<path>~/GUI/EditoralOffice/MainOffce/Votes/VoteItem.ascx</path>

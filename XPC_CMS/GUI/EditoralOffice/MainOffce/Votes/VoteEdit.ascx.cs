@@ -76,11 +76,11 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.Votes {
             //LogHelper logHelper = new LogHelper();
             //logHelper.InsertFlowEvent(logRow);
             #endregion
-            Response.Redirect("~/office/votemngr.aspx");
+            Response.Redirect("~/office/votelist.aspx");
         }
 
         protected void txtCancel_Click(object sender, EventArgs e) {
-            Response.Redirect("~/office/votemngr.aspx");
+            Response.Redirect("~/office/votelist.aspx");
         }
     }
 }

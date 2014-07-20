@@ -13,15 +13,6 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.Votes {
     public partial class VoteList {
         
         /// <summary>
-        /// panel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.UpdatePanel panel;
-        
-        /// <summary>
         /// grdVote control.
         /// </summary>
         /// <remarks>
@@ -29,6 +20,15 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.Votes {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView grdVote;
+        
+        /// <summary>
+        /// panel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel panel;
         
         /// <summary>
         /// cboPage control.

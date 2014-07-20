@@ -1,28 +1,39 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="VoteList.ascx.cs" Inherits="DFISYS.GUI.EditoralOffice.MainOffce.Votes.VoteList" %>
-
-<table width="100%">
-    <tr>
-        <td class="Edit_Head_Cell">
-            Quản lý bình chọn</td>
-    </tr>    
-</table>
-<asp:UpdatePanel ID="panel" runat="server">
-<ContentTemplate>
-<table cellpadding="0" cellspacing="0" border="0" width="100%">
-    <tr>
-        <td>
-            <table cellpadding="0" cellspacing="5" width="100%">
-                <tr>
-                    <td colspan="2">
-                        <asp:GridView Width="100%" ID="grdVote" runat="server" HeaderStyle-CssClass="grdHeader" RowStyle-CssClass="grdItem"
-                                AlternatingRowStyle-CssClass="grdAlterItem" AutoGenerateColumns="False" AllowPaging="True" DataSourceID="objVoteSource" PageSize="12" OnRowCommand="grdVote_RowCommand"> 
+<div class="container-fluid">
+    <!-- BEGIN PAGE HEADER-->
+    <div class="row-fluid">
+        <div class="span12">
+            <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+            <h3 class="page-title">
+                Vote manager <small>Quản lý bình chọn</small>
+            </h3>
+            <!-- END PAGE TITLE & BREADCRUMB-->
+        </div>
+    </div>
+    <!-- END PAGE HEADER-->
+    <!-- BEGIN PAGE CONTENT-->
+     <div class="row-fluid">
+        <div class="span12">
+              <!-- BEGIN EXAMPLE TABLE PORTLET-->
+            <div class="portlet box blue">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="icon-edit"></i>List votes</div>
+                    <div class="tools">
+                        <a href="javascript:;" class="collapse"></a><a href="javascript:location.reload();" class="reload"></a>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="dataTables_wrapper form-inline" role="grid">
+                        <asp:GridView Width="100%" ID="grdVote" runat="server" CssClass="table table-striped table-hover table-bordered dataTable"  AutoGenerateColumns="False" AllowPaging="True" DataSourceID="objVoteSource" PageSize="25" OnRowCommand="grdVote_RowCommand"> 
                             <Columns>
                                 <asp:TemplateField>
                                     <HeaderTemplate>
-                                        <input type="checkbox" id="chkAll" onclick="CheckAll();"/>
+                                        <%--<input type="checkbox" id="chkAll" onclick="CheckAll();"  class="hidden"/>--%> STT
                                     </HeaderTemplate>
                                     <ItemTemplate>
-                                        <asp:CheckBox ID="chkSelect" runat="server"/>
+                                        <%# Container.DataItemIndex + 1 %>
+                                        <asp:CheckBox ID="chkSelect" runat="server" CssClass="hidden"/>
                                     </ItemTemplate>
                                     <HeaderStyle Width="2%" />
                                 </asp:TemplateField>
@@ -37,53 +48,70 @@
                                             <asp:Literal ID="ltrStart" runat="server" Text='<%# DataBinder.Eval(Container.DataItem,"Vote_StartDate") %>'></asp:Literal>
                                         </ItemTemplate>
                                     <ItemStyle HorizontalAlign="Center" />
-                                    <HeaderStyle Width="20%" />
+                                    
                                 </asp:TemplateField>
                                 <asp:TemplateField HeaderText="Ng&#224;y kết th&#250;c">
                                         <ItemTemplate>
                                             <%# DataBinder.Eval(Container.DataItem,"Vote_EndDate") %>
                                         </ItemTemplate>
                                     <ItemStyle HorizontalAlign="Center" />
-                                    <HeaderStyle Width="20%" />
+                                    
                                 </asp:TemplateField>
                                 <asp:TemplateField HeaderText="Sửa">
                                     <ItemTemplate>
-                                        <center>
-						                    <span onclick="EditVote(<%#Eval("Vote_Id")%>)"; style="cursor:pointer"><img id="ImgEdit"  alt="Sửa bài viết" runat="server" title="Sửa bài viết" src="~/Images/Icons/edit.gif"/></span> 
-					                    </center>
-					                </ItemTemplate>
-                                    <HeaderStyle HorizontalAlign="Center" Width="6%" />
+                                        <a href="/office/voteadd/<%#Eval("Vote_Id")%>.aspx" class="btn mini purple"><i class="icon-edit"></i> Edit</a>
+                                      </ItemTemplate>
                                 </asp:TemplateField>
                                 <asp:TemplateField HeaderText="X&#243;a">
                                     <ItemTemplate>
-                                        <center>
-						                    <asp:ImageButton id="btnDelete" OnClientClick="return confirm('Bạn có muốn xóa bài thuộc luồng này hay không?')" runat="server" CommandName="Delete" CommandArgument='<%#DataBinder.Eval(Container.DataItem,"Vote_ID")%>' CausesValidation="False" ImageUrl="~/Images/icons/delete.gif"></asp:ImageButton>
-					                    </center>
+                                        <asp:LinkButton ID="lbtnDel" runat="server" CommandName="Delete"  OnClientClick="return confirm('Do you want delete this item!');"  CommandArgument='<%# Eval("Vote_ID") %>' CssClass="btn mini black"><i class="icon-trash"></i> Delete</asp:LinkButton>
 					                </ItemTemplate>
-                                    <HeaderStyle HorizontalAlign="Center" Width="4%" />
+                                    
                                 </asp:TemplateField>
                                 <asp:TemplateField HeaderText="Thêm c&#226;u hỏi cho Vote">
                                     <ItemTemplate>
                                         <center>
-						                    <span onclick="openpreview('/voteitem.aspx?vote=<%#Eval("Vote_Id")%>',600,300)"; style="cursor:pointer"><img id="ImgEdit11"  alt="Thêm câu hỏi cho vote" runat="server" title="Thêm câu hỏi cho vote" src="~/Images/Icons/new.gif"/></span> 
+						                    <a  href="/office/voteitem.aspx?vote=<%#Eval("Vote_Id")%>"><img id="ImgEdit11"  alt="Thêm câu hỏi cho vote" runat="server" title="Thêm câu hỏi cho vote" src="~/Images/Icons/new.gif"/></a> 
 					                    </center>
 					                </ItemTemplate>
                                     <HeaderStyle HorizontalAlign="Center" Width="16%" />
                                 </asp:TemplateField>
-                                <asp:TemplateField HeaderText="B&#224;i li&#234;n quan" Visible="False">
-                                    <ItemTemplate>
-                                        <center>
-                                            <span onclick="openpreview('/newsthread.aspx?cpmode=publishedlist&type=vote&voteid=<%#Eval("Vote_Id")%>',800,600);" style="cursor:pointer"><img id="ImgEdit1"  alt="Chọn bài liên quan" runat="server" title="Chọn bài liên quan" src="~/Images/Icons/new.gif"/></span> 
-					                    </center>
-					                </ItemTemplate>
-                                    <HeaderStyle HorizontalAlign="Center" Width="6%" />
-                                </asp:TemplateField>
+                                
                             </Columns>
                                 <RowStyle CssClass="grdItem" />
                                 <HeaderStyle CssClass="grdHeader" />
                                 <AlternatingRowStyle CssClass="grdAlterItem" />
                                 <PagerSettings Visible="False"/>     
                         </asp:GridView>
+                    </div>
+                    <div></div>
+                    <div class="table-toolbar">
+                        <div class="btn-group">
+                            <a class="btn green" href="/office/voteadd.aspx"> Add New <i class="icon-plus"></i></a>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End PAGE CONTENT-->
+    </div>
+<table width="100%">
+    <tr>
+        <td class="Edit_Head_Cell">
+            </td>
+    </tr>    
+</table>
+<asp:UpdatePanel ID="panel" runat="server">
+<ContentTemplate>
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="display: none">
+    <tr>
+        <td>
+            <table cellpadding="0" cellspacing="5" width="100%">
+                <tr>
+                    <td colspan="2">
+                        
                     </td>
                 </tr>
                 <tr>
@@ -106,7 +134,7 @@
             </table>
         </td>
     </tr>
-    <tr>
+    <tr style="display: none">
         <td style="padding-top:10px;">
             <table cellpadding="0" cellspacing="0" border="0" style="width:100%; height:80px; border:1px solid #b8c1ca; background-color:#E5E5E5; clear:both">
                 <tr>

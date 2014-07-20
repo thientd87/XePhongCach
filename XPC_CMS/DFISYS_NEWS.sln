@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DFISYS.Db", "coreDb\DFISYS.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DFISYS.User.Db", "Channel_User_Db\DFISYS.User.Db.csproj", "{FC2F43C2-CEDF-415D-961E-7369CEBB9832}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GalleryManager", "GalleryManager", "{36972970-2C5C-492C-B08B-B5F6F15D8C10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

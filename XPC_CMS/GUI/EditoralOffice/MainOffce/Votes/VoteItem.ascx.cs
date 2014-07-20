@@ -15,19 +15,7 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.Votes
             }
         }
         #endregion
-        protected void grdThreadList_RowDataBound(object sender, GridViewRowEventArgs e)
-        {
-            if (e.Row.RowType != DataControlRowType.Header && e.Row.RowType != DataControlRowType.Footer)
-            {
-                if (DataBinder.Eval(e.Row.DataItem, "VoteIt_ID").ToString() == "0")
-                {
-                    e.Row.Cells.RemoveAt(3);
-                    e.Row.Cells.RemoveAt(2);
-                    e.Row.Cells[1].Attributes.Add("colspan", "4");
-                    e.Row.Cells[1].Attributes.Add("align", "center");
-                }
-            }
-        }
+        
 
         protected void grdThreadList_RowCommand(object sender, GridViewCommandEventArgs e)
         {

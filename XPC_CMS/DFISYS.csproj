@@ -752,25 +752,25 @@
     <Compile Include="GUI\EditoralOffice\MainOffce\Thongke\ThongKeChiTietBaiVietTheoChuyenMuc.ascx.designer.cs">
       <DependentUpon>ThongKeChiTietBaiVietTheoChuyenMuc.ascx</DependentUpon>
     </Compile>
-    <Compile Include="GUI\EditoralOffice\MainOffce\Tool\ListGallery.ascx.cs">
+    <Compile Include="GUI\EditoralOffice\MainOffce\Album\ListGallery.ascx.cs">
       <DependentUpon>ListGallery.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GUI\EditoralOffice\MainOffce\Tool\ListGallery.ascx.designer.cs">
+    <Compile Include="GUI\EditoralOffice\MainOffce\Album\ListGallery.ascx.designer.cs">
       <DependentUpon>ListGallery.ascx</DependentUpon>
     </Compile>
-    <Compile Include="GUI\EditoralOffice\MainOffce\Tool\Gallery1.ascx.cs">
+    <Compile Include="GUI\EditoralOffice\MainOffce\Album\Gallery1.ascx.cs">
       <DependentUpon>Gallery1.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GUI\EditoralOffice\MainOffce\Tool\Gallery1.ascx.designer.cs">
+    <Compile Include="GUI\EditoralOffice\MainOffce\Album\Gallery1.ascx.designer.cs">
       <DependentUpon>Gallery1.ascx</DependentUpon>
     </Compile>
-    <Compile Include="GUI\EditoralOffice\MainOffce\Tool\GalleryMng.aspx.cs">
+    <Compile Include="GUI\EditoralOffice\MainOffce\Album\GalleryMng.aspx.cs">
       <DependentUpon>GalleryMng.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GUI\EditoralOffice\MainOffce\Tool\GalleryMng.aspx.designer.cs">
+    <Compile Include="GUI\EditoralOffice\MainOffce\Album\GalleryMng.aspx.designer.cs">
       <DependentUpon>GalleryMng.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\EditoralOffice\MainOffce\Votes\List.ascx.cs">
@@ -1324,9 +1324,9 @@
     <Content Include="GUI\EditoralOffice\MainOffce\Thongke\ThongKeBaiXemNhieuNhat.ascx" />
     <Content Include="GUI\EditoralOffice\MainOffce\Thongke\ThongKeBieuDoTheoChuyenMuc.ascx" />
     <Content Include="GUI\EditoralOffice\MainOffce\Thongke\ThongKeChiTietBaiVietTheoChuyenMuc.ascx" />
-    <Content Include="GUI\EditoralOffice\MainOffce\Tool\ListGallery.ascx" />
-    <Content Include="GUI\EditoralOffice\MainOffce\Tool\Gallery1.ascx" />
-    <Content Include="GUI\EditoralOffice\MainOffce\Tool\GalleryMng.aspx" />
+    <Content Include="GUI\EditoralOffice\MainOffce\Album\ListGallery.ascx" />
+    <Content Include="GUI\EditoralOffice\MainOffce\Album\Gallery1.ascx" />
+    <Content Include="GUI\EditoralOffice\MainOffce\Album\GalleryMng.aspx" />
     <Content Include="GUI\EditoralOffice\MainOffce\Votes\List.ascx" />
     <Content Include="GUI\EditoralOffice\MainOffce\Votes\VoteEdit.ascx" />
     <Content Include="GUI\EditoralOffice\MainOffce\Votes\VoteItem.ascx" />
