@@ -36,13 +36,21 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.Tool
         {
             if (News_Id > 0)
             {
-                MediaObject objMediaObject = new MediaObject();
-                var Data = objMediaObject.MediaObject_getbyGallleryId(News_Id);
-                if (Data != null && Data.Count > 0)
+                Gallery galleryHelper =  new Gallery();
+                galleryHelper.ID = News_Id;
+                Gallery gallery = galleryHelper.SelectOne();
+                if (gallery != null)
                 {
-                    GridView1.DataSource = Data;
-                    GridView1.DataBind();
+                    txtName.Value = gallery.Name;
+                    MediaObject objMediaObject = new MediaObject();
+                    var Data = objMediaObject.MediaObject_getbyGallleryId(News_Id);
+                    if (Data != null && Data.Count > 0)
+                    {
+                        GridView1.DataSource = Data;
+                        GridView1.DataBind();
+                    }
                 }
+                
                
 
             }
@@ -147,7 +155,7 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.Tool
         protected void btnAdd_Click(object sender, EventArgs e)
         {
             string val = hdfValue.Value;
-            string galleryName = GalleryName.Value;
+            string galleryName = txtName.Value;
             if (val.Length > 0&&galleryName.Length>0)
             {
                 val = "[" + val.TrimEnd(',') + "]";

@@ -52,9 +52,8 @@
                 <Columns>
                     <asp:TemplateField HeaderText="Tên Gallery">
                         <ItemTemplate>
-                            <div style="cursor: default" onclick="openpreview('/Pages/MediaMng.aspx?News_Id=11,900,500); return false;" id="name_<%#Eval("Name")%>">
-                                <a href="#" onclick="openpreview('/Pages/MediaMng.aspx?News_Id=<%#Eval("Id")%>&Gallery=true',900,500); return false;">
-                                    <%#Eval("Name")%></a></div>
+                            <div id="name_<%#Eval("Name")%>">
+                                <a href="/office/addgallery.aspx?id=<%#Eval("Id")%>"><%#Eval("Name")%></a></div>
                         </ItemTemplate>
                         <ItemStyle CssClass="vertical-align-top tieudelist" VerticalAlign="Top"></ItemStyle>
                     </asp:TemplateField>

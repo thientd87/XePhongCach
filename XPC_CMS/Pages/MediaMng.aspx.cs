@@ -21,15 +21,14 @@ namespace DFISYS.Pages
             if (!String.IsNullOrEmpty(user))
             {
                 News_ID = NewsId();
-                GalleryId = 0;
+                GalleryId = Convert.ToInt32(Request.QueryString["News_Id"]);
                 if (!IsPostBack)
                 {
                     
                     string gallery = Request.QueryString["Gallery"];
                     if(!string.IsNullOrEmpty(gallery))
                     {
-                        
-                         BinData2(GalleryId);
+                        BinData2(GalleryId);
                     }
                     else
                     {

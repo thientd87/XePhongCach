@@ -158,7 +158,52 @@ END
 
 GO
 
-Create PROCEDURE [dbo].[CMS_Gallery_Search]
+/****** Object:  StoredProcedure [dbo].[CMS_Gallery_Delete]    Script Date: 07/22/2014 00:14:36 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[CMS_Gallery_Delete]
+(
+   @ID int
+)
+AS
+SET NOCOUNT ON;
+DELETE            Gallery
+WHERE        ([ID] = @ID)
+
+GO
+
+/****** Object:  StoredProcedure [dbo].[CMS_Gallery_Insert]    Script Date: 07/22/2014 00:14:36 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[CMS_Gallery_Insert]
+(
+   	@Name  nvarchar(50) 
+)
+AS
+SET NOCOUNT OFF;
+INSERT INTO        Gallery
+            ([Name])
+VALUES        ( @Name);
+SELECT [ID], [Name] FROM Gallery WHERE (ID = SCOPE_IDENTITY())
+
+GO
+
+/****** Object:  StoredProcedure [dbo].[CMS_Gallery_Search]    Script Date: 07/22/2014 00:14:36 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[CMS_Gallery_Search]
     @pageIndex int,
     @pageSize int,
     @keyword nvarchar(500)
@@ -178,3 +223,81 @@ BEGIN
 END
 
 GO
+
+/****** Object:  StoredProcedure [dbo].[CMS_Gallery_SelectAllLike]    Script Date: 07/22/2014 00:14:36 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[CMS_Gallery_SelectAllLike]
+     @keyword nvarchar(500)
+AS
+SET NOCOUNT ON;
+BEGIN
+    if (len(@keyword) = 0)
+        set @keyword = '%%'
+     SELECT        [ID], [Name]
+     FROM            Gallery
+     WHERE [Name] LIKE @keyword
+END
+
+GO
+
+/****** Object:  StoredProcedure [dbo].[CMS_Gallery_SelectOne]    Script Date: 07/22/2014 00:14:36 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[CMS_Gallery_SelectOne]
+(
+   @ID int
+)
+AS
+SET NOCOUNT ON;
+SELECT        [ID], [Name]
+FROM            Gallery
+WHERE        ([ID] = @ID)
+
+GO
+
+/****** Object:  StoredProcedure [dbo].[CMS_Gallery_Update]    Script Date: 07/22/2014 00:14:36 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[CMS_Gallery_Update]
+(
+   	@Name  nvarchar(50),
+	@ID  int 
+)
+AS
+SET NOCOUNT OFF;
+UPDATE        Gallery
+SET         [Name]=@Name
+WHERE ([ID] = @ID)
+
+GO
+
+/****** Object:  StoredProcedure [dbo].[CMS_MediaObject_GetAllItem_By_GalleryId]    Script Date: 07/22/2014 00:14:36 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+create Proc [dbo].[CMS_MediaObject_GetAllItem_By_GalleryId] 
+@GalleryId int
+as
+begin
+select t1.*,t2.Name from [MediaObject] t1 
+inner join [Gallery] t2 on t1.[GalleryID]=t2.[ID] where t1.GalleryID=@GalleryId order by t1.Object_Type,t1.STT
+end
+
+GO
+
