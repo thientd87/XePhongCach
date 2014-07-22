@@ -165,16 +165,15 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.Tool
                 {
                     var ga = new Gallery();
                     ga.Name = galleryName;
-                    int ID = ga.Insert();
+                    if(Id==0)
+                        Id = ga.Insert();
                     MediaObject objMediaObject = new MediaObject();
                     string strReturn = string.Empty;
                     data.ForEach(p =>
                                      {
                                          int Object_Type = Convert.ToInt32(p.Object_Type);
                                          int STT = Convert.ToInt32(p.STT);
-                                         strReturn += objMediaObject.MediaObject_Add(Object_Type, p.Object_Url,
-                                                                                     p.Object_Note, STT, string.Empty,
-                                                                                     Id,ID);
+                                         strReturn += objMediaObject.MediaObject_Add(Object_Type, p.Object_Url, p.Object_Note, STT, string.Empty, 0, Id);
 
                                      });
                     BinData(Id);

@@ -31,6 +31,15 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.Tool {
         protected global::System.Web.UI.WebControls.HiddenField hdNewsID;
         
         /// <summary>
+        /// grdListSupport control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView grdListSupport;
+        
+        /// <summary>
         /// tblSearch control.
         /// </summary>
         /// <remarks>
@@ -56,23 +65,5 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.Tool {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSearch;
-        
-        /// <summary>
-        /// panel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.UpdatePanel panel;
-        
-        /// <summary>
-        /// grdListSupport control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdListSupport;
     }
 }

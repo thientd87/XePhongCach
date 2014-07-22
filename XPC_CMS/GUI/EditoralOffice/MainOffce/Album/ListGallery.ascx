@@ -2,23 +2,88 @@
     Inherits="DFISYS.GUI.EditoralOffice.MainOffce.Tool.ListGallery" %>
 <asp:HiddenField ID="hdArgs" runat="server" />
 <asp:HiddenField ID="hdNewsID" runat="server" />
-<style>
-    .commentUser
-    {
-        font-size: 12px;
-        color: darkgrey;
-    }
-    .commentLabel
-    {
-        font-size: 11px;
-        color: lightgrey;
-        margin: 0 !important;
-        padding: 0;
-    }
-</style>
-<h1 style="text-align: center">
-    Quản lý Gallery</h1>
-<table id="tblSearch" runat="server" cellpadding="5" cellspacing="5" style="width: 100%;">
+
+<div class="container-fluid">
+    <!-- BEGIN PAGE HEADER-->
+    <div class="row-fluid">
+        <div class="span12">
+            <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+            <h3 class="page-title">
+                Gallery manager <small>Quản lý Gallery</small>
+            </h3>
+            <!-- END PAGE TITLE & BREADCRUMB-->
+        </div>
+    </div>
+    <!-- END PAGE HEADER-->
+    <!-- BEGIN PAGE CONTENT-->
+    <div class="row-fluid">
+        <div class="span12">
+            <!-- BEGIN EXAMPLE TABLE PORTLET-->
+            <div class="portlet box blue">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="icon-edit"></i>List gallery</div>
+                    <div class="tools">
+                        <a href="javascript:;" class="collapse"></a><a href="javascript:location.reload();" class="reload">
+                        </a>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="dataTables_wrapper form-inline" role="grid">
+                        <asp:GridView runat="server" ID="grdListSupport" CssClass="table table-striped table-hover table-bordered dataTable" AllowPaging="False" AutoGenerateColumns="false" Width="100%" ShowHeaderWhenEmpty="True" RowStyle-CssClass="odd" AlternatingRowStyle-CssClass="even" ShowFooter="False"
+                            OnRowDeleting="grvCategories_RowDeleting" >
+                             <Columns>
+                                 <asp:TemplateField HeaderText="#">
+                                      <ItemStyle Width="30px"></ItemStyle>
+                                    <HeaderStyle CssClass="sorting_disabled bold"></HeaderStyle>
+                                    <ItemTemplate>
+                                        <%# Container.DataItemIndex + 1 %>
+                                         <asp:HiddenField runat="server" ID="hiddenColorID" Value='<%# Eval("Id") %>'/>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Gallery name">
+                                    <HeaderStyle CssClass="sorting_disabled"></HeaderStyle>
+                                    <ItemTemplate >
+                                        <a href="/office/addgallery.aspx?id=<%#Eval("Id")%>"><%#Eval("Name")%></a>
+                                    </ItemTemplate>
+                                    <EditItemTemplate>
+                                        <input type="text" runat="server" id="txt_ColorName" class="m-wrap small" value='<%#Eval("ColorName").ToString() %>'/>
+                                    </EditItemTemplate>
+                                    <FooterTemplate>
+                                        <input type="text" runat="server" id="txt_NewColorName" class="m-wrap small" />
+                                    </FooterTemplate>
+                                </asp:TemplateField>
+                                 <asp:TemplateField HeaderText="Edit">
+                                    <HeaderStyle CssClass="sorting_disabled"></HeaderStyle>
+                                    <ItemTemplate >
+                                        <a href="/office/addgallery.aspx?id=<%#Eval("Id")%>" class="btn mini purple"><i class="icon-edit"></i> Edit</a>
+                                      &nbsp;
+                                        <asp:LinkButton ID="lbtnDel" runat="server" CommandName="Delete"  OnClientClick="return confirm('Do you want delete this item!');"  CommandArgument='<%# Eval("ID") %>' CssClass="btn mini black"><i class="icon-trash"></i> Delete</asp:LinkButton>
+                                    </ItemTemplate>
+                                    <ItemStyle Width="150px"></ItemStyle>
+                                </asp:TemplateField>
+                             </Columns>
+                             
+                        </asp:GridView>
+                    </div>
+                    
+                    <div></div>
+                    <div class="table-toolbar">
+                        <div class="btn-group">
+                            <a href="/office/addgallery.aspx" class="btn green">Add New <i class="icon-plus"></i></a>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END EXAMPLE TABLE PORTLET-->
+        </div>
+    </div>
+    <!-- END PAGE CONTENT -->
+</div>
+
+
+<table id="tblSearch" runat="server" cellpadding="5" cellspacing="5" style="width: 100%; display: none">
     <tr>
         <td style="vertical-align: middle;">
             <table cellpadding="5" cellspacing="5">
@@ -39,92 +104,4 @@
         </td>
     </tr>
 </table>
-<div style="float: left; width: 100%;">
-    <asp:UpdatePanel ID="panel" UpdateMode="conditional" runat="server">
-        <ContentTemplate>
-            <div style="margin-top: 10px; margin-bottom: 10px;">
-                <a class="btnUpdate"  href="/office/addgallery.aspx">Thêm
-                    mới</a></div>
-            <asp:GridView Width="100%" ID="grdListSupport" runat="server" CssClass="gtable sortable"
-                EmptyDataText="<span style='color:Red'><b>Không có bài !</b></span>" AutoGenerateColumns="False"
-                AllowPaging="false" 
-                >
-                <Columns>
-                    <asp:TemplateField HeaderText="Tên Gallery">
-                        <ItemTemplate>
-                            <div id="name_<%#Eval("Name")%>">
-                                <a href="/office/addgallery.aspx?id=<%#Eval("Id")%>"><%#Eval("Name")%></a></div>
-                        </ItemTemplate>
-                        <ItemStyle CssClass="vertical-align-top tieudelist" VerticalAlign="Top"></ItemStyle>
-                    </asp:TemplateField>
 
-                </Columns>
-            </asp:GridView>
-            <div style="margin-top: 10px; margin-bottom: 10px;">
-                <a class="btnUpdate"  href="/office/addgallery.aspx" target="_top">Thêm
-                    mới</a></div>
-        </ContentTemplate>
-        <Triggers>
-            <asp:AsyncPostBackTrigger ControlID="btnSearch" EventName="Click" />
-        </Triggers>
-    </asp:UpdatePanel>
-</div>
-<script type="text/javascript" src="/scripts/calendar.js"></script>
-<script language="JavaScript" type="text/javascript" src="/scripts/newslist2.js"></script>
-<script language="javascript" type="text/javascript">
-    function GetControlByName(id) {
-        return document.getElementById("<% = ClientID %>_" + id);
-    }
-</script>
-<script type="text/javascript">
-    $(document).ready(function ($) {
-        $('a[rel*=colorbox]').facebox({ width: 900, height: 500 });
-    });
-
-    var prm = Sys.WebForms.PageRequestManager.getInstance();
-    prm.add_endRequest(EndRequest);
-    function EndRequest(sender, args) {
-        $('#bgFilter').hide();
-        $('#imgloading').hide();
-        $('a[rel*=colorbox]').facebox({ width: 900, height: 500 });
-        $('*[rel*=editbox]').facebox({ iframe: true, width: 900, height: 500 });
-    }
-
-    function Delete(id) {
-        if (!confirm('Bạn có muốn xóa ?')) return;
-
-        $.post("/Ajax/Tool/EditSupportOnline.aspx?action=delete&Id=" + id, {}, function (data) {
-            $.facebox.close();
-            $("#name_" + id).parent().parent().remove();
-        });
-    }
-
-    function Save(id, status) {
-        if ($("#txtName").val() == "") {
-            alert("Chưa nhập Nội dung");
-            $("#txtName").focus();
-            return false;
-        }
-
-        if ($("#txtURL").val() == "") {
-            alert("Chưa nhập Email");
-            $("#txtURL").focus();
-            return false;
-        }
-        $.post("/Ajax/Tool/EditSupportOnline.aspx?post=true&status=" + status + "&Id=" + id, $('#saveWeblink *').serialize(), function (data) {
-            $("#name_" + id).html($("#txtName").val().replace(/\n/gim, '</br>'));
-            $("#yahoo_" + id).html($("#txtYahoo").val());
-            $("#skype_" + id).html($("#txtSkype").val());
-            $("#mobile_" + id).html($("#txtMobile").val());
-            $("#groupname_" + id).html($("#txtGroupName").val());
-            $("#stt_" + id).html($("#txtSTT").val());
-            
-            $("#url_" + id).attr("href", $("#txtURL").val());
-            $.facebox.close();
-            if (status == true)
-                $("#content_" + id).parent().parent().remove();
-        });
-        return false;
-    }
-     
-</script>

@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using DFISYS.BO;
 using DFISYS.BO.CoreBO;
 using System.Data;
+using DFISYS.BO.Editoral.ProductColor;
 
 namespace DFISYS.GUI.EditoralOffice.MainOffce.Tool
 {
@@ -17,16 +18,20 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.Tool
         {
             if (!IsPostBack)
             {
-                var tbl = ga.SelectAllSearch(1000,1,"");
-                grdListSupport.DataSource = tbl;
-                grdListSupport.DataBind();
+                BindData();
             }
+        }
+
+        public void BindData()
+        {
+            var tbl = ga.SelectAllSearch(1000, 1, "");
+            grdListSupport.DataSource = tbl;
+            grdListSupport.DataBind();
         }
         protected void grdListNews_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName == "Edit")
             {
-
                 int index = Convert.ToInt32(e.CommandArgument);
                 GridViewRow row = grdListSupport.Rows[index];
                 grdListSupport.EditIndex = index;
@@ -38,10 +43,19 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.Tool
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
-            var tbl = SupportOnline_Helper.SelectSupportOnline();
-            grdListSupport.DataSource = tbl;
-            grdListSupport.DataBind();
-        }         
+            //var tbl = SupportOnline_Helper.SelectSupportOnline();
+            //grdListSupport.DataSource = tbl;
+            //grdListSupport.DataBind();
+        }
 
+        protected void grvCategories_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            GridViewRow editRow = grdListSupport.Rows[e.RowIndex];
+            ga.ID = Convert.ToInt32((editRow.FindControl("hiddenColorID") as HiddenField).Value);
+            ga.Delete();
+            BindData();
+
+
+        }
     }
 }

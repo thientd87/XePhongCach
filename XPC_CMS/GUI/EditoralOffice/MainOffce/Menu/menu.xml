@@ -49,7 +49,6 @@
         <MenuName>Quản lý album</MenuName>
         <Cpmode>albumlist</Cpmode>
         <IsCount>False</IsCount>
-        <HeadCpmode>albumlist</HeadCpmode>
         <path>~/GUI/EditoralOffice/MainOffce/Album/ListGallery.ascx</path>
       </row>
 

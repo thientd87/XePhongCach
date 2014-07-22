@@ -1,7 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Gallery1.ascx.cs" Inherits="DFISYS.GUI.EditoralOffice.MainOffce.Tool.Gallery1" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<script src="/Scripts/jquery-1.3.2.min.js" type="text/javascript"></script>
-<script src="/Scripts/library.js" type="text/javascript"></script>
+
 <style type="text/css">
     .themmoi
     {
