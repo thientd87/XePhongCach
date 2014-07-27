@@ -1,93 +1,117 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Gallery1.ascx.cs" Inherits="DFISYS.GUI.EditoralOffice.MainOffce.Tool.Gallery1" %>
+<div class="container-fluid">
+	<!-- BEGIN PAGE HEADER-->   
+	<div class="row-fluid">
+		<div class="span12">
+			<h3 class="page-title">
+				Gallery Manager <small>Quản lý sản phẩm</small>
+			</h3>
+		</div>
+	</div>
+      <!-- END PAGE HEADER-->
+    <!-- BEGIN PAGE CONTENT-->
+    <div class="row-fluid">
+        <div class="span12">
+            <!-- BEGIN EXAMPLE TABLE PORTLET-->
+            <div class="portlet box blue">
+                 <div class="portlet-title">
+                    <div class="caption">
+                        <i class="icon-edit"></i>Gallery detail</div>
+                    <div class="tools">
+                        <a href="javascript:;" class="collapse"></a><a href="javascript:location.reload();" class="reload">
+                        </a>
+                    </div>
+                </div>
+                	<div class="portlet-body form">
+								<div class="tabbable portlet-tabs">
+									<div class="tab-content">
+										<div class="tab-pane active form-horizontal">
+											 <div class="control-group">
+													<label class="control-label">Tên Gallery</label>
+													<div class="controls">
+													    <input type="text" id="txtName" runat="server" value="<%#TxtGallery%>" />
+													</div>
+												</div>
+                                            <asp:GridView ID="GridView1"  CssClass="table table-striped table-hover table-bordered dataTable" runat="server" AutoGenerateColumns="False"
+                                                    DataKeyNames="Object_ID" EnableModelValidation="True" OnRowDataBound="GridView1_RowDataBound"
+                                                    OnRowUpdating="GridView1_RowUpdating" OnRowEditing="GridView1_RowEditing" OnRowCancelingEdit="GridView1_RowCancelingEdit"
+                                                    OnRowDeleting="GridView1_RowDeleting">
+                                                    <Columns>
+                                                        <asp:BoundField DataField="Object_ID" HeaderText="Object_ID" InsertVisible="False"
+                                                            ReadOnly="True" SortExpression="Object_ID" Visible="False">
+                                                           
+                                                        </asp:BoundField>
+                                                        <asp:TemplateField HeaderText="Loại" SortExpression="Object_Type">
+                                                            <EditItemTemplate>
+                                                                <asp:DropDownList ID="cboObject_Type" runat="server">
+                                                                    <asp:ListItem Value="1">Image</asp:ListItem>
+                                                                    <%--<asp:ListItem Value="2">Video</asp:ListItem>--%>
+                                                                </asp:DropDownList>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="Label1" runat="server" Text='<%# Bind("Object_TypeName") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                            <ItemStyle Width="50px"></ItemStyle>
+                                                        </asp:TemplateField>
+                                                        <asp:TemplateField HeaderText="Ảnh" SortExpression="Object_Url">
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="txtObject_Url" runat="server" Text='<%# Bind("Object_Url") %>'></asp:TextBox>
+                                                                <asp:Literal ID="lbl" runat="server"></asp:Literal>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Image Height="150px" ID="Image1" ImageUrl='<%#Bind("Object_Url") %>' runat="server" />
+                                                            </ItemTemplate>
+                                                            <ItemStyle  Height="150px" Width="300px" />
+                                                        </asp:TemplateField>
+                                                        <asp:TemplateField HeaderText="Ghi chú" SortExpression="Object_Note">
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="txtObject_Note" runat="server" Text='<%# Bind("Object_Note") %>'
+                                                                    TextMode="MultiLine"></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="Label2" runat="server" Text='<%# Bind("Object_Note") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                           
+                                                        </asp:TemplateField>
+                                                        <asp:TemplateField HeaderText="STT" SortExpression="STT">
+                                                            <EditItemTemplate>
+                                                                <asp:TextBox ID="txtStt" runat="server" Text='<%# Bind("STT") %>'></asp:TextBox>
+                                                            </EditItemTemplate>
+                                                            <ItemTemplate>
+                                                                <asp:Label ID="Label3" runat="server" Text='<%# Bind("STT") %>'></asp:Label>
+                                                            </ItemTemplate>
+                                                        </asp:TemplateField>
+                                                        <asp:TemplateField HeaderText="Edit">
+                                                            <ItemTemplate>
+                                                                <asp:ImageButton ID="ImageButton2" runat="server" CssClass="AcctionDelete" CausesValidation="False"
+                                                                    CommandName="Delete" ImageUrl="~/Images/delete_event.png" />
+                                                            </ItemTemplate>
+                                                            <HeaderStyle CssClass="lstcol7" />
+                                                            <ItemStyle CssClass="lstcol7" />
+                                                        </asp:TemplateField>
+                                                    </Columns>
+                                                </asp:GridView>
+                                              <table class="table table-striped table-hover table-bordered dataTable themmoi" cellspacing="0" rules="all" border="1"  style="border-collapse:collapse;">
+                                              </table>
+										</div>
+										<div>Bạn có thể thêm nhiều file.</div>
+                                            <div class="table-toolbar">
+                                                <div class="btn-group">
+                                                    <input id="btnThem" type="button" class="btn green"  value="Thêm" >
+                                                     
+                                                </div>
+                                                <div class="btn-group">
+                                                    &nbsp;&nbsp;<asp:Button ID="btnAdd" runat="server" CssClass="btn green" Text="Lưu" OnClick="btnAdd_Click" />  &nbsp;&nbsp;
+                                                    </div>
+                                            </div>
+									</div>
+								</div>
+							</div>
+            </div>
+	    </div>
+    </div>
+</div>
 
-<style type="text/css">
-    .themmoi
-    {
-        border-bottom: 1px solid;
-        margin-top: 25px;
-        width: 860px;
-    }
-    .themmoi tr
-    {
-    }
-    .themmoi td, .themmoi th
-    {
-        border-top: 1px solid;
-        border-left: 1px solid;
-        padding: 5px;
-    }
-    .themmoi .col1
-    {
-        width: 75px;
-    }
-    .themmoi .col2
-    {
-        width: 165px;
-    }
-    .themmoi .col3
-    {
-        width: 540px;
-    }
-    .themmoi .col3 *
-    {
-        width: 95%;
-    }
-    .themmoi .col4
-    {
-        width: 55px;
-    }
-    .themmoi .col5
-    {
-        border-right: 1px solid;
-        width: 20px;
-    }
-    .themmoi .col4 input
-    {
-        width: 50px;
-    }
-    .ObjectDelete
-    {
-        cursor: pointer;
-    }
-    .lstImages
-    {
-        width: 860px;
-    }
-    .lstImages .lstcol2
-    {
-        width: 75px;
-    }
-    .lstImages .lstcol3
-    {
-        width: 165px;
-    }
-    .lstImages .lstcol4
-    {
-        width: 540px;
-    }
-    .lstImages .lstcol4 *
-    {
-        width: 95%;
-    }
-    .lstImages .lstcol5
-    {
-        width: 55px;
-        text-align: center;
-    }
-    .lstImages .lstcol6
-    {
-        width: 20px;
-    }
-    .lstImages .lstcol7
-    {
-    }
-    .objecttitle
-    {
-        font-size: 18px;
-        font-weight: bold;
-        padding: 10px;
-    }
-</style>
 <script type="text/javascript">
 
     function avatar_loadValue(arrImage) {
@@ -110,9 +134,9 @@
         txtID = document.getElementById(txtID).value;
         openpreview("/GUI/EditoralOffice/MainOffce/FileManager/default.aspx?function=" + type + "_loadValue&mode=single&share=share&i=" + encodeURIComponent(txtID), 900, 700);
     }
-    var combobox = "<select class='selecttype'><option value='1'>Image</option><option value='2'>Video</option></select>";
+    var combobox = "<select class='selecttype'><option value='1'>Image</option></select>";
     var Object_Url = "<input class='Object_Url' type=\"text\" />";
-    var Object_Note = "<textarea class='Object_Note' cols=\"20\" rows=\"2\"></textarea>";
+    var Object_Note = "<textarea class='Object_Note' cols=\"30\" style=\"width:400px\" rows=\"2\"></textarea>";
     var STT = "<input class='STT' type=\"text\" value='0' />";
     var htmlEdit = "<img alt='' src='/Images/edit.png' />";
     var htmlAddAndCancel = "<img id='ObjectAdd' alt='' src='/Images/ico-add.gif' /><img id='ObjectCancel' alt='' src='/Images/delete_event.png' />";
@@ -130,7 +154,7 @@
                 $(".themmoi").append("<tr><th class='col1'>Loại</th><th class='col2'>Ảnh</th><th class='col3'>Ghi chú</th><th class='col4'>STT</th><th class='col5'></th></tr>");
             }
             i++;
-            var newItem = "<tr><td class='col1'>" + combobox + "</td><td class='col2'><input id='Object_Url_" + i + "' class='Object_Url' type=\"text\" /><img src=\"/images/icons/folder.gif\" onclick=\"chooseFile('avatar', 'Object_Url_" + i + "')\" style=\"cursor: pointer;\" /></td><td class='col3'>" + Object_Note + "</td><td class='col4'>" + STT + "</td><td class='col5'><img class='ObjectDelete' alt='' src='/Images/delete_event.png' /></td></tr>";
+            var newItem = "<tr><td class='col1' style=\"width:130px\">" + combobox + "</td><td class='' style=\"width:330px\"><input id='Object_Url_" + i + "' class='Object_Url' type=\"text\" style=\"width:300px\"  /><img src=\"/images/icons/folder.gif\" onclick=\"openInfo('/FileManager/index.html?field_name=Object_Url_" + i + "',900,700)\" style=\"cursor: pointer;\" /></td><td class='col3' style=\"width:430px\">" + Object_Note + "</td><td class='col4'>" + STT + "</td><td class=''><img class='ObjectDelete' alt='' src='/Images/delete_event.png' /></td></tr>";
             $(".themmoi").append(newItem);
         });
         $("#<%=btnAdd.ClientID %>").live("click", function () {
@@ -173,95 +197,15 @@
     <asp:HiddenField ID="GalleryName" runat="server" />
     <div class='objecttitle'>
         <div style="float: left">
-            Tên Gallery:&nbsp;</div>
-        <input type="text" id="txtName" runat="server" value="<%#TxtGallery%>" />
+            :&nbsp;</div>
+        
     </div>
-    <asp:GridView ID="GridView1" CssClass="lstImages" runat="server" AutoGenerateColumns="False"
-        DataKeyNames="Object_ID" EnableModelValidation="True" OnRowDataBound="GridView1_RowDataBound"
-        OnRowUpdating="GridView1_RowUpdating" OnRowEditing="GridView1_RowEditing" OnRowCancelingEdit="GridView1_RowCancelingEdit"
-        OnRowDeleting="GridView1_RowDeleting">
-        <Columns>
-            <asp:BoundField DataField="Object_ID" HeaderText="Object_ID" InsertVisible="False"
-                ReadOnly="True" SortExpression="Object_ID" Visible="False">
-                <HeaderStyle CssClass="lstcol1" />
-                <ItemStyle CssClass="lstcol1" />
-            </asp:BoundField>
-            <asp:TemplateField HeaderText="Loại" SortExpression="Object_Type">
-                <EditItemTemplate>
-                    <asp:DropDownList ID="cboObject_Type" runat="server">
-                        <asp:ListItem Value="1">Image</asp:ListItem>
-                        <asp:ListItem Value="2">Video</asp:ListItem>
-                    </asp:DropDownList>
-                </EditItemTemplate>
-                <ItemTemplate>
-                    <asp:Label ID="Label1" runat="server" Text='<%# Bind("Object_TypeName") %>'></asp:Label>
-                </ItemTemplate>
-                <HeaderStyle CssClass="lstcol2" />
-                <ItemStyle CssClass="lstcol2" />
-            </asp:TemplateField>
-            <asp:TemplateField HeaderText="Ảnh" SortExpression="Object_Url">
-                <EditItemTemplate>
-                    <asp:TextBox ID="txtObject_Url" runat="server" Text='<%# Bind("Object_Url") %>'></asp:TextBox>
-                    <asp:Literal ID="lbl" runat="server"></asp:Literal>
-                </EditItemTemplate>
-                <ItemTemplate>
-                    <asp:Image Height="100px" ID="Image1" ImageUrl='<%#Bind("Object_Url") %>' runat="server" />
-                </ItemTemplate>
-                <HeaderStyle CssClass="lstcol3" />
-                <ItemStyle CssClass="lstcol3" Width="100px" Height="100px" />
-            </asp:TemplateField>
-            <asp:TemplateField HeaderText="Ghi chú" SortExpression="Object_Note">
-                <EditItemTemplate>
-                    <asp:TextBox ID="txtObject_Note" runat="server" Text='<%# Bind("Object_Note") %>'
-                        TextMode="MultiLine"></asp:TextBox>
-                </EditItemTemplate>
-                <ItemTemplate>
-                    <asp:Label ID="Label2" runat="server" Text='<%# Bind("Object_Note") %>'></asp:Label>
-                </ItemTemplate>
-                <HeaderStyle CssClass="lstcol4" />
-                <ItemStyle CssClass="lstcol4" />
-            </asp:TemplateField>
-            <asp:TemplateField HeaderText="STT" SortExpression="STT">
-                <EditItemTemplate>
-                    <asp:TextBox ID="txtStt" runat="server" Text='<%# Bind("STT") %>'></asp:TextBox>
-                </EditItemTemplate>
-                <ItemTemplate>
-                    <asp:Label ID="Label3" runat="server" Text='<%# Bind("STT") %>'></asp:Label>
-                </ItemTemplate>
-                <HeaderStyle CssClass="lstcol5" />
-                <ItemStyle CssClass="lstcol5" />
-            </asp:TemplateField>
-<%--            <asp:TemplateField ShowHeader="False">
-                <EditItemTemplate>
-                    <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="True" CommandName="Update"
-                        Text="Update"></asp:LinkButton>
-                    &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Cancel"
-                        Text="Cancel"></asp:LinkButton>
-                </EditItemTemplate>
-                <ItemTemplate>
-                    <asp:ImageButton ID="ImageButton1" CausesValidation="False" CommandName="Edit" runat="server"
-                        ImageUrl="~/Images/edit.png" />
-                </ItemTemplate>
-                <HeaderStyle CssClass="lstcol6" />
-                <ItemStyle CssClass="lstcol6" />
-            </asp:TemplateField>--%>
-            <asp:TemplateField ShowHeader="False">
-                <ItemTemplate>
-                    <asp:ImageButton ID="ImageButton2" runat="server" CssClass="AcctionDelete" CausesValidation="False"
-                        CommandName="Delete" ImageUrl="~/Images/delete_event.png" />
-                </ItemTemplate>
-                <HeaderStyle CssClass="lstcol7" />
-                <ItemStyle CssClass="lstcol7" />
-            </asp:TemplateField>
-        </Columns>
-    </asp:GridView>
+    
+    
+  
     <div>
-        Bạn có thể thêm nhiều file.</div>
-    <table cellpadding="0" cellspacing="0" class="themmoi">
-    </table>
-    <div>
-        <input id="btnThem" type="button" class="btnUpdate" value="Thêm" />
-        <asp:Button ID="btnAdd" runat="server" CssClass="btnUpdate" Text="Lưu" OnClick="btnAdd_Click" />
+        
+      
     </div>
     <div id="albumimages">
     </div>

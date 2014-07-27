@@ -112,6 +112,15 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.editnews {
         protected global::CKEditor.NET.CKEditorControl NewsContent;
         
         /// <summary>
+        /// cboNews control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox cboNews;
+        
+        /// <summary>
         /// btnUpdate control.
         /// </summary>
         /// <remarks>
@@ -263,15 +272,6 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.editnews {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox chkNoiBatNhat;
-        
-        /// <summary>
-        /// cboNews control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox cboNews;
         
         /// <summary>
         /// lstThread control.

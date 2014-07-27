@@ -7,54 +7,72 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DFISYS.GUI.EditoralOffice.MainOffce.Tool {
+namespace XPC.Web {
     
     
-    public partial class Gallery1 {
+    public partial class Site {
         
         /// <summary>
-        /// txtName control.
+        /// title control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtName;
+        protected global::System.Web.UI.HtmlControls.HtmlTitle title;
         
         /// <summary>
-        /// GridView1 control.
+        /// description control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.HtmlControls.HtmlMeta description;
         
         /// <summary>
-        /// btnAdd control.
+        /// keywords control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAdd;
+        protected global::System.Web.UI.HtmlControls.HtmlMeta keywords;
         
         /// <summary>
-        /// hdfValue control.
+        /// metaRefesh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdfValue;
+        protected global::System.Web.UI.HtmlControls.HtmlMeta metaRefesh;
         
         /// <summary>
-        /// GalleryName control.
+        /// robot control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField GalleryName;
+        protected global::System.Web.UI.HtmlControls.HtmlMeta robot;
+        
+        /// <summary>
+        /// form1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        
+        /// <summary>
+        /// ContentPlaceHolder1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
     }
 }

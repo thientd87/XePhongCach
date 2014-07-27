@@ -1,0 +1,176 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="XPC.Web.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title id="title" runat="server"></title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <meta name="description" runat="server" id="description" content="vietpress" />
+    <meta name="keywords" content="" runat="server" id="keywords" />
+    <meta http-equiv="refresh" content="500" runat="server" id="metaRefesh" />
+    <meta content="INDEX,FOLLOW,NOARCHIVE" name="robots" id="robot" runat="server" />
+    <meta name="GENERATOR" content="Achilles_vn - thientd87@gmail.com" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta name="author" content="thientd87@gmail.com" />
+    <meta http-equiv="content-language" content="vi" />
+
+    <link href="/Styles/styles.css" rel="stylesheet" />
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <!--start of #header-->
+            <div class="header">
+                <a href="/" class="logo">Xe và phong cách</a>
+                <a href="#" style="display: block; float: right;">
+                    <img src="/images/banner_1.png"></a>
+            </div>
+            <!--end of #header-->
+            <!--start of #top-menu-->
+            <div class="menu top-menu">
+                <ul>
+                    <li class="active">
+                        <a href="/">Trang chủ</a></li>
+                    <li>
+                        <a href="http://xevaphongcach.net/videos">Video</a></li>
+                    <li>
+                        <a href="http://xevaphongcach.net/news/index/2">Tin tức</a></li>
+                    <li>
+                        <a href="http://xevaphongcach.net/news/index/3">Xe máy</a></li>
+                    <li>
+                        <a href="http://xevaphongcach.net/news/index/4">Thử xe</a></li>
+                    <li>
+                        <a href="http://xevaphongcach.net/news/index/5">Nhân vật</a></li>
+                    <li>
+                        <a href="http://xevaphongcach.net/news/index/6">Showroom</a></li>
+                    <li>
+                        <a href="http://xevaphongcach.net/news/index/7">Chia sẻ</a></li>
+                    <li><a href="http://xevaphongcach.net/#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <!--end of #top-menu-->
+            <!--start of #clock-searchbox-->
+            <div class="clock-socialbutton-searchbox container">
+                <div class="clock">
+                    Thứ 2, 5/5/2014 | 21:31 
+                </div>
+                <div class="search-box">
+                    <input type="text" id="txtSearch" class="txtSearch"/>
+                    <input type="button" id="btnSearch" class="btnSearch"/>
+                </div>
+                <a href="#btnRSS"><div class="btnRSS"></div></a>
+                <a href="#btnFB"><div class="btnFB"></div></a>
+            </div>
+            <!--end of #clock-searchbox-->
+            
+            <!--end of #top-menu-->        
+        <div   class="top-news-cate container">
+            <div id="flash">
+                <div id="bigPic">
+                     <div class="pic" style="display: block; opacity: 1; z-index: 1;">
+            	        <a href="http://xevaphongcach.net/news/detail/1935">
+	                        <img src="/images/Xe-hoi-bn-tm.jpg" width="625" height="413" alt=""> 
+                        </a>              
+                        <div class="tieude-bar">
+                            <h1><a href="http://xevaphongcach.net/news/detail/1935" title="Xe hơi-bồn tắm">
+                    	        Xe hơi-bồn tắm</a>
+                            </h1>
+                            <p>[xevaphongcach.net] Hai thợ máy đến từ Mỹ đã hô biến chiếc Cadillac Coupe DeVille 1969 thành chiếc bồn tắm nóng…</p>
+                            <a class="link" href="http://xevaphongcach.net/news/detail/1935"><img src="/images/next_ico.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="pic" style="display: none; opacity: 1; z-index: 1;">
+            	         <a href="http://xevaphongcach.net/news/detail/1935">
+	                        <img src="/images/Xe-hoi-bn-tm.jpg" width="625" height="413" alt=""> 
+                        </a>             
+                        <div class="tieude-bar">
+                            <h1><a href="http://xevaphongcach.net/news/detail/1917" title="Johny Trí Nguyễn và những mẫu xe độ tuyệt đẹp">
+                    	        Johny Trí Nguyễn và những mẫu xe…</a>
+                            </h1>
+                            <p>[xevaphongcach.net] Ham mê xe độ và Johnny Trí Nguyễn đã sở hửu cho mình ba chiếc xe độ tuyệt đẹp.…</p>
+                            <a class="link" href="http://xevaphongcach.net/news/detail/1917"><img src="./Xe và phong cách - Trang chủ_files/next_ico.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="pic" style="display: none; opacity: 1; z-index: 1;">
+            	         <a href="http://xevaphongcach.net/news/detail/1935">
+	                        <img src="/images/Xe-hoi-bn-tm.jpg" width="625" height="413" alt=""> 
+                        </a>        
+                        <div class="tieude-bar">
+                            <h1><a href="http://xevaphongcach.net/news/detail/1944" title="Vietnam Motorbike Festival 2014 sắp đến">
+                    	        Vietnam Motorbike Festival 2014 sắp đến</a>
+                            </h1>
+                            <p>[xevaphongcach.net] Chỉ còn không đầy 24 giờ nữa thì hoạt động được xem là đình đám nhất dành cho người…</p>
+                            <a class="link" href="http://xevaphongcach.net/news/detail/1944"><img src="./Xe và phong cách - Trang chủ_files/next_ico.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="pic" style="display: none; opacity: 1; z-index: 1;">
+            	        <a href="http://xevaphongcach.net/news/detail/1935">
+	                        <img src="/images/Xe-hoi-bn-tm.jpg" width="625" height="413" alt=""> 
+                        </a>              
+                        <div class="tieude-bar">
+                            <h1><a href="http://xevaphongcach.net/news/detail/1923" >
+                    	        Màn "ngột thở" của xe khách</a>
+                            </h1>
+                            <p>[xevaphongcach.net] Cảnh tượng thường thấy khi đi xe khách là màn "chào hỏi" đón tiếp vô cùng nhiệt tình suốt…</p>
+                            <a class="link" href="http://xevaphongcach.net/news/detail/1923"><img src="./Xe và phong cách - Trang chủ_files/next_ico.png" alt=""></a>
+                        </div>
+                    </div>
+                                   
+                </div>
+                <div id="scroll">                        
+                    <ul id="thumbs">
+                        <li rel="1" class="active">
+                            <a href="http://xevaphongcach.net/news/detail/1935" title="Xe hơi-bồn tắm">
+                            <img src="/images/Xe-hoi-bn-tm(1).jpg" alt="">                    <h5>Xe hơi-bồn tắm</h5>
+                            </a>
+                        </li>
+                 
+                        <li rel="2" class="">
+                            <a href="http://xevaphongcach.net/news/detail/1917" title="Johny Trí Nguyễn và những mẫu xe độ tuyệt đẹp">
+                            <img src="/images/Xe-hoi-bn-tm(1).jpg" alt="">                     <h5>Johny Trí Nguyễn và những mẫu xe độ…</h5>
+                            </a>
+                        </li>
+                 
+                        <li rel="3" class="">
+                            <a href="http://xevaphongcach.net/news/detail/1944" title="Vietnam Motorbike Festival 2014 sắp đến">
+                            <img src="/images/Xe-hoi-bn-tm(1).jpg" alt="">                     <h5>Vietnam Motorbike Festival 2014 sắp đến</h5>
+                            </a>
+                        </li>
+                 
+                        <li rel="4" class="">
+                            <a href="http://xevaphongcach.net/news/detail/1923" >
+                            <img src="/images/Xe-hoi-bn-tm(1).jpg" alt="">                     <h5>Màn "ngột thở" của xe khách</h5>
+                            </a>
+                        </li>
+                                
+                    </ul>
+                </div>
+            </div>
+
+            <div id="list-tintuc">
+                <h2 class="tabs">
+                    Tin tức tổng hợp
+                </h2>
+                <ul>
+                            <li><a href="http://xevaphongcach.net/news/detail/1916" title="Yamaha Tricity 125 vững chắc với 3 bánh giá 3.490 Euro">
+                            Yamaha Tricity 125 vững chắc với 3 bánh giá 3.490 Euro </a></li>
+                  
+                    
+                </ul>
+            </div>
+
+            <div id="qc-home-1" class="qc_300_120">
+                        <a href="http://xevaphongcach.net/news/detail/450" target="_blank">
+                <img src="./Xe và phong cách - Trang chủ_files/Banner_Nho2.gif" width="300" height="120" alt=""></a>
+            </div>
+        </div>
+        <!--end of #top-news-cate-->  
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
