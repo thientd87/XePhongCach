@@ -1,12 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Configuration;
+using System.Linq;
 using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
+using DFISYS.GUI.Administrator.CategoryManager;
+
 namespace DFISYS.BO
 {
     public class SearchHelper
@@ -23,11 +27,20 @@ namespace DFISYS.BO
 			if (_keys.Length == 0) return string.Empty;
 
             string strResult = "";
-            for (int i = 0; i < _keys.Length; i++)
+            List<string> columnArray = new List<string>();
+            if (_colum.IndexOf(',') != -1)
+                columnArray = _colum.Split(',').ToList();
+            else
+                columnArray.Add(_colum);
+
+            foreach (var column in columnArray)
             {
-                strResult += " AND " + _colum + " like N'%" + _keys[i] + "%'";
+                for (int i = 0; i < _keys.Length; i++)
+                {
+                    strResult +=  column + " like N'%" + _keys[i] + "%'" + " OR " ;
+                }
             }
-            strResult = strResult.Substring(5, strResult.Length - 5);
+            strResult = " (" + strResult.Substring(0,strResult.Length-4) + ")";
             return strResult;
         }
         /// <summary>

@@ -76,6 +76,15 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.editnews {
         protected global::System.Web.UI.WebControls.DropDownList cboIsHot;
         
         /// <summary>
+        /// cboMedia control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox cboMedia;
+        
+        /// <summary>
         /// txtSource control.
         /// </summary>
         /// <remarks>
@@ -94,13 +103,13 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.editnews {
         protected global::System.Web.UI.WebControls.TextBox txtIcon;
         
         /// <summary>
-        /// cboMedia control.
+        /// cboNews control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox cboMedia;
+        protected global::System.Web.UI.WebControls.ListBox cboNews;
         
         /// <summary>
         /// NewsContent control.
@@ -110,15 +119,6 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.editnews {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::CKEditor.NET.CKEditorControl NewsContent;
-        
-        /// <summary>
-        /// cboNews control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox cboNews;
         
         /// <summary>
         /// btnUpdate control.
