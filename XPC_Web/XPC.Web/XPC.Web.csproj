@@ -110,10 +110,13 @@
     <Content Include="Images\btnFb.png" />
     <Content Include="Images\btnRSS.jpg" />
     <Content Include="Images\iconSearch.png" />
+    <Content Include="Images\iconWheel.png" />
     <Content Include="Images\line_ver_menu.gif" />
+    <Content Include="Images\list_ico.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\next_ico.png" />
     <Content Include="Images\play_ico.png" />
+    <Content Include="Images\pre_next_video.png" />
     <Content Include="Images\Xe-hoi-bn-tm%281%29.jpg" />
     <Content Include="Images\Xe-hoi-bn-tm%282%29.jpg" />
     <Content Include="Images\Xe-hoi-bn-tm.jpg" />
