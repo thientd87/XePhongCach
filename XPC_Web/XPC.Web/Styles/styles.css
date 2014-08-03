@@ -261,7 +261,7 @@ ul#thumbs img{
     float: left;
     padding: 15px 10px 9px 60px;
     margin-left:10px;
-    background: url("../images/video_ico.png") no-repeat top left;
+    background: url("/images/video_ico.png") no-repeat top left;
     font-size: 16px;
     color:#464646;
     text-transform: uppercase;
@@ -289,7 +289,7 @@ ul#thumbs img{
 .video a{display: block;}
 .video .title{ 
     padding:10px 10px 20px 10px;
-    height: 35px;
+    height: 45px;
 }
  #list-video{width: 934px;background: #f1f1f1; padding: 10px 0}
  #list-video-overflow{width:1850px;}
