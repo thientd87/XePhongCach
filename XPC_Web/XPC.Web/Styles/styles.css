@@ -325,3 +325,53 @@ font-size: 12px;
 font-weight: bold;
 }
 .video .title h3{margin: 0}
+/*********top-news -horizontal************/
+.cate_horizontal_home h2{
+    overflow: hidden;
+    float: left;
+    display: block;
+    height: 37px;
+    width: 606px;
+    border: 1px solid #dbdbdb; 
+    margin-bottom: 10px;
+    background: rgb(222,222,222); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RlZGVkZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM0JSIgc3RvcC1jb2xvcj0iI2YxZjFmMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(left,  rgba(222,222,222,1) 0%, rgba(241,241,241,1) 34%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(222,222,222,1)), color-stop(34%,rgba(241,241,241,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(222,222,222,1) 0%,rgba(241,241,241,1) 34%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(222,222,222,1) 0%,rgba(241,241,241,1) 34%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(222,222,222,1) 0%,rgba(241,241,241,1) 34%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(222,222,222,1) 0%,rgba(241,241,241,1) 34%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedede', endColorstr='#f1f1f1',GradientType=1 ); /* IE6-8 */
+    margin: 0;
+}
+.cate_horizontal_home a.tab-news{
+    display: block;
+    float: left;
+    padding: 15px 10px 9px 45px;
+    margin-left:10px;
+    background: url("../images/star_ico.png") no-repeat top left;
+    font-size: 16px;
+    color:#464646;
+    text-transform: uppercase;
+    font-weight: bold;    
+}
+.cate_horizontal_home a:hover{
+    color: #d20000;
+}
+.list-news{
+    float: left;
+    overflow: hidden;
+    background: #f1f1f1
+}
+.news {
+    width: 187px;
+    float: left;
+    margin:0px 0px 12px 12px;
+}
+.news a{display: block;}
+.news .title-news{ 
+    padding:10px 0px 20px 0px;
+    height: 35px;
+}
