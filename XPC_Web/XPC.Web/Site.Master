@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title id="title" runat="server"></title>
-    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="/images/star_ico.png">
     <meta name="description" runat="server" id="description" content="vietpress" />
     <meta name="keywords" content="" runat="server" id="keywords" />
     <meta http-equiv="refresh" content="500" runat="server" id="metaRefesh" />
@@ -170,8 +170,8 @@
 
             </div>
             <!--end of #top-news-cate-->
-            
-            <div id="top-video" class="container">
+            <div class="clearfix"></div>
+            <div id="top-video" class="container margin-top15">
                 <h2>
                     <a class="tab-video" href="http://xevaphongcach.net/videos">Video</a>
                     <span>
@@ -325,7 +325,8 @@
                     }, 5000);*/
                 });
 </script>
-            <div class="container">
+            <div class="clearfix"></div>
+            <div class="container margin-top15">
                 <div id="top-news" class="cate_horizontal_home">
                 <h2>
                     <a class="tab-news" href="http://xevaphongcach.net/news/index/2">Tin tức</a>
@@ -337,8 +338,9 @@
                         <div class="title-news title">
                             <h3><a href="http://xevaphongcach.net/news/detail/1935" title="Xe hơi-bồn tắm">
                                     Xe hơi-bồn tắm</a></h3>
-                            <p class="sum">[xevaphongcach.net] Hai thợ máy đến từ Mỹ đã hô biến chiếc Cadillac Coupe DeVille 1969 thành chiếc bồn tắm nóng di động, đồng thời họ cũng hi vọng sẽ lập…</p>
+
                         </div>                 
+                        <p class="sum">[xevaphongcach.net] Hai thợ máy đến từ Mỹ đã hô biến chiếc Cadillac Coupe DeVille 1969 thành chiếc bồn tắm nóng di động, đồng thời họ cũng hi vọng sẽ lập…</p>
                     </div>  
                     <div class="news">
                         <a href="http://xevaphongcach.net/news/detail/1935">
@@ -346,8 +348,9 @@
                         <div class="title-news title">
                             <h3><a href="http://xevaphongcach.net/news/detail/1935" title="Xe hơi-bồn tắm">
                                     Xe hơi-bồn tắm</a></h3>
-                            <p class="sum">[xevaphongcach.net] Hai thợ máy đến từ Mỹ đã hô biến chiếc Cadillac Coupe DeVille 1969 thành chiếc bồn tắm nóng di động, đồng thời họ cũng hi vọng sẽ lập…</p>
+
                         </div>                 
+                        <p class="sum">[xevaphongcach.net] Hai thợ máy đến từ Mỹ đã hô biến chiếc Cadillac Coupe DeVille 1969 thành chiếc bồn tắm nóng di động, đồng thời họ cũng hi vọng sẽ lập…</p>
                     </div>            
                     <div class="news">
                         <a href="http://xevaphongcach.net/news/detail/1935">
@@ -355,14 +358,298 @@
                         <div class="title-news title">
                             <h3><a href="http://xevaphongcach.net/news/detail/1935" title="Xe hơi-bồn tắm">
                                     Xe hơi-bồn tắm</a></h3>
-                            <p class="sum">[xevaphongcach.net] Hai thợ máy đến từ Mỹ đã hô biến chiếc Cadillac Coupe DeVille 1969 thành chiếc bồn tắm nóng di động, đồng thời họ cũng hi vọng sẽ lập…</p>
+
                         </div>                 
+                        <p class="sum">[xevaphongcach.net] Hai thợ máy đến từ Mỹ đã hô biến chiếc Cadillac Coupe DeVille 1969 thành chiếc bồn tắm nóng di động, đồng thời họ cũng hi vọng sẽ lập…</p>
                     </div>                      
                 </div><!--end of .list-news-->
             </div>
+            <div id="anh-dep" class="anhdep">
+                <h2>
+                    <a class="tab-anh" href="http://xevaphongcach.net/slideshows" target="_blank">Ảnh đẹp</a>
+                </h2>
+                <div class="list-anh">
+                
+                    <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-2.jpg" target="_blank" rel="slideshow">
+                            <img src="./Xe và phong cách - Trang chủ_files/xe-dep-2.jpg" width="89" height="62" alt=""></a>
+                
+                    <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-16.jpg" target="_blank" rel="slideshow">
+                            <img src="./Xe và phong cách - Trang chủ_files/xe-dep-16.jpg" width="89" height="62" alt=""></a>
+                
+                    <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-20.jpg" target="_blank" rel="slideshow">
+                            <img src="./Xe và phong cách - Trang chủ_files/xe-dep-20.jpg" width="89" height="62" alt=""></a>
+                
+                    <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-18.jpg" target="_blank" rel="slideshow">
+                            <img src="./Xe và phong cách - Trang chủ_files/xe-dep-18.jpg" width="89" height="62" alt=""></a>
+                
+                    <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-25.JPG" target="_blank" rel="slideshow">
+                            <img src="./Xe và phong cách - Trang chủ_files/xe-dep-25.JPG" width="89" height="62" alt=""></a>
+                
+                    <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-1.jpg" target="_blank" rel="slideshow">
+                            <img src="./Xe và phong cách - Trang chủ_files/xe-dep-1.jpg" width="89" height="62" alt=""></a>
+                
+                    <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-12.jpg" target="_blank" rel="slideshow">
+                            <img src="./Xe và phong cách - Trang chủ_files/xe-dep-12.jpg" width="89" height="62" alt=""></a>
+                
+                    <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-9.jpg" target="_blank" rel="slideshow">
+                            <img src="./Xe và phong cách - Trang chủ_files/xe-dep-9.jpg" width="89" height="62" alt=""></a>
+                
+                    <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-10.jpg" target="_blank" rel="slideshow">
+                            <img src="./Xe và phong cách - Trang chủ_files/xe-dep-10.jpg" width="89" height="62" alt=""></a>
+                        </div>
+            </div>
+            <!--end of .anhdep-->
+                
             </div>   
-            
+            <div class="clearfix"></div>
+            <div class="container margin-top15">
+                <div id="top-news" class="cate_horizontal_home">
+                <h2>
+                    <a class="tab-news" href="http://xevaphongcach.net/news/index/2">Tin tức</a>
+                </h2> 
+                <div class="list-news">
+                    <div class="news">
+                        <a href="http://xevaphongcach.net/news/detail/1935">
+                            <img src="./Xe và phong cách - Trang chủ_files/Xe-hoi-bn-tm(2).jpg" width="187" height="114" alt="">    </a>
+                        <div class="title-news title">
+                            <h3><a href="http://xevaphongcach.net/news/detail/1935" title="Xe hơi-bồn tắm">
+                                    Xe hơi-bồn tắm</a></h3>
+
+                        </div>                 
+                        <p class="sum">[xevaphongcach.net] Hai thợ máy đến từ Mỹ đã hô biến chiếc Cadillac Coupe DeVille 1969 thành chiếc bồn tắm nóng di động, đồng thời họ cũng hi vọng sẽ lập…</p>
+                    </div>  
+                    <div class="news">
+                        <a href="http://xevaphongcach.net/news/detail/1935">
+                            <img src="./Xe và phong cách - Trang chủ_files/Xe-hoi-bn-tm(2).jpg" width="187" height="114" alt="">    </a>
+                        <div class="title-news title">
+                            <h3><a href="http://xevaphongcach.net/news/detail/1935" title="Xe hơi-bồn tắm">
+                                    Xe hơi-bồn tắm</a></h3>
+
+                        </div>                 
+                        <p class="sum">[xevaphongcach.net] Hai thợ máy đến từ Mỹ đã hô biến chiếc Cadillac Coupe DeVille 1969 thành chiếc bồn tắm nóng di động, đồng thời họ cũng hi vọng sẽ lập…</p>
+                    </div>            
+                    <div class="news">
+                        <a href="http://xevaphongcach.net/news/detail/1935">
+                            <img src="./Xe và phong cách - Trang chủ_files/Xe-hoi-bn-tm(2).jpg" width="187" height="114" alt="">    </a>
+                        <div class="title-news title">
+                            <h3><a href="http://xevaphongcach.net/news/detail/1935" title="Xe hơi-bồn tắm">
+                                    Xe hơi-bồn tắm</a></h3>
+
+                        </div>                 
+                        <p class="sum">[xevaphongcach.net] Hai thợ máy đến từ Mỹ đã hô biến chiếc Cadillac Coupe DeVille 1969 thành chiếc bồn tắm nóng di động, đồng thời họ cũng hi vọng sẽ lập…</p>
+                    </div>                      
+                </div><!--end of .list-news-->
+            </div>
+                <div id="anh-dep" class="anhdep">
+                    <h2>
+                        <a class="tab-anh" href="http://xevaphongcach.net/slideshows" target="_blank">Ảnh đẹp</a>
+                    </h2>
+                    <div class="list-anh">
+                
+                        <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-2.jpg" target="_blank" rel="slideshow">
+                                <img src="./Xe và phong cách - Trang chủ_files/xe-dep-2.jpg" width="89" height="62" alt=""></a>
+                
+                        <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-16.jpg" target="_blank" rel="slideshow">
+                                <img src="./Xe và phong cách - Trang chủ_files/xe-dep-16.jpg" width="89" height="62" alt=""></a>
+                
+                        <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-20.jpg" target="_blank" rel="slideshow">
+                                <img src="./Xe và phong cách - Trang chủ_files/xe-dep-20.jpg" width="89" height="62" alt=""></a>
+                
+                        <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-18.jpg" target="_blank" rel="slideshow">
+                                <img src="./Xe và phong cách - Trang chủ_files/xe-dep-18.jpg" width="89" height="62" alt=""></a>
+                
+                        <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-25.JPG" target="_blank" rel="slideshow">
+                                <img src="./Xe và phong cách - Trang chủ_files/xe-dep-25.JPG" width="89" height="62" alt=""></a>
+                
+                        <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-1.jpg" target="_blank" rel="slideshow">
+                                <img src="./Xe và phong cách - Trang chủ_files/xe-dep-1.jpg" width="89" height="62" alt=""></a>
+                
+                        <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-12.jpg" target="_blank" rel="slideshow">
+                                <img src="./Xe và phong cách - Trang chủ_files/xe-dep-12.jpg" width="89" height="62" alt=""></a>
+                
+                        <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-9.jpg" target="_blank" rel="slideshow">
+                                <img src="./Xe và phong cách - Trang chủ_files/xe-dep-9.jpg" width="89" height="62" alt=""></a>
+                
+                        <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-10.jpg" target="_blank" rel="slideshow">
+                                <img src="./Xe và phong cách - Trang chủ_files/xe-dep-10.jpg" width="89" height="62" alt=""></a>
+                            </div>
+                </div>
+                <!--end of .anhdep-->
+                
+            </div>
+            <div class="clearfix"></div>
+            <div class="container margin-top15">
+                  <div id="top-thuxe" class="cate_vertical_home">
+                        <h2>
+                            <a class="tab-news" href="http://xevaphongcach.net/news/index/4">Thử xe</a>            
+                        </h2>
+                        <div class="list-news">
+                                    <div class="news">
+                        <a href="http://xevaphongcach.net/news/detail/1921">
+                            <img src="./Xe và phong cách - Trang chủ_files/Tri-nghim-cung-Porsche-Cayenne-2015-vi-thit-k-sc-so.jpg" width="82" height="72" alt="">    </a>
+                        <div class="title">
+                            <h3><a href="http://xevaphongcach.net/news/detail/1921" title="Trải nghiệm cùng Porsche Cayenne 2015 với thiết kế " sắc="" sảo""="">
+                                    Trải nghiệm cùng Porsche Cayenne 2015 với thiết kế "sắc…</a></h3>
+                            <p class="sum">[xevaphongcach.net] Mẫu xe hạng sang  Porsche Cayenne 2015 sẽ chính thức ra mắt vào tháng 11/2014 là mẫu xe đầu tiên sử dụng hệ dẫn động hybrid sạc điện.</p>
+                        </div>
+                     </div>                <div class="news">
+                        <a href="http://xevaphongcach.net/news/detail/1904">
+                            <img src="./Xe và phong cách - Trang chủ_files/Ducati-Hypermotard-SP-2015-dua-con-ca.jpg" width="82" height="72" alt="">    </a>
+                        <div class="title">
+                            <h3><a href="http://xevaphongcach.net/news/detail/1904" title="Ducati Hypermotard SP 2015-đứa con của " kinh="" nghiệm""="">
+                                    Ducati Hypermotard SP 2015-đứa con của "kinh nghiệm"</a></h3>
+                            <p class="sum">[xevaphongcach.net] Ducati Hypermotard SP 2015 với động cơ gồm Race 110 mã lực (High), Sport 110 mã lực (Medium)
+                    và Wet 75 mã lực (Low) được điều chỉnh bằng một…</p>
+                        </div>
+                     </div>                <div class="news">
+                        <a href="http://xevaphongcach.net/news/detail/1900">
+                            <img src="./Xe và phong cách - Trang chủ_files/Ngo-qua-Ford-Ecosport-du-tien-ti-Vit-Nam.jpg" width="82" height="72" alt="">    </a>
+                        <div class="title">
+                            <h3><a href="http://xevaphongcach.net/news/detail/1900" title="Ngó qua Ford Ecosport đầu tiên tại Việt Nam">
+                                    Ngó qua Ford Ecosport đầu tiên tại Việt Nam</a></h3>
+                            <p class="sum">[xevaphongcach.net]  Ford Ecosport tại Việt Nam được trang bị 7 túi khí với công suất 110 mã lực tại 6.300 vòng/phút và momen xoắn cực đại 140 Nm tại 4.500…</p>
+                        </div>
+                     </div>                <div class="news">
+                        <a href="http://xevaphongcach.net/news/detail/1888">
+                            <img src="./Xe và phong cách - Trang chủ_files/Z1000-2014-t-b-mau-ao-cu-gi-nguyen-dng-co.jpg" width="82" height="72" alt="">    </a>
+                        <div class="title">
+                            <h3><a href="http://xevaphongcach.net/news/detail/1888" title="Z1000 2014 từ bỏ màu áo cũ nhưng giữ nguyên động cơ">
+                                    Z1000 2014 từ bỏ màu áo cũ nhưng giữ nguyên…</a></h3>
+                            <p class="sum">[xevaphongcach.net]  Từ bỏ màu sơn đen và đen-cam nguyên bản của Z1000 mới, thay vào đó Kawasaki muốn chưng dụng hai màu xanh lá và xám ánh kim để làm…</p>
+                        </div>
+                     </div>                 
+                        </div><!--end of .list-news-->
+                    </div>
+                    <!--end of #top-thuxe-->        
+                  <div id="top-nhanvat" class="cate_vertical_home">
+                        <h2>
+                            <a class="tab-news" href="http://xevaphongcach.net/news/index/5">Nhân vật</a>            
+                        </h2>
+                        <div class="list-news">
+                                    <div class="news">
+                        <a href="http://xevaphongcach.net/news/detail/1917">
+                            <img src="./Xe và phong cách - Trang chủ_files/Johny-Tri-Nguyn-va-nhng-mu-xe-d-tuyt-dp(2).jpg" width="82" height="72" alt="">    </a>
+                        <div class="title">
+                            <h3><a href="http://xevaphongcach.net/news/detail/1917" title="Johny Trí Nguyễn và những mẫu xe độ tuyệt đẹp">
+                                    Johny Trí Nguyễn và những mẫu xe độ tuyệt đẹp</a></h3>
+                            <p class="sum">[xevaphongcach.net] Ham mê xe độ và Johnny Trí Nguyễn đã sở hửu cho mình ba chiếc xe độ tuyệt đẹp. Đầu tiên là cô vợ lớn Ducati Monster 1100, tiếp…</p>
+                        </div>
+                     </div>                <div class="news">
+                        <a href="http://xevaphongcach.net/news/detail/1920">
+                            <img src="./Xe và phong cách - Trang chủ_files/Vut-qua-th-thach-Nguyn-Trung-Thanh-va-Ducati-Diavel.jpg" width="82" height="72" alt="">    </a>
+                        <div class="title">
+                            <h3><a href="http://xevaphongcach.net/news/detail/1920" title="Vượt qua thử thách: Nguyễn Trung Thành và Ducati Diavel">
+                                    Vượt qua thử thách: Nguyễn Trung Thành và Ducati Diavel</a></h3>
+                            <p class="sum">[xevaphongcach.net] Chủ nhật tuần trước 20/7 chúng ta đã cùng giao lưu với anh Nguyễn Trung Thành và cũng khám phá chiếc xe Ducati Diavel của anh.</p>
+                        </div>
+                     </div>                <div class="news">
+                        <a href="http://xevaphongcach.net/news/detail/1899">
+                            <img src="./Xe và phong cách - Trang chủ_files/Chi-Vu-Ai-bo-bo-cho-con-ngi-binh-xang-xe-con-tay-t-nh.jpg" width="82" height="72" alt="">    </a>
+                        <div class="title">
+                            <h3><a href="http://xevaphongcach.net/news/detail/1899" >
+                                    Chi Vũ: "Ai bảo bố cho con ngồi bình xăng…</a></h3>
+                            <p class="sum">[xevaphongcach.net] Được tiếp xúc với xe côn tay từ nhỏ, Chi Vũ chia sẻ: có lúc mình đã từng ôm bình xăng và ngủ. Niềm đam mê xe côn tay…</p>
+                        </div>
+                     </div>                <div class="news">
+                        <a href="http://xevaphongcach.net/news/detail/1838">
+                            <img src="./Xe và phong cách - Trang chủ_files/Xe-va-phong-cach-so-33-Nguyn-Trung-Thanh-va-dua-con-d-bit-ca-Ducati.jpg" width="82" height="72" alt="">    </a>
+                        <div class="title">
+                            <h3><a href="http://xevaphongcach.net/news/detail/1838">
+                                    Xe và phong cách số 33: Nguyễn Trung Thành và…</a></h3>
+                            <p class="sum">[xevaphongcach.net] Đến hẹn lại lên, cứ thứ sáu hàng tuần, người hâm mộ sẽ lại được bật mí một phần mới vô cùng hấp dẫn của chương trình Xe và…</p>
+                        </div>
+                     </div>                 
+                        </div><!--end of .list-news-->
+                    </div>
+                <!--end of #top-nhanvat-->        
+                <div id="other">
+                        <div id="top-thuxe" class="cate_vertical_thamdo">
+                            <h2>
+                                <a class="tab-news" href="http://xevaphongcach.net/#">Thăm dò ý kiến</a>            
+                            </h2>
+                            <div class="list-news">
+                                <p>Bạn biết đến Website Xe&amp;phongcach thông qua thông tin nào ?</p><form action="http://xevaphongcach.net/polls/process_poll/1" id="poll_submit_form" method="post" accept-charset="utf-8">
+                    <input type="hidden" name="poll_id" value="1">
+                    <p><input type="radio" name="ans_id" value="0"> <label for="Internet">Internet</label></p><p><input type="radio" name="ans_id" value="1"> <label for="Truyền hình">Truyền hình</label></p><p><input type="radio" name="ans_id" value="2"> <label for="Bạn bè">Bạn bè</label></p><button name="mysubmit" type="button" id="poll_submit">Biểu quyết</button><button name="myresult" type="button" id="poll_result">Kết quả</button></form>     
+                            </div><!--end of .list-news-->
+                        </div><!--end of #top-thuxe-->
+    
+                        <iframe src="./Xe và phong cách - Trang chủ_files/likebox.htm" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:249px; height:204px;" allowtransparency="true"></iframe>
+                    </div>
+                <!--end of #other-->
+
+                    <script>
+                        jq171("#poll_submit").click(function () {
+                            poll_id = jq171("input[name='poll_id']").val();
+                            ans_id = jq171("input[name='ans_id']:checked").val();
+                            var request = jq171.ajax({
+                                url: "http://xevaphongcach.net/polls/process_poll" + "/" + poll_id,
+                                type: "POST",
+                                data: { poll_id: poll_id, ans_id: ans_id },
+                                dataType: "html"
+                            });
+                            request.done(function (msg) {
+                                alert(msg);
+                            });
+                            request.fail(function (jqXHR, textStatus) {
+                                alert("Request failed: " + textStatus);
+                            });
+                            return false;
+                        });
+                        jq171("#poll_result").click(function () {
+                            window.open("http://xevaphongcach.net/polls/process_result", '_blank', 'width=600, height=500');
+                            return false;
+                        });
+                    </script>
+            </div>
+            <div class="clearfix"></div>
         </div>
+        
+          <div id="bottom-menu" class="menu">
+    <ul>
+                <li class="active">
+            <a href="./Xe và phong cách - Trang chủ_files/Xe và phong cách - Trang chủ.htm">Trang chủ</a></li>
+        <li>
+            <a href="http://xevaphongcach.net/videos">Video</a></li>
+        <li>
+            <a href="http://xevaphongcach.net/news/index/2">Tin tức</a></li>
+        <li>
+            <a href="http://xevaphongcach.net/news/index/3">Xe máy</a></li>
+        <li>
+            <a href="http://xevaphongcach.net/news/index/4">Thử xe</a></li>
+        <li>
+            <a href="http://xevaphongcach.net/news/index/5">Nhân vật</a></li>
+        <li>
+            <a href="http://xevaphongcach.net/news/index/6">Showroom</a></li>
+        <li>
+            <a href="http://xevaphongcach.net/news/index/7">Chia sẻ</a></li>
+        <li><a href="http://xevaphongcach.net/#">Liên hệ</a></li>
+    </ul>
+</div><!--end of #bottom-menu-->        <div id="footer">
+    <div id="congty">
+        <p>Bản quyền thuộc <a href="http://www.xevaphongcach.net/">www.xevaphongcach.net</a></p>
+        <p>® Ghi rõ nguồn http://www.xevaphongcach.net/ khi phát hành lại thông tin từ website này.</p><p>
+        <!--<p>Đang online: -->
+        <script id="_waucxo">
+            ///var _wau = _wau || []; _wau.push(["small", "eqdwmqud20hp", "cxo"]);
+            //(function() {var s=document.createElement("script"); s.async=true;
+            //s.src="http://widgets.amung.us/small.js";
+            //document.getElementsByTagName("head")[0].appendChild(s);
+            //})();
+	</script>
+        <!--</p>-->
+        </p><p>Lượt truy cập:
+        <!-- GoStats JavaScript Based Code -->
+	<script type="text/javascript" src="./Xe và phong cách - Trang chủ_files/counter.js"></script><script language="javascript">var _go_js = "1.0";</script><script language="javascript1.1">_go_js="1.1";</script><script language="javascript1.2">_go_js="1.2";</script><script language="javascript1.3">_go_js="1.3";</script><script language="javascript1.4">_go_js="1.4";</script><script language="javascript1.5">_go_js="1.5";</script><script language="javascript1.6">_go_js="1.6";</script><script language="javascript1.7">_go_js="1.7";</script><script language="javascript1.8">_go_js="1.8";</script><script language="javascript1.9">_go_js="1.9";</script><script language="javascript"></script>
+	<script type="text/javascript">_gos = 'c3.gostats.vn'; _goa = 384390;
+	    _got = 4; _goi = 19; _goz = 0; _god = 'hits'; _gol = 'Bộ đếm và thống kê Web chuyên nghiệp'; _GoStatsRun();</script><a target="_blank" href="http://gostats.vn/" title="Bộ đếm và thống kê Web chuyên nghiệp"><img id="_go_render_38439045" alt="Bộ đếm và thống kê Web chuyên nghiệp" title="Bộ đếm và thống kê Web chuyên nghiệp" border="0" style="border-width:0px" src="./Xe và phong cách - Trang chủ_files/count"></a>
+	<noscript>&lt;a target="_blank" title="Bộ đếm và thống kê Web chuyên nghiệp" 
+	href="http://gostats.vn"&gt;&lt;img alt="Bộ đếm và thống kê Web chuyên nghiệp" 
+	src="http://c3.gostats.vn/bin/count/a_384390/t_4/i_19/z_0/show_hits/counter.png" 
+	style="border-width:0" /&gt;&lt;/a&gt;</noscript>
+	<!-- End GoStats JavaScript Based Code -->
+        </p>
+    </div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
     </form>
