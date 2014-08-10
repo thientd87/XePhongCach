@@ -106,6 +106,11 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="GUI\HomeBonBaiNoiBat.ascx" />
+    <Content Include="GUI\HomeNoiBatHorizal.ascx" />
+    <Content Include="GUI\HomeTinDocNhieu.ascx" />
+    <Content Include="GUI\HomeVideo.ascx" />
+    <Content Include="GUI\TopMenu.ascx" />
     <Content Include="Images\banner_1.png" />
     <Content Include="Images\btnFb.png" />
     <Content Include="Images\btnRSS.jpg" />
@@ -126,7 +131,9 @@
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
     <Content Include="Styles\styles.css" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Config\RewriteRules.config" />
@@ -148,6 +155,41 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\HomeBonBaiNoiBat.ascx.cs">
+      <DependentUpon>HomeBonBaiNoiBat.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\HomeBonBaiNoiBat.ascx.designer.cs">
+      <DependentUpon>HomeBonBaiNoiBat.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\HomeNoiBatHorizal.ascx.cs">
+      <DependentUpon>HomeNoiBatHorizal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\HomeNoiBatHorizal.ascx.designer.cs">
+      <DependentUpon>HomeNoiBatHorizal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\HomeTinDocNhieu.ascx.cs">
+      <DependentUpon>HomeTinDocNhieu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\HomeTinDocNhieu.ascx.designer.cs">
+      <DependentUpon>HomeTinDocNhieu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\HomeVideo.ascx.cs">
+      <DependentUpon>HomeVideo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\HomeVideo.ascx.designer.cs">
+      <DependentUpon>HomeVideo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TopMenu.ascx.cs">
+      <DependentUpon>TopMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\TopMenu.ascx.designer.cs">
+      <DependentUpon>TopMenu.ascx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

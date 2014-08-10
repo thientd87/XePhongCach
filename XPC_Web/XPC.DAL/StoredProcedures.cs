@@ -60,6 +60,15 @@ namespace DAL
         }
         
         #endregion
+
+
+        public DataTable Web_NewsPublished_GetFocus(int iTop)
+        {
+            IDbCommand cmd = _db.CreateCommand("Web_NewsPublished_GetFocus", true);
+            _db.AddParameter(cmd, "iTop", DbType.Int32, iTop);
+            DataTable table = _db.CreateDataTable(cmd);
+            return table;
+        }
         public DataTable Web_MediaObject_GetAllItem_By_News_ID(long News_ID)
         {
             IDbCommand cmd = _db.CreateCommand("Web_MediaObject_GetAllItem_By_News_ID", true);

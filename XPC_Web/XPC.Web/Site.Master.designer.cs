@@ -67,6 +67,51 @@ namespace XPC.Web {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// TopMenu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::XPC.Web.GUI.TopMenu TopMenu;
+        
+        /// <summary>
+        /// HomeBonBaiNoiBat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::XPC.Web.GUI.HomeBonBaiNoiBat HomeBonBaiNoiBat;
+        
+        /// <summary>
+        /// TinDocNhieu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::XPC.Web.GUI.HomeTinDocNhieu TinDocNhieu;
+        
+        /// <summary>
+        /// HomeVideo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::XPC.Web.GUI.HomeVideo HomeVideo;
+        
+        /// <summary>
+        /// HomeNoiBatHorizal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::XPC.Web.GUI.HomeNoiBatHorizal HomeNoiBatHorizal;
+        
+        /// <summary>
         /// ContentPlaceHolder1 control.
         /// </summary>
         /// <remarks>

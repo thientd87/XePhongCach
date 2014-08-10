@@ -6,7 +6,7 @@ using DAL;
 
 namespace BO
 {
-    public class SPSTHelper
+    public class XpcHelper
     {
 
         public static DataTable GetAllSupportOnline()
@@ -40,6 +40,8 @@ namespace BO
             }
             return result;
         }
+
+
         public static DataTable GetSiteInformation(int id)
         {
             DataTable result;
@@ -256,6 +258,46 @@ namespace BO
             }
             return totalPage;
         }
+
+        public static DataTable GetFocusNews(int iTop)
+        {
+            string CacheName = "Web_NewsPublished_GetFocus" + iTop;
+            DataTable tbl = Utility.GetFromCache<DataTable>(CacheName);
+            if (tbl == null)
+            {
+                using (MainDB db = new MainDB())
+                {
+                    tbl = db.StoredProcedures.Web_NewsPublished_GetFocus(iTop);
+
+                    if (tbl != null && tbl.Rows.Count > 0)
+                    {
+                        if (!tbl.Columns.Contains("URL")) tbl.Columns.Add("URL");
+                        if (!tbl.Columns.Contains("Image")) tbl.Columns.Add("Image");
+                      
+                        if (!tbl.Columns.Contains("PublishDate")) tbl.Columns.Add("PublishDate");
+                        for (int i = 0; i < tbl.Rows.Count; i++)
+                        {
+                            tbl.Rows[i]["URL"] = Utility.NewsDetailLinkV2(tbl.Rows[i]["News_Title"].ToString(),
+                                tbl.Rows[i]["Cat_ID"].ToString(), tbl.Rows[i]["Cat_ParentID"].ToString(),
+                                tbl.Rows[i]["News_ID"].ToString(), "1");
+                            tbl.Rows[i]["Image"] = tbl.Rows[i]["News_Image"] != null
+                                ? Utility.GetThumbNail(tbl.Rows[i]["News_Title"].ToString(),
+                                    tbl.Rows[i]["URL"].ToString(), tbl.Rows[i]["News_Image"].ToString(), 0)
+                                : String.Empty;
+                            
+                            tbl.Rows[i]["PublishDate"] =
+                                Convert.ToDateTime(tbl.Rows[i]["News_PublishDate"]).ToString("dd/MM/yyyy | HH:mm");
+                          
+
+                        }
+                        tbl.AcceptChanges();
+                        Utility.SaveToCacheDependency(TableName.DATABASE_NAME, TableName.NEWSPUBLISHED, CacheName, tbl);
+                    }
+                }
+            }
+            return tbl;
+        }
+
         public static DataTable displayGetDanhSachTin(int catID, int PageIndex, int PageSize, int imgWidth)
         {
             string CacheName = "Microf_DanhSachTin" + catID + PageSize + PageIndex + imgWidth;

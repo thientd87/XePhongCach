@@ -301,3 +301,19 @@ end
 
 GO
 
+ALTER PROCEDURE [dbo].[Web_NewsPublished_GetFocus]
+	@iTop int	
+AS
+BEGIN
+
+	 
+		SELECT Top(@iTop)	N.[News_ID],N.[Cat_ID],N.[News_SubTitle],N.[News_Title],N.[News_InitContent],N.[News_PublishDate],N.[News_image],C.[Cat_ParentID],N.Extension3,N.Extension4, N.Icon
+		FROM NewsPublished AS N INNER JOIN Category AS C ON N.[Cat_ID] = C.[Cat_ID]
+		WHERE	(N.[News_PublishDate] <=(SELECT GETDATE() AS [CurrentDateTime])) and News_isFocus = 1 order by 	News_PublishDate desc						
+	 		
+
+
+END
+
+
+GO
