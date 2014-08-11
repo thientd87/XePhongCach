@@ -41,6 +41,7 @@ namespace BO
             return result;
         }
 
+       
 
         public static DataTable GetSiteInformation(int id)
         {
@@ -257,6 +258,34 @@ namespace BO
                 Utility.SaveToCacheDependency(TableName.DATABASE_NAME, TableName.NEWSPUBLISHED, CachName, totalPage);
             }
             return totalPage;
+        }
+        public static DataTable GetNewsNoiBatMuc(int CatID, Int32 Top,int imageWidth, bool IsHidden = true)
+        {
+            string CacheName = "GetNewsNoiBatMuc" + CatID + Top + IsHidden;
+            DataTable tbl = Utility.GetFromCache<DataTable>(CacheName);
+            if (tbl == null)
+            {
+                using (MainDB db = new MainDB())
+                {
+                    tbl = db.StoredProcedures.Web_NoiBatMuc(CatID, Top, IsHidden);
+
+                    if (tbl != null && tbl.Rows.Count > 0)
+                    {
+                        if (!tbl.Columns.Contains("URL")) tbl.Columns.Add("URL");
+                        if (!tbl.Columns.Contains("Image")) tbl.Columns.Add("Image");
+                        if (!tbl.Columns.Contains("PublishDate")) tbl.Columns.Add("PublishDate");
+                        for (int i = 0; i < tbl.Rows.Count; i++)
+                        {
+                            tbl.Rows[i]["URL"] = Utility.NewsDetailLinkV2(tbl.Rows[i]["News_Title"].ToString(),tbl.Rows[i]["Cat_ID"].ToString(), tbl.Rows[i]["Cat_ParentID"].ToString(),tbl.Rows[i]["News_ID"].ToString(), "1");
+                            tbl.Rows[i]["Image"] = tbl.Rows[i]["News_Image"] != null ? Utility.GetThumbNail(tbl.Rows[i]["News_Title"].ToString(), tbl.Rows[i]["URL"].ToString(), tbl.Rows[i]["News_Image"].ToString(), imageWidth) : String.Empty;
+                            tbl.Rows[i]["PublishDate"] = Convert.ToDateTime(tbl.Rows[i]["News_PublishDate"]).ToString("dd/MM/yyyy | HH:mm");
+                        }
+                        tbl.AcceptChanges();
+                        Utility.SaveToCacheDependency(TableName.DATABASE_NAME, TableName.NEWSPUBLISHED, CacheName, tbl);
+                    }
+                }
+            }
+            return tbl;
         }
 
         public static DataTable GetFocusNews(int iTop)
@@ -555,12 +584,22 @@ namespace BO
         #endregion Phân Trang
         public static  DataTable GetCategoryDetail(int Cat_ID)
         {
-            DataTable dt;
+            DataTable tbl;
             using (MainDB db = new MainDB())
             {
-                dt = db.StoredProcedures.Microf_SelectCategory(Cat_ID);
+                tbl = db.StoredProcedures.Microf_SelectCategory(Cat_ID);
+                if (tbl != null && tbl.Rows.Count > 0)
+                {
+                    if (!tbl.Columns.Contains("Cat_URL")) tbl.Columns.Add("Cat_URL");
+                    for (int i = 0; i < tbl.Rows.Count; i++)
+                    {
+                        tbl.Rows[i]["Cat_URL"] = Utility.CatLink(tbl.Rows[i]["Cat_ID"].ToString(),
+                                                                 tbl.Rows[i]["Cat_ParentID"].ToString(),
+                                                                 Utility.UnicodeToKoDauAndGach(tbl.Rows[i]["Cat_Name"].ToString()), "1");
+                    }
+                }
             }
-            return dt;
+            return tbl;
         }
         public static DataTable GetDanhSachTin(int catId, int pageSize, int pageIndex)
         {

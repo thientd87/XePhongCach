@@ -44,7 +44,7 @@
             <uc1:HomeVideo runat="server" id="HomeVideo" />
             <div class="clearfix"></div>
             <div class="container margin-top15">
-            <uc1:HomeNoiBatHorizal runat="server" id="HomeNoiBatHorizal" />    
+            <uc1:HomeNoiBatHorizal runat="server" id="HomeNoiBatHorizal" CatId="31" Top="3" />    
             <div id="anh-dep" class="anhdep">
                 <h2>
                     <a class="tab-anh" href="http://xevaphongcach.net/slideshows" target="_blank">Ảnh đẹp</a>

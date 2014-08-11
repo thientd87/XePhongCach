@@ -138,6 +138,7 @@
   <ItemGroup>
     <Content Include="Config\RewriteRules.config" />
     <Content Include="Site.Master" />
+    <Content Include="GetThumbNail.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -152,6 +153,9 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetThumbNail.ashx.cs">
+      <DependentUpon>GetThumbNail.ashx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

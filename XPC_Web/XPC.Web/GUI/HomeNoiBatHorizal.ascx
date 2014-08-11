@@ -1,38 +1,20 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="HomeNoiBatHorizal.ascx.cs" Inherits="XPC.Web.GUI.HomeNoiBatHorizal" %>
 <div id="top-news" class="cate_horizontal_home">
     <h2>
-        <a class="tab-news" href="http://xevaphongcach.net/news/index/2">Tin tức</a>
+        <asp:Literal runat="server" ID="ltrCatName"></asp:Literal>
     </h2> 
     <div class="list-news">
-        <div class="news">
-            <a href="http://xevaphongcach.net/news/detail/1935">
-                <img src="./Xe và phong cách - Trang chủ_files/Xe-hoi-bn-tm(2).jpg" width="187" height="114" alt="">    </a>
-            <div class="title-news title">
-                <h3><a href="http://xevaphongcach.net/news/detail/1935" title="Xe hơi-bồn tắm">
-                        Xe hơi-bồn tắm</a></h3>
+        <asp:Repeater runat="server" ID="rptNewNoiBatMuc">
+            <ItemTemplate>
+                <div class="news">
+                    <%#Eval("Image") %>
+                    <div class="title-news title">
+                        <h3><a href="<%#Eval("URL") %>" title="<%#HttpUtility.HtmlEncode(Eval("News_Title")) %>"><%#Eval("News_Title") %></a></h3>
 
-            </div>                 
-            <p class="sum">[xevaphongcach.net] Hai thợ máy đến từ Mỹ đã hô biến chiếc Cadillac Coupe DeVille 1969 thành chiếc bồn tắm nóng di động, đồng thời họ cũng hi vọng sẽ lập…</p>
-        </div>  
-        <div class="news">
-            <a href="http://xevaphongcach.net/news/detail/1935">
-                <img src="./Xe và phong cách - Trang chủ_files/Xe-hoi-bn-tm(2).jpg" width="187" height="114" alt="">    </a>
-            <div class="title-news title">
-                <h3><a href="http://xevaphongcach.net/news/detail/1935" title="Xe hơi-bồn tắm">
-                        Xe hơi-bồn tắm</a></h3>
-
-            </div>                 
-            <p class="sum">[xevaphongcach.net] Hai thợ máy đến từ Mỹ đã hô biến chiếc Cadillac Coupe DeVille 1969 thành chiếc bồn tắm nóng di động, đồng thời họ cũng hi vọng sẽ lập…</p>
-        </div>            
-        <div class="news">
-            <a href="http://xevaphongcach.net/news/detail/1935">
-                <img src="./Xe và phong cách - Trang chủ_files/Xe-hoi-bn-tm(2).jpg" width="187" height="114" alt="">    </a>
-            <div class="title-news title">
-                <h3><a href="http://xevaphongcach.net/news/detail/1935" title="Xe hơi-bồn tắm">
-                        Xe hơi-bồn tắm</a></h3>
-
-            </div>                 
-            <p class="sum">[xevaphongcach.net] Hai thợ máy đến từ Mỹ đã hô biến chiếc Cadillac Coupe DeVille 1969 thành chiếc bồn tắm nóng di động, đồng thời họ cũng hi vọng sẽ lập…</p>
-        </div>                      
+                    </div>                 
+                    <p class="sum"><%#Eval("News_Initcontent") %></p>
+                </div>
+            </ItemTemplate>
+        </asp:Repeater>                         
     </div><!--end of .list-news-->
 </div>

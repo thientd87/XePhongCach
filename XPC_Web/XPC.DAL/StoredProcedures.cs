@@ -317,6 +317,15 @@ namespace DAL
             return dataTable;
         }
 
+        public DataTable Web_NoiBatMuc(int CatID, Int32 Top,bool IsHidden = true)
+        {
+            IDbCommand cmd = _db.CreateCommand("Web_NoiBatMuc", true);
+            _db.AddParameter(cmd, "CatID", DbType.Int32, CatID);
+            _db.AddParameter(cmd, "Top", DbType.Int32, Top);
+            _db.AddParameter(cmd, "IsHidden", DbType.Boolean, IsHidden);
+            DataTable dataTable = CreateDataTable(cmd);
+            return dataTable;
+        }
         public DataTable tdt_NoiBatMuc(int CatID,Int32 Top)
         {
             IDbCommand cmd = _db.CreateCommand("tdt_NoiBatMuc", true);
