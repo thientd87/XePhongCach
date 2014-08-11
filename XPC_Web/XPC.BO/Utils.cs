@@ -1174,7 +1174,8 @@ namespace BO
                 return String.Format("<a title=\"{2}\" href=\"{0}\"><img src=\"{1}\" onerror=\"LoadImage(this,'{3}');\" title=\"{2}\" alt=\"{4}\" border=\"0\"/></a>", url, thumb, HttpUtility.HtmlEncode(title), error, UnicodeToKoDau(title));
             }
             error = String.Format("{0}/GetThumbNail.ashx?ImgFilePath={1}/{2}&width={3}", ImagesThumbUrl, ImagesStorageUrl, HttpUtility.UrlEncode(img), width);
-            img = img.Replace(ImagesStorageUrl, "").TrimStart('/');
+            if (!string.IsNullOrEmpty(ImagesStorageUrl))
+                img = img.Replace(ImagesStorageUrl, "").TrimStart('/');
 
             thumb = String.Format("{0}/ThumbImages/{1}", ImagesThumbUrl, img.Insert(img.LastIndexOf("."), "_" + width));
             return String.Format("<a title=\"{2}\" href=\"{0}\"><img src=\"{1}\" onerror=\"LoadImage(this,'{3}');\" title=\"{2}\" alt=\"{4}\" border=\"0\"/></a>", url, thumb, HttpUtility.HtmlEncode(title), error, UnicodeToKoDau(title));

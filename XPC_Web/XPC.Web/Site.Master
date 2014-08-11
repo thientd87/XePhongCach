@@ -1,21 +1,17 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="XPC.Web.Site" %>
-
 <%@ Register Src="~/GUI/TopMenu.ascx" TagPrefix="uc1" TagName="TopMenu" %>
 <%@ Register Src="~/GUI/HomeTinDocNhieu.ascx" TagPrefix="uc1" TagName="TinDocNhieu" %>
 <%@ Register Src="~/GUI/HomeBonBaiNoiBat.ascx" TagPrefix="uc1" TagName="HomeBonBaiNoiBat" %>
 <%@ Register Src="~/GUI/HomeNoiBatHorizal.ascx" TagPrefix="uc1" TagName="HomeNoiBatHorizal" %>
 <%@ Register Src="~/GUI/HomeVideo.ascx" TagPrefix="uc1" TagName="HomeVideo" %>
-
-
-
-
+<%@ Register Src="~/GUI/HomeNoiBatVertical.ascx" TagPrefix="uc1" TagName="HomeNoiBatVertical" %>
+<%@ Register Src="~/GUI/HomeAnhDep.ascx" TagPrefix="uc1" TagName="HomeAnhDep" %>
 
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title id="title" runat="server"></title>
+    <title id="title" runat="server">Xe và phong cách - xevaphongcach.net</title>
     <link rel="SHORTCUT ICON" href="/images/star_ico.png">
     <meta name="description" runat="server" id="description" content="vietpress" />
     <meta name="keywords" content="" runat="server" id="keywords" />
@@ -45,40 +41,7 @@
             <div class="clearfix"></div>
             <div class="container margin-top15">
             <uc1:HomeNoiBatHorizal runat="server" id="HomeNoiBatHorizal" CatId="31" Top="3" />    
-            <div id="anh-dep" class="anhdep">
-                <h2>
-                    <a class="tab-anh" href="http://xevaphongcach.net/slideshows" target="_blank">Ảnh đẹp</a>
-                </h2>
-                <div class="list-anh">
-                
-                    <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-2.jpg" target="_blank" rel="slideshow">
-                            <img src="./Xe và phong cách - Trang chủ_files/xe-dep-2.jpg" width="89" height="62" alt=""></a>
-                
-                    <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-16.jpg" target="_blank" rel="slideshow">
-                            <img src="./Xe và phong cách - Trang chủ_files/xe-dep-16.jpg" width="89" height="62" alt=""></a>
-                
-                    <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-20.jpg" target="_blank" rel="slideshow">
-                            <img src="./Xe và phong cách - Trang chủ_files/xe-dep-20.jpg" width="89" height="62" alt=""></a>
-                
-                    <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-18.jpg" target="_blank" rel="slideshow">
-                            <img src="./Xe và phong cách - Trang chủ_files/xe-dep-18.jpg" width="89" height="62" alt=""></a>
-                
-                    <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-25.JPG" target="_blank" rel="slideshow">
-                            <img src="./Xe và phong cách - Trang chủ_files/xe-dep-25.JPG" width="89" height="62" alt=""></a>
-                
-                    <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-1.jpg" target="_blank" rel="slideshow">
-                            <img src="./Xe và phong cách - Trang chủ_files/xe-dep-1.jpg" width="89" height="62" alt=""></a>
-                
-                    <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-12.jpg" target="_blank" rel="slideshow">
-                            <img src="./Xe và phong cách - Trang chủ_files/xe-dep-12.jpg" width="89" height="62" alt=""></a>
-                
-                    <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-9.jpg" target="_blank" rel="slideshow">
-                            <img src="./Xe và phong cách - Trang chủ_files/xe-dep-9.jpg" width="89" height="62" alt=""></a>
-                
-                    <a href="http://xevaphongcach.net/public/data/albums/xe-dep/xe-dep-10.jpg" target="_blank" rel="slideshow">
-                            <img src="./Xe và phong cách - Trang chủ_files/xe-dep-10.jpg" width="89" height="62" alt=""></a>
-                        </div>
-            </div>
+            <uc1:HomeAnhDep runat="server" id="HomeAnhDep" />
             <!--end of .anhdep-->
                 
             </div>   
@@ -160,48 +123,8 @@
             </div>
             <div class="clearfix"></div>
             <div class="container margin-top15">
-                  <div id="top-thuxe" class="cate_vertical_home">
-                        <h2>
-                            <a class="tab-news" href="http://xevaphongcach.net/news/index/4">Thử xe</a>            
-                        </h2>
-                        <div class="list-news">
-                                    <div class="news">
-                        <a href="http://xevaphongcach.net/news/detail/1921">
-                            <img src="./Xe và phong cách - Trang chủ_files/Tri-nghim-cung-Porsche-Cayenne-2015-vi-thit-k-sc-so.jpg" width="82" height="72" alt="">    </a>
-                        <div class="title">
-                            <h3><a href="http://xevaphongcach.net/news/detail/1921" title="Trải nghiệm cùng Porsche Cayenne 2015 với thiết kế " sắc="" sảo""="">
-                                    Trải nghiệm cùng Porsche Cayenne 2015 với thiết kế "sắc…</a></h3>
-                            <p class="sum">[xevaphongcach.net] Mẫu xe hạng sang  Porsche Cayenne 2015 sẽ chính thức ra mắt vào tháng 11/2014 là mẫu xe đầu tiên sử dụng hệ dẫn động hybrid sạc điện.</p>
-                        </div>
-                     </div>                <div class="news">
-                        <a href="http://xevaphongcach.net/news/detail/1904">
-                            <img src="./Xe và phong cách - Trang chủ_files/Ducati-Hypermotard-SP-2015-dua-con-ca.jpg" width="82" height="72" alt="">    </a>
-                        <div class="title">
-                            <h3><a href="http://xevaphongcach.net/news/detail/1904" title="Ducati Hypermotard SP 2015-đứa con của " kinh="" nghiệm""="">
-                                    Ducati Hypermotard SP 2015-đứa con của "kinh nghiệm"</a></h3>
-                            <p class="sum">[xevaphongcach.net] Ducati Hypermotard SP 2015 với động cơ gồm Race 110 mã lực (High), Sport 110 mã lực (Medium)
-                    và Wet 75 mã lực (Low) được điều chỉnh bằng một…</p>
-                        </div>
-                     </div>                <div class="news">
-                        <a href="http://xevaphongcach.net/news/detail/1900">
-                            <img src="./Xe và phong cách - Trang chủ_files/Ngo-qua-Ford-Ecosport-du-tien-ti-Vit-Nam.jpg" width="82" height="72" alt="">    </a>
-                        <div class="title">
-                            <h3><a href="http://xevaphongcach.net/news/detail/1900" title="Ngó qua Ford Ecosport đầu tiên tại Việt Nam">
-                                    Ngó qua Ford Ecosport đầu tiên tại Việt Nam</a></h3>
-                            <p class="sum">[xevaphongcach.net]  Ford Ecosport tại Việt Nam được trang bị 7 túi khí với công suất 110 mã lực tại 6.300 vòng/phút và momen xoắn cực đại 140 Nm tại 4.500…</p>
-                        </div>
-                     </div>                <div class="news">
-                        <a href="http://xevaphongcach.net/news/detail/1888">
-                            <img src="./Xe và phong cách - Trang chủ_files/Z1000-2014-t-b-mau-ao-cu-gi-nguyen-dng-co.jpg" width="82" height="72" alt="">    </a>
-                        <div class="title">
-                            <h3><a href="http://xevaphongcach.net/news/detail/1888" title="Z1000 2014 từ bỏ màu áo cũ nhưng giữ nguyên động cơ">
-                                    Z1000 2014 từ bỏ màu áo cũ nhưng giữ nguyên…</a></h3>
-                            <p class="sum">[xevaphongcach.net]  Từ bỏ màu sơn đen và đen-cam nguyên bản của Z1000 mới, thay vào đó Kawasaki muốn chưng dụng hai màu xanh lá và xám ánh kim để làm…</p>
-                        </div>
-                     </div>                 
-                        </div><!--end of .list-news-->
-                    </div>
-                    <!--end of #top-thuxe-->        
+                <uc1:HomeNoiBatVertical runat="server" id="HomeNoiBatVertical" CatId="31"  Top="4" />
+                          
                   <div id="top-nhanvat" class="cate_vertical_home">
                         <h2>
                             <a class="tab-news" href="http://xevaphongcach.net/news/index/5">Nhân vật</a>            
