@@ -71,12 +71,13 @@ h1,h2,h3,h4{ margin: 0; padding: 0}
 }
 /******menu-bottom***********/
 .bottom-menu {
-    border-bottom: solid 3px #979797
+    border-bottom: solid 3px #979797; margin: 0 auto
 }
+.bottom-menu ul { margin: 0 auto;}
 .bottom-menu ul li{  
     float:left;
     overflow: hidden;
-    height: 100%;
+    height: 100%; padding: 5px 10px
 }
 /*******Clock - Social button - Search box********/
 .clock-socialbutton-searchbox{height: 36px;clear: both; line-height: 36px}
