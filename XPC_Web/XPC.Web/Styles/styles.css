@@ -32,7 +32,8 @@ h1,h2,h3,h4{ margin: 0; padding: 0}
     background: url("/images/logo.png") no-repeat top left;
     float: left;
     text-indent: -9999px;
-}/******menu-top***********/
+}
+/******menu-top***********/
 .menu{
     background: rgb(252,255,244); /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -67,6 +68,15 @@ h1,h2,h3,h4{ margin: 0; padding: 0}
 }
 .menu li a:hover{
     color:#d20000;
+}
+/******menu-bottom***********/
+.bottom-menu {
+    border-bottom: solid 3px #979797
+}
+.bottom-menu ul li{  
+    float:left;
+    overflow: hidden;
+    height: 100%;
 }
 /*******Clock - Social button - Search box********/
 .clock-socialbutton-searchbox{height: 36px;clear: both; line-height: 36px}

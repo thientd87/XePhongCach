@@ -76,60 +76,6 @@ namespace XPC.Web {
         protected global::XPC.Web.GUI.TopMenu TopMenu;
         
         /// <summary>
-        /// HomeBonBaiNoiBat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::XPC.Web.GUI.HomeBonBaiNoiBat HomeBonBaiNoiBat;
-        
-        /// <summary>
-        /// TinDocNhieu control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::XPC.Web.GUI.HomeTinDocNhieu TinDocNhieu;
-        
-        /// <summary>
-        /// HomeVideo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::XPC.Web.GUI.HomeVideo HomeVideo;
-        
-        /// <summary>
-        /// HomeNoiBatHorizal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::XPC.Web.GUI.HomeNoiBatHorizal HomeNoiBatHorizal;
-        
-        /// <summary>
-        /// HomeAnhDep control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::XPC.Web.GUI.HomeAnhDep HomeAnhDep;
-        
-        /// <summary>
-        /// HomeNoiBatVertical control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::XPC.Web.GUI.HomeNoiBatVertical HomeNoiBatVertical;
-        
-        /// <summary>
         /// ContentPlaceHolder1 control.
         /// </summary>
         /// <remarks>
@@ -137,5 +83,14 @@ namespace XPC.Web {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        
+        /// <summary>
+        /// Footer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::XPC.Web.GUI.Footer Footer;
     }
 }
