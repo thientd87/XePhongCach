@@ -3,18 +3,18 @@
                     <div id="bigPic">
                         <asp:Repeater runat="server" ID="rptBigPic">
                             <ItemTemplate>
-                                 <div class="pic">
-                                <a href="<%#Eval("URL") %>">
-                                    <img src="<%#Eval("OriginImage") %>">
-                                </a>
-                                <div class="tieude-bar">
-                                    <h1><a href="<%#Eval("URL") %>" title="Xe hơi-bồn tắm"><%#Eval("News_Title") %></a>
-                                    </h1>
-                                    <p><%#Eval("News_Initcontent") %></p>
-                                    <a class="link" href="<%#Eval("URL") %>">
-                                        <img src="/images/next_ico.png" alt=""></a>
+                                <div class="pic">
+                                    <a href="<%#Eval("URL") %>">
+                                        <img class="bigImg" src="<%#Eval("OriginImage") %>">
+                                    </a>
+                                    <div class="tieude-bar">
+                                        <h1><a href="<%#Eval("URL") %>" title="Xe hơi-bồn tắm"><%#Eval("News_Title") %></a>
+                                        </h1>
+                                        <p><%#Eval("News_Initcontent") %></p>
+                                        <a class="link" href="<%#Eval("URL") %>">
+                                            <img src="/images/next_ico.png" alt=""></a>
+                                    </div>
                                 </div>
-                            </div>
                             </ItemTemplate>
                         </asp:Repeater>
                     </div>
@@ -22,11 +22,9 @@
                         <ul id="thumbs">
                             <asp:Repeater runat="server" ID="rptThumbs">
                                 <ItemTemplate>
-                                    <li rel="<%#Convert.ToInt32(Eval("ItemIndex"))+1 %>">
-                                        <a href="<%#Eval("URL") %>" title="<%#HttpUtility.HtmlEncode(Eval("News_Title")) %>">
+                                    <li rel="<%# Container.ItemIndex+1 %>">
                                             <%#Eval("Image") %>
-                                            <h5><%#Eval("News_Title") %></h5>
-                                        </a>
+                                        <h5><%#Eval("News_Title") %></h5>
                                     </li>
                                 </ItemTemplate>
                             </asp:Repeater>

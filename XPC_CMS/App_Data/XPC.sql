@@ -317,3 +317,22 @@ END
 
 
 GO
+
+
+ALTER procedure [dbo].[Web_BonBanNoiBat] 
+(
+	@Top int,
+	@EditionType int	
+)
+AS
+SELECT     TOP (@Top) n.News_ID, n.News_Title, n.News_PublishDate, n.News_Image, c.Cat_ID, c.Cat_ParentID,C.Channel_ID,  N.Icon,N.News_Initcontent
+FROM         NewsPublished AS n INNER JOIN
+                      Category AS c ON c.Cat_ID = n.Cat_ID INNER JOIN
+                      BonBaiNoiBat AS b ON b.News_ID = n.News_ID INNER JOIN
+                      News ON n.News_ID = News.News_ID
+WHERE     (n.News_PublishDate <= GETDATE()) and c.Cat_ishidden<> 1
+And c.EditionType_ID = @EditionType
+ORDER BY b.ThuTu
+
+
+GO

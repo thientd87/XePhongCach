@@ -40,3 +40,7 @@ $(document).ready(function () {
     });
 });
 
+function LoadImage(id, src) {
+    id.src = src;
+    id.onerror = null;
+}
