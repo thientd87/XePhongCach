@@ -458,6 +458,40 @@ namespace BO
 
             return tbl;
         }
+
+
+
+        public static DataTable GetBonBanNoiBat(int Top,int imgWidth)
+        {
+            string CacheName = "Web_BonBanNoiBat" + Top;
+            DataTable tbl = Utility.GetFromCache<DataTable>(CacheName);
+            if (tbl == null)
+            {
+                using (MainDB db = new MainDB())
+                {
+                    tbl = db.StoredProcedures.Web_BonBanNoiBat(Top);
+                }
+                if (tbl != null && tbl.Rows.Count > 0)
+                {
+                    if (!tbl.Columns.Contains("URL")) tbl.Columns.Add("URL");
+                    if (!tbl.Columns.Contains("Image")) tbl.Columns.Add("Image");
+                    if (!tbl.Columns.Contains("OriginImage")) tbl.Columns.Add("OriginImage");
+                    if (!tbl.Columns.Contains("PublishDate")) tbl.Columns.Add("PublishDate");
+                    for (int i = 0; i < tbl.Rows.Count; i++)
+                    {
+                        tbl.Rows[i]["URL"] = Utility.NewsDetailLinkV2(tbl.Rows[i]["News_Title"].ToString(), tbl.Rows[i]["Cat_ID"].ToString(), tbl.Rows[i]["Cat_ParentID"].ToString(), tbl.Rows[i]["News_ID"].ToString(), tbl.Rows[i]["Channel_ID"].ToString());
+                        tbl.Rows[i]["Image"] = tbl.Rows[i]["News_Image"] != null ? Utility.GetThumbNail(tbl.Rows[i]["News_Title"].ToString(), tbl.Rows[i]["URL"].ToString(), tbl.Rows[i]["News_Image"].ToString(), imgWidth) : String.Empty;
+                        tbl.Rows[i]["OriginImage"] = tbl.Rows[i]["News_Image"] != null ? Utility.ImagesStorageUrl + tbl.Rows[i]["News_Image"] : String.Empty;
+                        tbl.Rows[i]["PublishDate"] = Convert.ToDateTime(tbl.Rows[i]["News_PublishDate"]).ToString("dd/MM");
+                    }
+                    tbl.AcceptChanges();
+                }
+               // Utility.SaveToCacheDependency(TableName.DATABASE_NAME, TableName.NEWSPUBLISHED, CacheName, tbl);
+            }
+
+            return tbl;
+        }
+
         public static DataTable displayGetItemByCategorySameDataSet_Data(int Top, int catId, int imgWidth)
         {
             string CacheName = "fn_GetItemByCategorySameDataSet" + Top + catId + imgWidth;

@@ -239,6 +239,16 @@ namespace DAL
             DataTable table = _db.CreateDataTable(cmd);
             return table;
         }
+        public DataTable Web_BonBanNoiBat(int Top, int EditionType =1)
+        {
+            IDbCommand cmd = _db.CreateCommand("Web_BonBanNoiBat", true);
+            _db.AddParameter(cmd, "Top", DbType.Int32, Top);
+            _db.AddParameter(cmd, "EditionType", DbType.Int32, EditionType);
+            DataTable table = _db.CreateDataTable(cmd);
+            return table;
+        }
+        
+
         public DataTable Microf_Detail(long News_Id)
         {
             IDbCommand cmd = _db.CreateCommand("Microf_Detail", true);

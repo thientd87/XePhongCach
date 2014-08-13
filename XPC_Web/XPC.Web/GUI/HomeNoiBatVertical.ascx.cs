@@ -34,7 +34,7 @@ namespace XPC.Web.GUI
                 if (dtNoiBatMuc != null)
                 {
                     DataTable dtCategory = XpcHelper.GetCategoryDetail(_Cat_ID);
-                    if (dtCategory != null)
+                    if (dtCategory != null && dtCategory.Rows.Count > 0)
                     {
                         ltrCatName.Text = "<a class=\"tab-news\" href=\"" + dtCategory.Rows[0]["Cat_URL"] + "\">" + dtCategory.Rows[0]["Cat_Name"] + "</a>";
                     }
