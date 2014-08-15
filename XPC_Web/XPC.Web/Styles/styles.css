@@ -95,7 +95,7 @@ h1,h2,h3,h4{ margin: 0; padding: 0}
 .top-news-cate{width: 936px;  background-color: #fff; min-height: 400px; float: left;}
 /*****slide show*********/
 #flash{overflow: hidden;float: left;width: 620px;}
-#flash #bigPic .pic>img:first-child{
+.pic .bigImg{
     width: 620px;
     height: 360px;
 }
@@ -109,6 +109,7 @@ h1,h2,h3,h4{ margin: 0; padding: 0}
     display:none;
      width: 620px;
     height: 360px;
+    overflow: hidden
 }
 .pic .tieude-bar{
     opacity: 0.8;

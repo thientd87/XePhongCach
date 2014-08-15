@@ -711,7 +711,7 @@ namespace DFISYS.BO.Editoral.Newslist {
             using (MainDB db = new MainDB())
             {
                 // xóa hết các bài trong bảng BonBaiNoiBat
-                string sql = "Delete bt From BonBaiNoiBat bt Join Category c On bt.Cat_ID = c.Cat_ID Where c.EditionType_ID = " + editionType + Environment.NewLine;
+                string sql = "Delete From BonBaiNoiBat" + Environment.NewLine;
 
                 // insert từng bài đã chọn vào bảng BonBaiNoiBat
                 for (int i = 0; i < newsIds.Length; i++)

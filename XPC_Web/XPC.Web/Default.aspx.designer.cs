@@ -67,6 +67,15 @@ namespace XPC.Web {
         protected global::XPC.Web.GUI.HomeNoiBatHorizal HomeNoiBatHorizal1;
         
         /// <summary>
+        /// HomeAnhDep1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::XPC.Web.GUI.HomeAnhDep HomeAnhDep1;
+        
+        /// <summary>
         /// HomeNoiBatVertical control.
         /// </summary>
         /// <remarks>
@@ -92,5 +101,23 @@ namespace XPC.Web {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::XPC.Web.GUI.HomeVote HomeVote;
+        
+        /// <summary>
+        /// HomeNoiBatHorizal2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::XPC.Web.GUI.HomeNoiBatHorizal HomeNoiBatHorizal2;
+        
+        /// <summary>
+        /// HomeNoiBatHorizal3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::XPC.Web.GUI.HomeNoiBatHorizal HomeNoiBatHorizal3;
     }
 }

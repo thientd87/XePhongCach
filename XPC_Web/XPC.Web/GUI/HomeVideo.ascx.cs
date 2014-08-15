@@ -29,14 +29,15 @@ namespace XPC.Web.GUI
         {
             if (!IsPostBack)
             {
+                DataTable dtCategory = XpcHelper.GetCategoryDetail(_Cat_ID);
+                if (dtCategory != null && dtCategory.Rows.Count > 0)
+                {
+                    ltrCatName.Text = "<a class=\"tab-video\" href=\"" + dtCategory.Rows[0]["Cat_URL"] + "\">" + dtCategory.Rows[0]["Cat_Name"] + "</a>";
+                }
                 DataTable dtNoiBatMuc = XpcHelper.GetNewsNoiBatMuc(CatId, Top, 175);
                 if (dtNoiBatMuc != null)
                 {
-                    DataTable dtCategory = XpcHelper.GetCategoryDetail(_Cat_ID);
-                    if (dtCategory != null && dtCategory.Rows.Count > 0)
-                    {
-                        ltrCatName.Text = "<a class=\"tab-video\" href=\"" + dtCategory.Rows[0]["Cat_URL"] + "\">" + dtCategory.Rows[0]["Cat_Name"] + "</a>";
-                    }
+                    
                     rptNewNoiBatMuc.DataSource = dtNoiBatMuc;
                     rptNewNoiBatMuc.DataBind();
                 }
