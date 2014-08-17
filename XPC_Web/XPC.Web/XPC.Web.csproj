@@ -63,11 +63,13 @@
     <Content Include="GUI\HomeTinDocNhieu.ascx" />
     <Content Include="GUI\HomeVideo.ascx" />
     <Content Include="GUI\HomeVote.ascx" />
+    <Content Include="GUI\ListTinDocNhieu.ascx" />
     <Content Include="GUI\TopMenu.ascx" />
     <Content Include="Images\banner_1.png" />
     <Content Include="Images\btnFb.png" />
     <Content Include="Images\btnRSS.jpg" />
     <Content Include="Images\Bui-Th-Son-Gp-g-Hoang-t-xu-Han-Genesis-Coupe-2009.jpg" />
+    <Content Include="Images\Car-Passion-va-thc-hu-cau-chuyn-thoai-trao.jpg" />
     <Content Include="Images\iconSearch.png" />
     <Content Include="Images\iconWheel.png" />
     <Content Include="Images\line_ver_menu.gif" />
@@ -81,6 +83,7 @@
     <Content Include="Images\Xe-hoi-bn-tm%282%29.jpg" />
     <Content Include="Images\Xe-hoi-bn-tm.jpg" />
     <Content Include="Pages\ListNews.aspx" />
+    <Content Include="Pages\NewsDetails.aspx" />
     <Content Include="Scripts\Common.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
@@ -171,6 +174,13 @@
     <Compile Include="GUI\HomeVote.ascx.designer.cs">
       <DependentUpon>HomeVote.ascx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\ListTinDocNhieu.ascx.cs">
+      <DependentUpon>ListTinDocNhieu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\ListTinDocNhieu.ascx.designer.cs">
+      <DependentUpon>ListTinDocNhieu.ascx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\TopMenu.ascx.cs">
       <DependentUpon>TopMenu.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -184,6 +194,13 @@
     </Compile>
     <Compile Include="Pages\ListNews.aspx.designer.cs">
       <DependentUpon>ListNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NewsDetails.aspx.cs">
+      <DependentUpon>NewsDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\NewsDetails.aspx.designer.cs">
+      <DependentUpon>NewsDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

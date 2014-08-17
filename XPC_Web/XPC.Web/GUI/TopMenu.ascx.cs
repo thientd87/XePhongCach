@@ -19,6 +19,10 @@ namespace XPC.Web.GUI
                 rptNewsCat.DataSource = dtNews;
                 rptNewsCat.DataBind();
             }
+            int CatID = Lib.QueryString.ParentCategory;
+            if (CatID == 0)
+                CatID = Lib.QueryString.CategoryID;
+            ltrActiveMenu.Text = "<script>ActiveMenu('li" + CatID + "');</script>";
         }
     }
 }

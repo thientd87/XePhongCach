@@ -9,11 +9,11 @@
             <!--start of #top-menu-->
             <div class="menu top-menu">
                 <ul>
-                    <li class="active">
+                    <li id="li0">
                         <a href="/">Trang chủ</a></li>
                      <asp:Repeater runat="server" ID="rptNewsCat">
                         <ItemTemplate>
-                             <li>
+                             <li id="li<%#Eval("Cat_ID") %>">
                                 <a href="<%#Eval("Cat_URL") %>"><%#Eval("Cat_Name") %></a>
                             </li>
                         </ItemTemplate>
@@ -41,3 +41,4 @@
             <!--end of #clock-searchbox-->
 
             <!--end of #top-menu-->
+<asp:Literal runat="server" ID="ltrActiveMenu"></asp:Literal>

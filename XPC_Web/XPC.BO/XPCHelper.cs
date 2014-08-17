@@ -288,7 +288,7 @@ namespace BO
             return tbl;
         }
 
-        public static DataTable GetFocusNews(int iTop)
+        public static DataTable GetFocusNews(int iTop,int imgWith=0)
         {
             string CacheName = "Web_NewsPublished_GetFocus" + iTop;
             DataTable tbl = Utility.GetFromCache<DataTable>(CacheName);
@@ -311,7 +311,7 @@ namespace BO
                                 tbl.Rows[i]["News_ID"].ToString(), "1");
                             tbl.Rows[i]["Image"] = tbl.Rows[i]["News_Image"] != null
                                 ? Utility.GetThumbNail(tbl.Rows[i]["News_Title"].ToString(),
-                                    tbl.Rows[i]["URL"].ToString(), tbl.Rows[i]["News_Image"].ToString(), 0)
+                                    tbl.Rows[i]["URL"].ToString(), tbl.Rows[i]["News_Image"].ToString(), imgWith)
                                 : String.Empty;
                             
                             tbl.Rows[i]["PublishDate"] =
@@ -342,7 +342,7 @@ namespace BO
                     if (!tbl.Columns.Contains("URL")) tbl.Columns.Add("URL");
                     if (!tbl.Columns.Contains("Cat_URL")) tbl.Columns.Add("Cat_URL");
                     if (!tbl.Columns.Contains("Image")) tbl.Columns.Add("Image");
-                    if (!tbl.Columns.Contains("TinhTrang")) tbl.Columns.Add("TinhTrang");
+                    if (!tbl.Columns.Contains("OriginImage")) tbl.Columns.Add("OriginImage");
                     if (!tbl.Columns.Contains("PublishDate")) tbl.Columns.Add("PublishDate");
                     for (int i = 0; i < tbl.Rows.Count; i++)
                     {
@@ -350,7 +350,7 @@ namespace BO
                         tbl.Rows[i]["Image"] = tbl.Rows[i]["News_Image"] != null ? Utility.GetThumbNail(tbl.Rows[i]["News_Title"].ToString(), tbl.Rows[i]["URL"].ToString(), tbl.Rows[i]["News_Image"].ToString(), imgWidth) : String.Empty;
                         tbl.Rows[i]["Cat_URL"] = Utility.CatLink(tbl.Rows[i]["Cat_ID"].ToString(), tbl.Rows[i]["Cat_ParentID"].ToString(), Utility.UnicodeToKoDauAndGach(tbl.Rows[i]["Cat_Name"].ToString()),"1");
                         tbl.Rows[i]["PublishDate"] = Convert.ToDateTime(tbl.Rows[i]["News_PublishDate"]).ToString("dd/MM/yyyy | HH:mm");
-                        tbl.Rows[i]["TinhTrang"] = tbl.Rows[i]["isComment"] != null ? Convert.ToBoolean(tbl.Rows[i]["isComment"]) ? "Còn hàng" : "Liên hệ đặt hàng" : "Liên hệ đặt hàng";
+                        tbl.Rows[i]["OriginImage"] = tbl.Rows[i]["News_Image"] != null ? Utility.ImagesStorageUrl + tbl.Rows[i]["News_Image"] : String.Empty;
 
                     }
                     tbl.AcceptChanges();

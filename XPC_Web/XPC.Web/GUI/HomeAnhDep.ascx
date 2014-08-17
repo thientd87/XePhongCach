@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="HomeAnhDep.ascx.cs" Inherits="XPC.Web.GUI.HomeAnhDep" %>
 <div id="anh-dep" class="anhdep">
     <h2>
-        <a class="tab-anh" href="http://xevaphongcach.net/slideshows" target="_blank">Ảnh đẹp</a>
+        <a class="tab-anh" href="#" target="_blank">Ảnh đẹp</a>
     </h2>
     <div class="list-anh">
                 

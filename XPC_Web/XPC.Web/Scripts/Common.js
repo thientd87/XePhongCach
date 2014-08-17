@@ -44,3 +44,8 @@ function LoadImage(id, src) {
     id.src = src;
     id.onerror = null;
 }
+
+
+function ActiveMenu(item) {
+    $("#" + item).addClass("active");
+}

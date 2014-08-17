@@ -10,24 +10,15 @@
 namespace XPC.Web.GUI {
     
     
-    public partial class TopMenu {
+    public partial class ListTinDocNhieu {
         
         /// <summary>
-        /// rptNewsCat control.
+        /// rptTinDocNhieu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptNewsCat;
-        
-        /// <summary>
-        /// ltrActiveMenu control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltrActiveMenu;
+        protected global::System.Web.UI.WebControls.Repeater rptTinDocNhieu;
     }
 }

@@ -10,69 +10,51 @@
 namespace XPC.Web.Pages {
     
     
-    public partial class ListNews {
+    public partial class NewsDetails {
         
         /// <summary>
-        /// ltrBigPic control.
+        /// ltrTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltrBigPic;
+        protected global::System.Web.UI.WebControls.Literal ltrTitle;
         
         /// <summary>
-        /// ltrBigTitle control.
+        /// ltrPublishDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltrBigTitle;
+        protected global::System.Web.UI.WebControls.Literal ltrPublishDate;
         
         /// <summary>
-        /// ltrDateTime control.
+        /// ltrSapo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltrDateTime;
+        protected global::System.Web.UI.WebControls.Literal ltrSapo;
         
         /// <summary>
-        /// ltrBigInitContent control.
+        /// ltrContent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltrBigInitContent;
+        protected global::System.Web.UI.WebControls.Literal ltrContent;
         
         /// <summary>
-        /// rptData control.
+        /// rptTinKhac control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptData;
-        
-        /// <summary>
-        /// HomeAnhDep control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::XPC.Web.GUI.HomeAnhDep HomeAnhDep;
-        
-        /// <summary>
-        /// ListTinDocNhieu control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::XPC.Web.GUI.ListTinDocNhieu ListTinDocNhieu;
+        protected global::System.Web.UI.WebControls.Repeater rptTinKhac;
     }
 }
