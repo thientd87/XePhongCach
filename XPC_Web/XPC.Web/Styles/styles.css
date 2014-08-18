@@ -661,3 +661,88 @@ border: 1px solid #cecece;
 padding: 2px;
 background-color: #fff;
 }
+
+
+/**********Videos page************/
+#detail-video{overflow: hidden; float: left; width: 595px;}
+.title-video{
+    overflow: hidden;
+    width: 100%;
+    margin:10px 0px 0px 0px;
+}
+.title-video h2.tieude{
+    color:#012c7b;
+    font-size: 15px;
+    font-weight: bold;
+}
+.title-video p.mota{
+    color:#363636;
+    font-size: 12px;
+    padding:5px 0;
+}
+.title-video p.thongtin{
+    color:#959595;
+    font-size: 12px;
+    padding:15px 0 5px 0;
+}
+.block-list{
+    float: right;
+    width:300px;
+    
+    padding: 15px 10px;
+    border: 2px solid #e4e4e4;
+    background-color: #fff;
+    border-radius:10px;
+}
+.block-list h2{
+    color:#d20000;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid #ebebeb;
+    padding: 0px 0px 8px 0px;
+    margin-bottom: 8px;
+}
+.video-vertical{
+    float:left;
+    width: 100%;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-top:3px;
+    border-bottom: 1px solid #ededed;
+}
+.video-vertical>a:first-child{
+    display: block;
+    text-align: center;
+    border: 3px solid #ededed;
+    width: 75px;
+    border-bottom: none;
+    padding-bottom: 7px;
+    padding-top: 2px;
+    margin-right:8px;
+    position: relative;
+    float: left;
+    z-index: 1000;
+    background: url("/images/line_video_small.png") no-repeat -2px 54px;
+}
+.video-vertical .title-list{
+    float: left;
+    width: 210px;
+}
+.video-vertical .title-list h3 a:first-child{
+    color: #393939;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.video-vertical .title-list h3 a:hover{
+    color:#d20000;
+}
+.video-vertical .title-list p{
+    color:#959595;
+    font-size: 12px;
+}
+.video-vertical a img.play{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}

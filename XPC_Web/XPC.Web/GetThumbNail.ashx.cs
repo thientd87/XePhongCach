@@ -120,7 +120,7 @@ namespace XPC.Web
                       //  break;
                 }
 
-                //imgHeight = Convert.ToInt32((float)9 / 16 * P_Width);
+                imgHeight = Convert.ToInt32((float)9 / 16 * P_Width);
 
                 System.Drawing.Image img = Crop(bmp, P_Width + 1, imgHeight + 1, AnchorPosition.Center);
                 using (Bitmap thumb = new Bitmap(img))
