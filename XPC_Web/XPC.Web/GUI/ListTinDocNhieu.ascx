@@ -10,9 +10,7 @@
                     <%#Eval("Image") %>
                     <div class="title-news title">
                         <h3><a href="<%#Eval("URL") %>" title="<%#HttpUtility.HtmlEncode(Eval("News_Title")) %>"><%#Eval("News_Title") %></a></h3>
-
-                    </div>                 
-                    <p class="sum"><%#Eval("News_Initcontent") %></p>
+                    </div>
                 </div>
             </ItemTemplate>
         </asp:Repeater>    

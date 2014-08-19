@@ -336,3 +336,51 @@ ORDER BY b.ThuTu
 
 
 GO
+
+
+ALTER PROCEDURE [dbo].[Web_DanhSachTin] 
+	@Cat_ID int,
+	@pageIndex int,
+	@pageSize int
+AS
+BEGIN
+	declare @NewsNoibat bigint = 0
+	create table #temp(cat_id int)
+	
+	Insert Into #temp Select @Cat_ID
+	Insert Into #temp Select Cat_Id From category 
+	Where Cat_ParentId in (select Cat_Id from category where Cat_ParentId=@Cat_ID) or Cat_ParentId=@Cat_ID
+	
+	create table #tmpNews(News_ID bigint)
+	
+
+	
+	insert into #tmpNews SELECT News.[News_ID]
+	FROM
+	( 
+		SELECT	N.[News_ID],ROW_NUMBER() OVER (ORDER BY N.[News_PublishDate] DESC ) Row									
+		FROM NewsPublished AS N INNER JOIN Category AS C ON N.[Cat_ID] = C.[Cat_ID]
+		WHERE	(N.[News_PublishDate] <=(SELECT GETDATE() AS [CurrentDateTime])) 
+				and  (N.[Cat_ID] in (Select cat_id From #temp) 
+				or C.[Cat_ParentID]= @Cat_ID OR (PATINDEX('%'+convert(nvarchar,@Cat_ID)+'%', N.News_OtherCat) > 0))				
+			
+	) News
+	WHERE   ROW Between (@PageIndex -1)*@PageSize + 1 AND @PageSize*@PageIndex			
+
+
+
+	 
+		SELECT	C.Cat_Name, N.[News_ID],N.[Cat_ID],N.[News_SubTitle],N.[News_Title],N.[News_InitContent],N.[News_PublishDate],N.[News_image],N.isComment,C.[Cat_ParentID], 0 extension4, N.Icon,N.isUserRate as Updated,(select dbo.cms_f_GetAttachmentTypesByNews(N.News_ID))IconFile,N.News_Mode,N.News_Content
+		FROM NewsPublished AS N INNER JOIN #tmpNews AS T ON N.News_ID = T.News_ID
+		INNER JOIN Category AS C ON N.[Cat_ID] = C.[Cat_ID]
+		--left join MediaObject as M on M.News_ID = N.News_ID
+	
+
+
+drop table #temp
+drop table #tmpNews
+
+END
+
+
+GO
