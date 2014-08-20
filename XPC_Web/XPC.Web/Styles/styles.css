@@ -101,14 +101,14 @@ h1,h2,h3,h4{ margin: 0; padding: 0}
 }
 #flash #bigPic{
     width: 620px;
-    height: 360px;
+    height: 350px;
     position: relative
 }
 #bigPic .pic{
     position:absolute;
     display:none;
      width: 620px;
-    height: 360px;
+    height: 350px;
     overflow: hidden
 }
 .pic .tieude-bar{
@@ -389,7 +389,7 @@ font-weight: bold;
 .news .title-news{ 
     padding:5px 0;
 }
-.news .sum{color: #999898}
+.news .sum{ color: #999898; display: inline-block}
 /************anh dep**************/
 .anhdep {background-color: #f1f1f1;width: 310px; float:right; height: 270px}
 .anhdep h2{
@@ -469,7 +469,7 @@ font-weight: bold;
 .cate_vertical_home .news a:first-child{float:left;}
 .cate_vertical_home .news .title { width: 210px; margin-left:10px; float:left}
 .cate_vertical_home .news .title h3{float: left; width: 100%;}
-
+.cate_vertical_home .news .title-news{padding: 0}
 .cate_vertical_thamdo{
     width:245px; 
     height: 192px; 
@@ -714,7 +714,7 @@ overflow: hidden;
     position: relative;
     float: left;
     z-index: 1000;
-    background: url("/images/line_video_small.png") no-repeat -2px 54px;
+    background: url("/images/line_video_small.png") no-repeat -2px 44px;
 }
 .video-vertical .title-list{
     float: left;
@@ -795,7 +795,7 @@ overflow: hidden;
     margin-bottom: 10px;
     position: relative;
     z-index: 1000;
-    background: url("/images/line_video.png") no-repeat -2px 95px;
+    background: url("/images/line_video.png") no-repeat -2px 78px;
 }
 .video-style>a:first-child img{
     margin: 0 auto;

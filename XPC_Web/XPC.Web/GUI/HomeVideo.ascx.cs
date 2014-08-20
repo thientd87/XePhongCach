@@ -25,6 +25,8 @@ namespace XPC.Web.GUI
             get { return _Top; }
             set { _Top = value; }
         }
+
+        protected int _TotalVideo;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -35,11 +37,12 @@ namespace XPC.Web.GUI
                     ltrCatName.Text = "<a class=\"tab-video\" href=\"" + dtCategory.Rows[0]["Cat_URL"] + "\">" + dtCategory.Rows[0]["Cat_Name"] + "</a>";
                 }
                 DataTable dtNoiBatMuc = XpcHelper.GetNewsNoiBatMuc(CatId, Top, 175);
-                if (dtNoiBatMuc != null)
+                if (dtNoiBatMuc != null && dtNoiBatMuc.Rows.Count>0)
                 {
                     
                     rptNewNoiBatMuc.DataSource = dtNoiBatMuc;
                     rptNewNoiBatMuc.DataBind();
+                    _TotalVideo = dtNoiBatMuc.Rows.Count;
                 }
             }
         }

@@ -22,7 +22,8 @@
     <meta http-equiv="content-language" content="vi" />
     <link href="/Styles/styles.css" rel="stylesheet" />
     <script src="/Scripts/jquery-1.8.2.min.js"></script>
-    <script src="/Scripts/Common.js"></script>
+    <script src="/Scripts/jquery.ellipsis.js"></script>
+    
 </head>
 <body>
     <form id="form1" runat="server">
@@ -33,7 +34,7 @@
             <uc1:Footer runat="server" id="Footer" />    
         </div>
         
-     
+     <script src="/Scripts/Common.js"></script>
        
     </form>
 </body>

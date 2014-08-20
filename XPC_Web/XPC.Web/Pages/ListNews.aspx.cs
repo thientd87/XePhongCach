@@ -39,7 +39,8 @@ namespace XPC.Web.Pages
                 if (objTintuc != null && objTintuc.Rows.Count > 0)
                 {
                     DataRow dtRow = objTintuc.Rows[0];
-                    ltrBigPic.Text = "<a href=\"" + dtRow["URL"] + "\"><img src=\"" + dtRow["OriginImage"] + "\" alt=\"" + HttpUtility.HtmlEncode(dtRow["News_Title"]) + "\"></a>";
+                    ltrBigPic.Text = Utility.GetThumbNail(dtRow["News_Title"].ToString(), dtRow["URL"].ToString(), dtRow["News_Image"].ToString(), 600);
+                       
                     ltrBigTitle.Text = "<a href=\"" + dtRow["URL"] + "\">" + dtRow["News_Title"] + "</a>";
                     ltrDateTime.Text = dtRow["PublishDate"].ToString();
                     ltrBigInitContent.Text = dtRow["News_InitContent"].ToString();

@@ -35,7 +35,7 @@ namespace XPC.Web.GUI
                 {
                     ltrCatName.Text = "<a class=\"tab-news\" href=\"" + dtCategory.Rows[0]["Cat_URL"] + "\">" + dtCategory.Rows[0]["Cat_Name"] + "</a>";
                 }
-                DataTable dtNoiBatMuc = XpcHelper.GetNewsNoiBatMuc(CatId, Top, 175);
+                DataTable dtNoiBatMuc = XpcHelper.GetNewsNoiBatMuc(CatId, Top, 82);
                 if (dtNoiBatMuc != null)
                 {
                    

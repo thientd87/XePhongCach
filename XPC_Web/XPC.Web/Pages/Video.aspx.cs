@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -23,6 +24,12 @@ namespace XPC.Web.Pages
                     int _pageIndex = Lib.QueryString.PageIndex;
                     _pageIndex = _pageIndex == 0 ? 1 : _pageIndex;
                     _catID = Lib.QueryString.CategoryID;
+
+                    long news_ID = Lib.QueryString.NewsID;
+
+                   
+
+
                     //_catID = Lib.QueryString.ParentCategory==0 ? Lib.QueryString.ParentCategory : Lib.QueryString.CategoryID;
                     DataTable objCat = XpcHelper.SelectCategory(_catID);
 
@@ -36,16 +43,38 @@ namespace XPC.Web.Pages
                         Utility.SetFaceBookSEO(this.Page, objCat.Rows[0]["Cat_Name"].ToString(), objCat.Rows[0]["Cat_Name"] + "-" + ", " + objCat.Rows[0]["Cat_displayURL"], System.Configuration.ConfigurationManager.AppSettings["WebDomain"] + "/images/BannerHome.png", System.Configuration.ConfigurationManager.AppSettings["WebDomain"] + "/" + objCat.Rows[0]["Cat_URL"]);
                     }
 
+                    if (news_ID != 0)
+                    {
+                        DataTable detail = XpcHelper.displayMicrof_Detail(news_ID);
+                        if (detail != null && detail.Rows.Count > 0)
+                        {
+                            DataRow dtRow = detail.Rows[0];
+                            string noHTML = Regex.Replace(dtRow["News_Content"].ToString(), @"<[^>]+>|&nbsp;", "").Trim();
+                            ltrBigVideo.Text = "<iframe width=\"595\" height=\"351\" src=\"http://" + noHTML + "\" frameborder=\"0\" allowfullscreen=\"\"></iframe>";
+                            ltrBigTitle.Text = dtRow["News_Title"].ToString();
+                            ltrDateTime.Text = dtRow["PublishDate"].ToString();
+                            ltrBigInitContent.Text = dtRow["News_InitContent"].ToString();
 
+                            string Seo_Title = dtRow["News_Title"].ToString();
+                            string Seo_Des = dtRow["News_InitContent"].ToString();
+                            string Seo_KeyWord = !String.IsNullOrEmpty(dtRow["Extension3"].ToString()) ? dtRow["Extension3"].ToString() : "";
+
+                            Utility.SetPageHeaderDetail(this.Page, Seo_Title, objCat.Rows[0]["Cat_Name"].ToString(), Seo_Des, Seo_KeyWord);
+                        }
+                    }
                     DataTable objTintuc = XpcHelper.displayGetDanhSachTin(_catID, 1, 5, 70);
-
                     if (objTintuc != null && objTintuc.Rows.Count > 0)
                     {
-                        DataRow dtRow = objTintuc.Rows[0];
-                        ltrBigVideo.Text = "<iframe width=\"595\" height=\"351\" src=\"http://" + dtRow["News_Content"] + "\" frameborder=\"0\" allowfullscreen=\"\"></iframe>";
-                        ltrBigTitle.Text = dtRow["News_Title"].ToString();
-                        ltrDateTime.Text = dtRow["PublishDate"].ToString();
-                        ltrBigInitContent.Text = dtRow["News_InitContent"].ToString();
+                        if (news_ID == 0)
+                        {
+                            DataRow dtRow = objTintuc.Rows[0];
+                            string noHTML = Regex.Replace(dtRow["News_Content"].ToString(), @"<[^>]+>|&nbsp;", "").Trim();
+                            ltrBigVideo.Text = "<iframe width=\"595\" height=\"351\" src=\"http://" + noHTML + "\" frameborder=\"0\" allowfullscreen=\"\"></iframe>";
+                            ltrBigTitle.Text = dtRow["News_Title"].ToString();
+                            ltrDateTime.Text = dtRow["PublishDate"].ToString();
+                            ltrBigInitContent.Text = dtRow["News_InitContent"].ToString();
+                        }
+                        
 
                         rptData.DataSource = objTintuc;
                         rptData.DataBind();

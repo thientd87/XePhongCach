@@ -14,15 +14,12 @@
                 <div class="title">
                     <h2 class="bigTitle">
                         <asp:Literal runat="server" ID="ltrBigTitle"></asp:Literal>
-                     
                     </h2>                    
                     <p class="datetime">
                         <asp:Literal runat="server" ID="ltrDateTime"></asp:Literal>
-                        15-08-2014 08:00 pm
                     </p>
                     <p class="sum">
                         <asp:Literal runat="server" ID="ltrBigInitContent"></asp:Literal>
-                        [xevaphongcach.net] Cuộc hành trình mang tên Car &amp; Passion đã đánh dấu tên tuổi ngay trong lần đầu xuất hiện vào năm 2011. Và đến nay ngày 5/8 vừa qua…
                     </p>
                 </div>
             </div>

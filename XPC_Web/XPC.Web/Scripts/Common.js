@@ -38,6 +38,15 @@ $(document).ready(function () {
         var count = $(this).attr('rel');
         showImage(parseInt(count) - 1);
     });
+    $('.cate_horizontal_home p.sum').ellipsis({
+        row: 4
+        
+    });
+    $('.cate_vertical_home p.sum').ellipsis({
+        row: 2
+        
+    });
+    
 });
 
 function LoadImage(id, src) {

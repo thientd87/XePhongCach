@@ -227,7 +227,7 @@ namespace XPC.Web
             string fileName_Thumb = fileName[0] + "_" + width + "." + fileName[1]; //FilenName_Width.Extension
             string folderName = "";
             imagePath = GetHTTPImages(imagePath);
-            folderName = Utility.UnicodeToKoDau(imagePath.Replace("/" + fileNameOrgin, "").Replace(" ", "").Replace("%20", ""));
+            folderName = imagePath.Replace("/" + fileNameOrgin, "").Replace(" ", "").Replace("%20", "");
             
 
             string fileThumb = "/" + folderName.TrimStart('/') + "/" + fileName_Thumb; //Đường dẫn file Thumb

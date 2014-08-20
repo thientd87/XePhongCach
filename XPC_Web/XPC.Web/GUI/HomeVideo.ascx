@@ -16,7 +16,7 @@
                                    <div class="title">
                                       <h3><a href="<%#Eval("URL") %>" title="<%#HttpUtility.HtmlEncode(Eval("News_Title")) %>">
                                               <%#Eval("News_Title") %></a></h3>
-                                      <p class="datetime"><%#Eval("News_Title") %></p>
+                                      <p class="datetime"><%#Eval("PublishDate") %></p>
                                    </div>                       
                                </div>
                           </ItemTemplate>
@@ -30,7 +30,7 @@
                     var left = $("#left");
                     var right = $("#right");
                     var count_over = 0;
-                    var total_video = 10;
+                    var total_video = <%=_TotalVideo%>;
                     left.click(function () {
                         if (count_over > 0) {
                             over.animate({
@@ -63,4 +63,6 @@
                         }
                     }, 5000);*/
                 });
+
+                
 </script>

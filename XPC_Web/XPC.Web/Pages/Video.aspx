@@ -43,8 +43,8 @@
                         <div class="video-style">
                             <%#Eval("ImageVideo") %>
                             <div class="title">
-                                <h3><a href="<%#Eval("URL") %>" title="<%#Eval("News_Title") %>">
-                                        Nguyễn Minh Quang - Zife design - Steed…</a></h3>
+                                <h3><a href="<%#Eval("URL") %>" title="<%#HttpUtility.HtmlEncode(Eval("News_Title")) %>">
+                                        <%#Eval("News_Title") %></a></h3>
                                 <p class="sum">Lượt xem: 0</p>
                                 <p class="sum">Thời gian: <%#Eval("PublishDate") %></p>
                             </div>

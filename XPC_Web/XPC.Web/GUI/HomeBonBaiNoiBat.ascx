@@ -4,9 +4,7 @@
                         <asp:Repeater runat="server" ID="rptBigPic">
                             <ItemTemplate>
                                 <div class="pic">
-                                    <a href="<%#Eval("URL") %>">
-                                        <img class="bigImg" src="<%#Eval("OriginImage") %>">
-                                    </a>
+                                    <%#Eval("OriginImage") %>
                                     <div class="tieude-bar">
                                         <h1><a href="<%#Eval("URL") %>" title="Xe hơi-bồn tắm"><%#Eval("News_Title") %></a>
                                         </h1>

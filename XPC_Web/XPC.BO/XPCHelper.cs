@@ -288,7 +288,7 @@ namespace BO
             return tbl;
         }
 
-        public static DataTable GetFocusNews(int iTop,int imgWith=0)
+        public static DataTable GetFocusNews(int iTop,int imgWith)
         {
             string CacheName = "Web_NewsPublished_GetFocus" + iTop;
             DataTable tbl = Utility.GetFromCache<DataTable>(CacheName);
@@ -356,7 +356,7 @@ namespace BO
 
                     }
                     tbl.AcceptChanges();
-                    Utility.SaveToCacheDependency(TableName.DATABASE_NAME, TableName.NEWSPUBLISHED, CacheName, tbl);
+                   // Utility.SaveToCacheDependency(TableName.DATABASE_NAME, TableName.NEWSPUBLISHED, CacheName, tbl);
                 }
             }
 
@@ -483,7 +483,7 @@ namespace BO
                     {
                         tbl.Rows[i]["URL"] = Utility.NewsDetailLinkV2(tbl.Rows[i]["News_Title"].ToString(), tbl.Rows[i]["Cat_ID"].ToString(), tbl.Rows[i]["Cat_ParentID"].ToString(), tbl.Rows[i]["News_ID"].ToString(), tbl.Rows[i]["Channel_ID"].ToString());
                         tbl.Rows[i]["Image"] = tbl.Rows[i]["News_Image"] != null ? Utility.GetThumbNail(tbl.Rows[i]["News_Title"].ToString(), tbl.Rows[i]["URL"].ToString(), tbl.Rows[i]["News_Image"].ToString(), imgWidth) : String.Empty;
-                        tbl.Rows[i]["OriginImage"] = tbl.Rows[i]["News_Image"] != null ? Utility.ImagesStorageUrl + tbl.Rows[i]["News_Image"] : String.Empty;
+                        tbl.Rows[i]["OriginImage"] = tbl.Rows[i]["News_Image"] != null ? Utility.GetThumbNail(tbl.Rows[i]["News_Title"].ToString(), tbl.Rows[i]["URL"].ToString(), tbl.Rows[i]["News_Image"].ToString(), 620) : String.Empty;
                         tbl.Rows[i]["PublishDate"] = Convert.ToDateTime(tbl.Rows[i]["News_PublishDate"]).ToString("dd/MM");
                     }
                     tbl.AcceptChanges();
