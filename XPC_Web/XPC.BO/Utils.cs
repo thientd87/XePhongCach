@@ -1180,7 +1180,28 @@ namespace BO
             thumb = String.Format("{0}/ThumbImages/{1}", ImagesThumbUrl, img.Insert(img.LastIndexOf("."), "_" + width));
             return String.Format("<a title=\"{2}\" href=\"{0}\"><img src=\"{1}\" onerror=\"LoadImage(this,'{3}');\" title=\"{2}\" alt=\"{4}\" border=\"0\"/></a>", url, thumb, HttpUtility.HtmlEncode(title), error, UnicodeToKoDau(title));
         }
+        public static string GetThumbNailWithPlayIcon(string title, string url, string img, int width)
+        {
+            if (img == null || String.IsNullOrEmpty(img) || img.IndexOf(".") == -1) return String.Empty;
+            string error;
+            string thumb;
+            if (img.IndexOf("http:") != -1 || img.IndexOf("https:") != -1)
+            {
+                error = String.Format("{0}/GetThumbNail.ashx?ImgFilePath={1}&width={2}", ImagesThumbUrl, HttpUtility.UrlEncode(img), width);
 
+                img = img.Replace("http://", "").Replace("https://", "");
+                img = img.Substring(img.IndexOf("/") + 1);
+
+                thumb = String.Format("{0}/ThumbImages/{1}", ImagesThumbUrl, img.Insert(img.LastIndexOf("."), "_" + width));
+                return String.Format("<a title=\"{2}\" href=\"{0}\"><img src=\"{1}\" onerror=\"LoadImage(this,'{3}');\" title=\"{2}\" alt=\"{4}\" border=\"0\"/></a>", url, thumb, HttpUtility.HtmlEncode(title), error, UnicodeToKoDau(title));
+            }
+            error = String.Format("{0}/GetThumbNail.ashx?ImgFilePath={1}/{2}&width={3}", ImagesThumbUrl, ImagesStorageUrl, HttpUtility.UrlEncode(img), width);
+            if (!string.IsNullOrEmpty(ImagesStorageUrl))
+                img = img.Replace(ImagesStorageUrl, "").TrimStart('/');
+
+            thumb = String.Format("{0}/ThumbImages/{1}", ImagesThumbUrl, img.Insert(img.LastIndexOf("."), "_" + width));
+            return String.Format("<a title=\"{2}\" href=\"{0}\"><img src=\"{1}\" onerror=\"LoadImage(this,'{3}');\" title=\"{2}\" alt=\"{4}\" border=\"0\"/><img src=\"/images/play_ico.png\" class=\"play\" alt=\"\">    </a>", url, thumb, HttpUtility.HtmlEncode(title), error, UnicodeToKoDau(title));
+        }
         //public static string GetThumbNail(string title, string url, string img, int width)
         //{
         //    if (img == null || String.IsNullOrEmpty(img) || img.IndexOf(".") == -1) return String.Empty;

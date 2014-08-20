@@ -17,9 +17,7 @@
                     <asp:Repeater runat="server" ID="rptData">
                         <ItemTemplate>
                             <div class="video-vertical">
-                                <a href="<%#Eval("URL") %>">
-                                    <img src="/images/Nguyn-Minh-Quang-Zife-design-Steed-400-d-Bobber.jpg" width="70" height="49" alt="">
-                                    <img src="/images/play_ico.png" class="play" alt="">    </a>
+                                <%#Eval("ImageVideo") %>
                                 <div class="title-list">
                                     <h3><a href="<%#Eval("URL") %>"><%#Eval("News_Title") %></a></h3>
                                     <p>Lượt xem: 0</p>
@@ -43,10 +41,7 @@
                 <asp:Repeater runat="server" ID="rptListVideo">
                     <ItemTemplate>
                         <div class="video-style">
-                            <a href="http://xevaphongcach.net/videos/index/2133">
-                                <img src="/Images/Nguyn-Minh-Quang-Zife-design-Steed-400-d-Bobber.jpg?width=120&amp;&amp;height=84" width="120" height="84" alt="">        
-                                <img src="http://xevaphongcach.net/assets/images/play_ico.png" class="play" alt="">    
-                            </a>
+                            <%#Eval("ImageVideo") %>
                             <div class="title">
                                 <h3><a href="<%#Eval("URL") %>" title="<%#Eval("News_Title") %>">
                                         Nguyễn Minh Quang - Zife design - Steed…</a></h3>
