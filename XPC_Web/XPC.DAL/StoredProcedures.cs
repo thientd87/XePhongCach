@@ -139,7 +139,22 @@ namespace DAL
             DataTable table = _db.CreateDataTable(cmd);
             return table;
         }
+        public DataTable Web_GetLastestGallery()
+        {
+            IDbCommand cmd = _db.CreateCommand("Web_GetLastestGallery", true);
+            DataTable table = _db.CreateDataTable(cmd);
+            return table;
+        }
 
+        public DataTable Web_GetImageByGalleryID(int GalleryId, int Top)
+        {
+            IDbCommand cmd = _db.CreateCommand("Web_GetImageByGalleryID", true);
+            _db.AddParameter(cmd, "GalleryId", DbType.Int32, GalleryId);
+            _db.AddParameter(cmd, "Top", DbType.Int32, Top);
+            DataTable dataTable = CreateDataTable(cmd);
+            return dataTable;
+        }
+        
         public DataTable Web_SearchProducts(string key, int pageIndex, int pageSize)
         {
             IDbCommand cmd = _db.CreateCommand("Web_SearchProducts", true);

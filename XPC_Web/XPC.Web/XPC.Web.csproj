@@ -85,6 +85,7 @@
     <Content Include="Images\Xe-hoi-bn-tm%281%29.jpg" />
     <Content Include="Images\Xe-hoi-bn-tm%282%29.jpg" />
     <Content Include="Images\Xe-hoi-bn-tm.jpg" />
+    <Content Include="Pages\Album.aspx" />
     <Content Include="Pages\ListNews.aspx" />
     <Content Include="Pages\NewsDetails.aspx" />
     <Content Include="Pages\Video.aspx" />
@@ -192,6 +193,13 @@
     </Compile>
     <Compile Include="GUI\TopMenu.ascx.designer.cs">
       <DependentUpon>TopMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Album.aspx.cs">
+      <DependentUpon>Album.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Album.aspx.designer.cs">
+      <DependentUpon>Album.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\ListNews.aspx.cs">
       <DependentUpon>ListNews.aspx</DependentUpon>

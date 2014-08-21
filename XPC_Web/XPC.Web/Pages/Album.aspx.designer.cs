@@ -7,18 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace XPC.Web.GUI {
+namespace XPC.Web.Pages {
     
     
-    public partial class HomeAnhDep {
+    public partial class Album {
         
         /// <summary>
-        /// rptAnhDep control.
+        /// rptAlbums control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptAnhDep;
+        protected global::System.Web.UI.WebControls.Repeater rptAlbums;
     }
 }

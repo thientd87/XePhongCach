@@ -8,6 +8,59 @@ namespace BO
 {
     public class XpcHelper
     {
+        public static DataTable GetAllAlbum(int imgWitdth)
+        {
+            DataTable dtAlbum = new DataTable();
+            using (MainDB objDb = new MainDB())
+            {
+                dtAlbum = objDb.StoredProcedures.Web_GetLastestGallery();
+                if (dtAlbum != null && dtAlbum.Rows.Count > 0)
+                {
+                    if (!dtAlbum.Columns.Contains("Image")) dtAlbum.Columns.Add("Image");
+                    
+                    for (int i = 0; i < dtAlbum.Rows.Count; i++)
+                    {
+                        DataTable dtAlbumDetail = objDb.StoredProcedures.Web_GetImageByGalleryID(Convert.ToInt32(dtAlbum.Rows[0]["ID"]), 1);
+                        if(dtAlbumDetail!=null && dtAlbumDetail.Rows.Count > 0)
+                            dtAlbum.Rows[i]["Image"] = dtAlbumDetail.Rows[i]["Object_URL"] != null
+                                ? Utility.GetThumbNail(dtAlbumDetail.Rows[i]["Object_Note"].ToString(),
+                                   "/album/" + Utility.UnicodeToKoDauAndGach(dtAlbum.Rows[0]["Name"].ToString()) + "-" + dtAlbum.Rows[0]["ID"] +".htm", dtAlbumDetail.Rows[i]["Object_URL"].ToString(), imgWitdth)
+                                : String.Empty;
+
+                    }
+                    dtAlbum.AcceptChanges();
+                }
+            }
+            return dtAlbum;
+        }
+        public static DataTable GetLastestAlbum(int imgWith,int Top)
+        {
+            
+            DataTable dtAlbum, dtAlbumDetail =  new DataTable();
+            using (MainDB objDb = new MainDB())
+            {
+               dtAlbum = objDb.StoredProcedures.Web_GetLastestGallery();
+                if (dtAlbum != null && dtAlbum.Rows.Count > 0)
+                {
+                    dtAlbumDetail = objDb.StoredProcedures.Web_GetImageByGalleryID(Convert.ToInt32(dtAlbum.Rows[0]["ID"]), Top);
+                }
+                if (dtAlbumDetail != null && dtAlbumDetail.Rows.Count > 0)
+                {
+                    if (!dtAlbumDetail.Columns.Contains("Image")) dtAlbumDetail.Columns.Add("Image");
+
+                    for (int i = 0; i < dtAlbumDetail.Rows.Count; i++)
+                    {
+                        dtAlbumDetail.Rows[i]["Image"] = dtAlbumDetail.Rows[i]["Object_URL"] != null
+                                ? Utility.GetThumbNail(dtAlbumDetail.Rows[i]["Object_Note"].ToString(),
+                                   "#", dtAlbumDetail.Rows[i]["Object_URL"].ToString(), imgWith)
+                                : String.Empty;
+                       
+                    }
+                    dtAlbumDetail.AcceptChanges();
+                }
+            }
+            return dtAlbumDetail;
+        }
 
         public static DataTable GetAllSupportOnline()
         {

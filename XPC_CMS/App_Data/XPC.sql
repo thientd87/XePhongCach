@@ -384,3 +384,21 @@ END
 
 
 GO
+
+
+
+Create proc Web_GetLastestGallery
+as
+Select top 1 * from Gallery order by ID DESC
+
+
+Go
+
+Create proc Web_GetImageByGalleryID --10
+@GalleryId int,
+@Top int = 9
+as
+begin
+select Top(@Top) t1.*,t2.Name from [MediaObject] t1 
+inner join [Gallery] t2 on t1.[GalleryID]=t2.[ID] where t1.GalleryID=@GalleryId order by t1.Object_Type,t1.STT
+end

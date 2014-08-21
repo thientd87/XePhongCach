@@ -808,3 +808,9 @@ overflow: hidden;
 .video-style .title h3{margin-bottom: 10px;}
 .video-style .title p{padding-bottom: 0px;}
 
+
+#ds-album img{
+border: 3px solid #cecece;
+padding: 4px;
+box-shadow: 4px 4px #dedede;
+}

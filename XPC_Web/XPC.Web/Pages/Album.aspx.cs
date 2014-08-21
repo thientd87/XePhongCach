@@ -7,19 +7,19 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using BO;
 
-namespace XPC.Web.GUI
+namespace XPC.Web.Pages
 {
-    public partial class HomeAnhDep : System.Web.UI.UserControl
+    public partial class Album : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                DataTable dtAnhDep = XpcHelper.GetLastestAlbum(89,9);
-                if (dtAnhDep != null && dtAnhDep.Rows.Count > 0)
+                DataTable dtAlbums = XpcHelper.GetAllAlbum(151);
+                if (dtAlbums != null && dtAlbums.Rows.Count > 0)
                 {
-                    rptAnhDep.DataSource = dtAnhDep;
-                    rptAnhDep.DataBind();
+                    rptAlbums.DataSource = dtAlbums;
+                    rptAlbums.DataBind();
                 }
             }
         }
