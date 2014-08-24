@@ -15,7 +15,7 @@ namespace XPC.Web.GUI
         {
             if (!IsPostBack)
             {
-                DataTable dtTinNhieuNhat = XpcHelper.GetFocusNews(8,57);
+                DataTable dtTinNhieuNhat = XpcHelper.GetFocusNews(7,57);
                 if (dtTinNhieuNhat != null && dtTinNhieuNhat.Rows.Count > 0)
                 {
                     rptTinNhieuNhat.DataSource = dtTinNhieuNhat;

@@ -28,15 +28,18 @@
                     Thứ 2, 5/5/2014 | 21:31 
                 </div>
                 <div class="search-box">
-                    <input type="text" id="txtSearch" class="txtSearch" />
+                    <input type="text" class="txtSearch" id="txtSearchBox" onkeypress="return TDTEnterPressSearch(event);" value="Tìm kiếm" onfocus="if(this.value=='Tìm kiếm') this.value='';"
+                                                                        onblur=" if(this.value=='') this.value='Tìm kiếm';" />
                     <input type="button" id="btnSearch" class="btnSearch" />
                 </div>
                 <a href="#btnRSS">
                     <div class="btnRSS"></div>
                 </a>
-                <a href="#btnFB">
-                    <div class="btnFB"></div>
-                </a>
+               <%-- <div class="btnFB">
+                    <div class="fb-like fb_iframe_widget" data-href="<%=Request.Url%>" data-layout="button" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;href=<%=Request.Url.DnsSafeHost + Request.RawUrl %>&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true">
+                            
+                    </div>
+                </div>--%>
             </div>
             <!--end of #clock-searchbox-->
 

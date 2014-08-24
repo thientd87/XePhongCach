@@ -6,6 +6,8 @@
 <%@ Register Src="~/GUI/HomeNoiBatVertical.ascx" TagPrefix="uc1" TagName="HomeNoiBatVertical" %>
 <%@ Register Src="~/GUI/HomeAnhDep.ascx" TagPrefix="uc1" TagName="HomeAnhDep" %>
 <%@ Register Src="~/GUI/HomeVote.ascx" TagPrefix="uc1" TagName="HomeVote" %>
+<%@ Register Src="~/GUI/HomeThongTinDoanhNghiep.ascx" TagPrefix="uc1" TagName="HomeThongTinDoanhNghiep" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <div class="top-news-cate container">
                 <uc1:HomeBonBaiNoiBat runat="server" id="HomeBonBaiNoiBat" />
@@ -32,6 +34,11 @@
                 <uc1:HomeNoiBatVertical runat="server" id="HomeNoiBatVertical1" CatId="120"  Top="4" />
                 <!--end of #top-nhanvat-->        
                 <uc1:HomeVote runat="server" id="HomeVote" />
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                        adjustHeights("top-thuxe119","top-thuxe120");
+                    })
+                </script>
             </div>
             <div class="clearfix"></div>
             <div class="container margin-top15">
@@ -41,5 +48,8 @@
             <div class="container margin-top15">
                 <uc1:HomeNoiBatHorizal runat="server" id="HomeNoiBatHorizal3" CatId="122" Top="3" /> 
             </div>
+        <div class="clearfix"></div>
+            <uc1:HomeThongTinDoanhNghiep runat="server" id="HomeThongTinDoanhNghiep" CatId="117" Top="4" />
+            <%--<uc1:HomeThongTinDoanhNghiep runat="server" id="HomeThongTinDoanhNghiep1" CatId="138" Top="4" />--%>
             <div class="clearfix"></div>
 </asp:Content>

@@ -60,6 +60,7 @@
     <Content Include="GUI\HomeBonBaiNoiBat.ascx" />
     <Content Include="GUI\HomeNoiBatHorizal.ascx" />
     <Content Include="GUI\HomeNoiBatVertical.ascx" />
+    <Content Include="GUI\HomeThongTinDoanhNghiep.ascx" />
     <Content Include="GUI\HomeTinDocNhieu.ascx" />
     <Content Include="GUI\HomeVideo.ascx" />
     <Content Include="GUI\HomeVote.ascx" />
@@ -77,6 +78,7 @@
     <Content Include="Images\line_video_small.png" />
     <Content Include="Images\list_ico.png" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\logoBUzzCom.png" />
     <Content Include="Images\next_ico.png" />
     <Content Include="Images\Nguyn-Minh-Quang-Zife-design-Steed-400-d-Bobber.jpg" />
     <Content Include="Images\play_ico.png" />
@@ -86,14 +88,31 @@
     <Content Include="Images\Xe-hoi-bn-tm%282%29.jpg" />
     <Content Include="Images\Xe-hoi-bn-tm.jpg" />
     <Content Include="Pages\Album.aspx" />
+    <Content Include="Pages\AlbumDetail.aspx" />
     <Content Include="Pages\ListNews.aspx" />
     <Content Include="Pages\NewsDetails.aspx" />
     <Content Include="Pages\Video.aspx" />
+    <Content Include="Pages\SearchResult.aspx" />
     <Content Include="Scripts\Common.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
     <Content Include="Scripts\jquery.ellipsis.js" />
+    <Content Include="Scripts\fancybox\blank.gif" />
+    <Content Include="Scripts\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="Scripts\fancybox\fancybox_loading.gif" />
+    <Content Include="Scripts\fancybox\fancybox_overlay.png" />
+    <Content Include="Scripts\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="Scripts\fancybox\fancybox_sprite.png" />
+    <Content Include="Scripts\fancybox\helpers\fancybox_buttons.png" />
+    <Content Include="Scripts\fancybox\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="Scripts\fancybox\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="Scripts\fancybox\helpers\jquery.fancybox-media.js" />
+    <Content Include="Scripts\fancybox\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="Scripts\fancybox\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="Scripts\fancybox\jquery.fancybox.css" />
+    <Content Include="Scripts\fancybox\jquery.fancybox.js" />
+    <Content Include="Scripts\fancybox\jquery.fancybox.pack.js" />
     <Content Include="Styles\styles.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -159,6 +178,13 @@
     <Compile Include="GUI\HomeNoiBatVertical.ascx.designer.cs">
       <DependentUpon>HomeNoiBatVertical.ascx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\HomeThongTinDoanhNghiep.ascx.cs">
+      <DependentUpon>HomeThongTinDoanhNghiep.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\HomeThongTinDoanhNghiep.ascx.designer.cs">
+      <DependentUpon>HomeThongTinDoanhNghiep.ascx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\HomeTinDocNhieu.ascx.cs">
       <DependentUpon>HomeTinDocNhieu.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -201,6 +227,13 @@
     <Compile Include="Pages\Album.aspx.designer.cs">
       <DependentUpon>Album.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AlbumDetail.aspx.cs">
+      <DependentUpon>AlbumDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AlbumDetail.aspx.designer.cs">
+      <DependentUpon>AlbumDetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ListNews.aspx.cs">
       <DependentUpon>ListNews.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -221,6 +254,13 @@
     </Compile>
     <Compile Include="Pages\Video.aspx.designer.cs">
       <DependentUpon>Video.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SearchResult.aspx.cs">
+      <DependentUpon>SearchResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SearchResult.aspx.designer.cs">
+      <DependentUpon>SearchResult.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

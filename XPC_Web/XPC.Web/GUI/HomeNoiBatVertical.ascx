@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="HomeNoiBatVertical.ascx.cs" Inherits="XPC.Web.GUI.HomeNoiBatVertical" %>
-<div id="top-thuxe" class="cate_vertical_home">
+<div id="top-thuxe<%=CatId %>" class="cate_vertical_home">
     <h2>
         <asp:Literal runat="server" ID="ltrCatName"></asp:Literal>
     </h2>

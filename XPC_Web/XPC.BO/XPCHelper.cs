@@ -33,6 +33,33 @@ namespace BO
             }
             return dtAlbum;
         }
+
+
+        public static DataTable GetAlbumDetail(int AlbumID,int imgWidth)
+        {
+            DataTable dtAlbumDetail = new DataTable();
+            using (MainDB objDb = new MainDB())
+            {
+
+                dtAlbumDetail = objDb.StoredProcedures.Web_GetImageByGalleryID(AlbumID, 1000);
+               
+                if (dtAlbumDetail != null && dtAlbumDetail.Rows.Count > 0)
+                {
+                    if (!dtAlbumDetail.Columns.Contains("Image")) dtAlbumDetail.Columns.Add("Image");
+
+                    for (int i = 0; i < dtAlbumDetail.Rows.Count; i++)
+                    {
+                        dtAlbumDetail.Rows[i]["Image"] = dtAlbumDetail.Rows[i]["Object_URL"] != null
+                                ? Utility.GetThumbNail(dtAlbumDetail.Rows[i]["Object_Note"].ToString(),
+                                   Utility.ImagesStorageUrl + dtAlbumDetail.Rows[i]["Object_URL"], dtAlbumDetail.Rows[i]["Object_URL"].ToString(), imgWidth,"gallery")
+                                : String.Empty;
+
+                    }
+                    dtAlbumDetail.AcceptChanges();
+                }
+            }
+            return dtAlbumDetail;
+        }
         public static DataTable GetLastestAlbum(int imgWith,int Top)
         {
             

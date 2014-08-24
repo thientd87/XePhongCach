@@ -119,5 +119,14 @@ namespace XPC.Web {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::XPC.Web.GUI.HomeNoiBatHorizal HomeNoiBatHorizal3;
+        
+        /// <summary>
+        /// HomeThongTinDoanhNghiep control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::XPC.Web.GUI.HomeThongTinDoanhNghiep HomeThongTinDoanhNghiep;
     }
 }

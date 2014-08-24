@@ -10,15 +10,24 @@
 namespace XPC.Web.GUI {
     
     
-    public partial class Footer {
+    public partial class HomeThongTinDoanhNghiep {
         
         /// <summary>
-        /// rptNewsCat control.
+        /// ltrCatName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptNewsCat;
+        protected global::System.Web.UI.WebControls.Literal ltrCatName;
+        
+        /// <summary>
+        /// rptNewNoiBatMuc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptNewNoiBatMuc;
     }
 }

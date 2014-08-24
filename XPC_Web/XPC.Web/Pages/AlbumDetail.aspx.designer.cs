@@ -7,18 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace XPC.Web.GUI {
+namespace XPC.Web.Pages {
     
     
-    public partial class Footer {
+    public partial class AlbumDetail {
         
         /// <summary>
-        /// rptNewsCat control.
+        /// rptAlbumDetail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptNewsCat;
+        protected global::System.Web.UI.WebControls.Repeater rptAlbumDetail;
     }
 }

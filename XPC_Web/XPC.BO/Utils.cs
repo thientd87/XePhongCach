@@ -1180,6 +1180,28 @@ namespace BO
             thumb = String.Format("{0}/ThumbImages/{1}", ImagesThumbUrl, img.Insert(img.LastIndexOf("."), "_" + width));
             return String.Format("<a title=\"{2}\" href=\"{0}\"><img src=\"{1}\" onerror=\"LoadImage(this,'{3}');\" title=\"{2}\" alt=\"{4}\" border=\"0\"/></a>", url, thumb, HttpUtility.HtmlEncode(title), error, UnicodeToKoDau(title));
         }
+        public static string GetThumbNail(string title, string url, string img, int width,string rel)
+        {
+            if (img == null || String.IsNullOrEmpty(img) || img.IndexOf(".") == -1) return String.Empty;
+            string error;
+            string thumb;
+            if (img.IndexOf("http:") != -1 || img.IndexOf("https:") != -1)
+            {
+                error = String.Format("{0}/GetThumbNail.ashx?ImgFilePath={1}&width={2}", ImagesThumbUrl, HttpUtility.UrlEncode(img), width);
+
+                img = img.Replace("http://", "").Replace("https://", "");
+                img = img.Substring(img.IndexOf("/") + 1);
+
+                thumb = String.Format("{0}/ThumbImages/{1}", ImagesThumbUrl, img.Insert(img.LastIndexOf("."), "_" + width));
+                return String.Format("<a title=\"{2}\" href=\"{0}\"><img src=\"{1}\" onerror=\"LoadImage(this,'{3}');\" title=\"{2}\" alt=\"{4}\" border=\"0\"/></a>", url, thumb, HttpUtility.HtmlEncode(title), error, UnicodeToKoDau(title));
+            }
+            error = String.Format("{0}/GetThumbNail.ashx?ImgFilePath={1}/{2}&width={3}", ImagesThumbUrl, ImagesStorageUrl, HttpUtility.UrlEncode(img), width);
+            if (!string.IsNullOrEmpty(ImagesStorageUrl))
+                img = img.Replace(ImagesStorageUrl, "").TrimStart('/');
+
+            thumb = String.Format("{0}/ThumbImages/{1}", ImagesThumbUrl, img.Insert(img.LastIndexOf("."), "_" + width));
+            return String.Format("<a rel=\"{5}\" title=\"{2}\" href=\"{0}\"><img src=\"{1}\" onerror=\"LoadImage(this,'{3}');\" title=\"{2}\" alt=\"{4}\" border=\"0\"/></a>", url, thumb, HttpUtility.HtmlEncode(title), error, UnicodeToKoDau(title),rel);
+        }
         public static string GetThumbNailWithPlayIcon(string title, string url, string img, int width)
         {
             if (img == null || String.IsNullOrEmpty(img) || img.IndexOf(".") == -1) return String.Empty;
@@ -2163,6 +2185,15 @@ namespace BO
                     if (string.IsNullOrEmpty(HttpContext.Current.Request.QueryString["News_ID"])) return 0;
 
                     return Lib.Object2Long(HttpContext.Current.Request.QueryString["News_ID"]);
+                }
+            }
+            public static int AlbumID
+            {
+                get
+                {
+                    if (string.IsNullOrEmpty(HttpContext.Current.Request.QueryString["AlbumID"])) return 0;
+
+                    return Lib.Object2Integer(HttpContext.Current.Request.QueryString["AlbumID"]);
                 }
             }
             public static int ProductID

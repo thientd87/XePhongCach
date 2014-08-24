@@ -56,5 +56,23 @@ namespace XPC.Web.Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater rptTinKhac;
+        
+        /// <summary>
+        /// HomeAnhDep control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::XPC.Web.GUI.HomeAnhDep HomeAnhDep;
+        
+        /// <summary>
+        /// ListTinDocNhieu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::XPC.Web.GUI.ListTinDocNhieu ListTinDocNhieu;
     }
 }
