@@ -58,6 +58,15 @@ namespace XPC.Web.Pages {
         protected global::System.Web.UI.WebControls.Repeater rptData;
         
         /// <summary>
+        /// Pagging control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::XPC.Web.GUI.Pagging Pagging;
+        
+        /// <summary>
         /// HomeAnhDep control.
         /// </summary>
         /// <remarks>

@@ -2,6 +2,8 @@
 
 <%@ Register Src="~/GUI/HomeAnhDep.ascx" TagPrefix="uc1" TagName="HomeAnhDep" %>
 <%@ Register Src="~/GUI/ListTinDocNhieu.ascx" TagPrefix="uc1" TagName="ListTinDocNhieu" %>
+<%@ Register Src="~/GUI/Pagging.ascx" TagPrefix="uc1" TagName="Pagging" %>
+
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -37,7 +39,7 @@
             </asp:Repeater>
 
     <!------>
-    <ul class="pagination"><li class="active"><a>1</a></li><li><a href="http://xevaphongcach.net/news/index/2/8">2</a></li><li><a href="http://xevaphongcach.net/news/index/2/16">3</a></li><li><a href="http://xevaphongcach.net/news/index/2/8">Sau</a></li><li><a href="http://xevaphongcach.net/news/index/2/616">Cuối</a></li></ul>    
+            <uc1:Pagging runat="server" id="Pagging" />
 </div>
     </div>
     <div class="colRight">

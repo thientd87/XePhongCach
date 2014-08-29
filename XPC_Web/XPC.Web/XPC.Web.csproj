@@ -66,6 +66,7 @@
     <Content Include="GUI\HomeVideo.ascx" />
     <Content Include="GUI\HomeVote.ascx" />
     <Content Include="GUI\ListTinDocNhieu.ascx" />
+    <Content Include="GUI\Pagging.ascx" />
     <Content Include="GUI\TopMenu.ascx" />
     <Content Include="Images\banner_1.png" />
     <Content Include="Images\btnFb.png" />
@@ -213,6 +214,13 @@
     </Compile>
     <Compile Include="GUI\ListTinDocNhieu.ascx.designer.cs">
       <DependentUpon>ListTinDocNhieu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Pagging.ascx.cs">
+      <DependentUpon>Pagging.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Pagging.ascx.designer.cs">
+      <DependentUpon>Pagging.ascx</DependentUpon>
     </Compile>
     <Compile Include="GUI\TopMenu.ascx.cs">
       <DependentUpon>TopMenu.ascx</DependentUpon>
