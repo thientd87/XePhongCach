@@ -28,7 +28,7 @@ namespace AddIns.GUI.EditoralOffice.MainOffce.Advertisment
                 ddlPosition.DataSource = _pos;
                 ddlPosition.DataBind();
 
-                ddlPages.Items.Insert(0, new ListItem("chon vi tri", "0"));
+                ddlPosition.Items.Insert(0, new ListItem("chon vi tri", "0"));
             }
             Adv_Page_Position objPage = new Adv_Page_Position();
             DataTable _pages = CategoryHelper.GetCategoriesByParent(0);//.SelectAllLike("");//.AdvGetAllPages();

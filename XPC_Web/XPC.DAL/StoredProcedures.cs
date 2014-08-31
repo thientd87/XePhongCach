@@ -58,7 +58,14 @@ namespace DAL
             DataTable table = _db.CreateDataTable(cmd);
             return table;
         }
-        
+        public DataTable CMS_Advertisments_SelectOne(int AdvID)
+        {
+            IDbCommand cmd = _db.CreateCommand("CMS_Advertisments_SelectOne", true);
+            _db.AddParameter(cmd, "AdvID", DbType.String, AdvID);
+
+            DataTable table = _db.CreateDataTable(cmd);
+            return table;
+        }
         #endregion
 
 
@@ -108,6 +115,31 @@ namespace DAL
         {
             IDbCommand cmd = _db.CreateCommand("Microf_DanhSachTin_Count", true);
             _db.AddParameter(cmd, "Cat_ID", DbType.Int64, catId);
+            DataTable table = _db.CreateDataTable(cmd);
+            return table;
+        }
+
+        public DataTable Web_DanhSachTin_Count(int catId)
+        {
+            IDbCommand cmd = _db.CreateCommand("Web_DanhSachTin_Count", true);
+            _db.AddParameter(cmd, "Cat_ID", DbType.Int64, catId);
+            DataTable table = _db.CreateDataTable(cmd);
+            return table;
+        }
+
+        public DataTable Web_SearchNews(string Key, int pageSize, int pageIndex)
+        {
+            IDbCommand cmd = _db.CreateCommand("Web_SearchNews", true);
+            _db.AddParameter(cmd, "Key", DbType.String, Key);
+            _db.AddParameter(cmd, "pageSize", DbType.Int32, pageSize);
+            _db.AddParameter(cmd, "pageIndex", DbType.Int32, pageIndex);
+            DataTable table = _db.CreateDataTable(cmd);
+            return table;
+        }
+        public DataTable Web_SearchNews_Count(string Key)
+        {
+            IDbCommand cmd = _db.CreateCommand("Web_SearchNews", true);
+            _db.AddParameter(cmd, "Key", DbType.String, Key);
             DataTable table = _db.CreateDataTable(cmd);
             return table;
         }

@@ -3,6 +3,8 @@
 <%@ Register Src="~/GUI/HomeAnhDep.ascx" TagPrefix="uc1" TagName="HomeAnhDep" %>
 <%@ Register Src="~/GUI/ListTinDocNhieu.ascx" TagPrefix="uc1" TagName="ListTinDocNhieu" %>
 <%@ Register Src="~/GUI/Pagging.ascx" TagPrefix="uc1" TagName="Pagging" %>
+<%@ Register Src="~/GUI/Adv.ascx" TagPrefix="uc1" TagName="Adv" %>
+
 
 
 
@@ -39,10 +41,11 @@
             </asp:Repeater>
 
     <!------>
-            <uc1:Pagging runat="server" id="Pagging" />
+            <uc1:Pagging runat="server" id="Pagging1" />
 </div>
     </div>
     <div class="colRight">
+        <uc1:Adv runat="server" id="Adv" AdvID="13" ClassName="banner8" />
         <uc1:HomeAnhDep runat="server" ID="HomeAnhDep" />
         <uc1:ListTinDocNhieu runat="server" id="ListTinDocNhieu" />
     </div>

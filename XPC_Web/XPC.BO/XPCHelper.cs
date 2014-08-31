@@ -406,7 +406,55 @@ namespace BO
             }
             return tbl;
         }
+        public static DataTable SearchNews(string  Key, int PageIndex, int PageSize, int imgWidth)
+        {
+            string CacheName = "SearchNews" + Key + PageSize + PageIndex + imgWidth;
+            DataTable tbl = Utility.GetFromCache<DataTable>(CacheName);
+            if (tbl == null)
+            {
+                using (MainDB db = new MainDB())
+                {
+                    tbl = db.StoredProcedures.Web_SearchNews(Key, PageSize, PageIndex);
+                }
+                if (tbl != null && tbl.Rows.Count > 0)
+                {
+                    if (!tbl.Columns.Contains("URL")) tbl.Columns.Add("URL");
+                    if (!tbl.Columns.Contains("Cat_URL")) tbl.Columns.Add("Cat_URL");
+                    if (!tbl.Columns.Contains("Image")) tbl.Columns.Add("Image");
+                    if (!tbl.Columns.Contains("ImageVideo")) tbl.Columns.Add("ImageVideo");
+                    if (!tbl.Columns.Contains("OriginImage")) tbl.Columns.Add("OriginImage");
+                    if (!tbl.Columns.Contains("PublishDate")) tbl.Columns.Add("PublishDate");
+                    for (int i = 0; i < tbl.Rows.Count; i++)
+                    {
+                        tbl.Rows[i]["URL"] = Utility.NewsDetailLinkV2(tbl.Rows[i]["News_Title"].ToString(), tbl.Rows[i]["Cat_ID"].ToString(), tbl.Rows[i]["Cat_ParentID"].ToString(), tbl.Rows[i]["News_ID"].ToString(), "1");
+                        tbl.Rows[i]["Image"] = tbl.Rows[i]["News_Image"] != null ? Utility.GetThumbNail(tbl.Rows[i]["News_Title"].ToString(), tbl.Rows[i]["URL"].ToString(), tbl.Rows[i]["News_Image"].ToString(), imgWidth) : String.Empty;
+                        tbl.Rows[i]["ImageVideo"] = tbl.Rows[i]["News_Image"] != null ? Utility.GetThumbNailWithPlayIcon(tbl.Rows[i]["News_Title"].ToString(), tbl.Rows[i]["URL"].ToString(), tbl.Rows[i]["News_Image"].ToString(), imgWidth) : String.Empty;
+                        tbl.Rows[i]["Cat_URL"] = Utility.CatLink(tbl.Rows[i]["Cat_ID"].ToString(), tbl.Rows[i]["Cat_ParentID"].ToString(), Utility.UnicodeToKoDauAndGach(tbl.Rows[i]["Cat_Name"].ToString()), "1");
+                        tbl.Rows[i]["PublishDate"] = Convert.ToDateTime(tbl.Rows[i]["News_PublishDate"]).ToString("dd/MM/yyyy | HH:mm");
+                        tbl.Rows[i]["OriginImage"] = tbl.Rows[i]["News_Image"] != null ? Utility.ImagesStorageUrl + tbl.Rows[i]["News_Image"] : String.Empty;
 
+                    }
+                    tbl.AcceptChanges();
+                    // Utility.SaveToCacheDependency(TableName.DATABASE_NAME, TableName.NEWSPUBLISHED, CacheName, tbl);
+                }
+            }
+
+            return tbl;
+        }
+        public static int SearchNewsCount(string Key)
+        {
+            int Count = 0;
+            using (MainDB db = new MainDB())
+            {
+                DataTable dt = db.StoredProcedures.Web_SearchNews_Count(Key);
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    Count = Convert.ToInt32(dt.Rows[0][0]);
+                }
+
+            }
+            return Count;
+        }
         public static DataTable displayGetDanhSachTin(int catID, int PageIndex, int PageSize, int imgWidth)
         {
             string CacheName = "Microf_DanhSachTin" + catID + PageSize + PageIndex + imgWidth;
@@ -849,7 +897,7 @@ namespace BO
             int Count = 0;
             using (MainDB db = new MainDB())
             {
-                DataTable dt = db.StoredProcedures.Select_DanhSachTin_Count(CatID);
+                DataTable dt = db.StoredProcedures.Web_DanhSachTin_Count(CatID);
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     if (CatID == 0)

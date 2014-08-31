@@ -2,6 +2,8 @@
 <%@ Import Namespace="BO" %>
 <%@ Register Src="~/GUI/HomeAnhDep.ascx" TagPrefix="uc1" TagName="HomeAnhDep" %>
 <%@ Register Src="~/GUI/ListTinDocNhieu.ascx" TagPrefix="uc1" TagName="ListTinDocNhieu" %>
+<%@ Register Src="~/GUI/Adv.ascx" TagPrefix="uc1" TagName="Adv" %>
+
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -45,6 +47,7 @@
                 </div>
             </div>
             <div class="colRight">
+                <uc1:Adv runat="server" id="Adv" AdvID="13" ClassName="banner8"  />
                 <uc1:HomeAnhDep runat="server" ID="HomeAnhDep" />
                 <uc1:ListTinDocNhieu runat="server" id="ListTinDocNhieu" />
             </div>

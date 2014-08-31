@@ -36,6 +36,14 @@
     }(document, 'script', 'facebook-jssdk'));</script>
     
     <form id="form1" runat="server">
+        <div id="wrapperBanner">
+	        <div id="bannerLeft">
+	          <img src="http://xevaphongcach.net/public/popup/banner_left.gif" title="">
+	        </div>
+	        <div id="bannerRight">
+	          <img src="http://xevaphongcach.net/public/popup/banner_right.gif" title="">
+	        </div>
+            </div>
         <div class="wrapper">
             <uc1:TopMenu runat="server" id="TopMenu" />
              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

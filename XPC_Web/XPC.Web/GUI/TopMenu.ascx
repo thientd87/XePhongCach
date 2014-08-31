@@ -1,9 +1,11 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="TopMenu.ascx.cs" Inherits="XPC.Web.GUI.TopMenu" %>
- <!--start of #header-->
+<%@ Register Src="~/GUI/Adv.ascx" TagPrefix="uc1" TagName="Adv" %>
+
+<!--start of #header-->
             <div class="header">
                 <a href="/" class="logo">Xe và phong cách</a>
-                <a href="#" style="display: block; float: right;">
-                    <img src="/images/banner_1.png"></a>
+                <uc1:Adv runat="server" ID="Adv" AdvID="7" />
+                <%--<a href="#" style="display: block; float: right;"><img src="/images/banner_1.png"></a>--%>
             </div>
             <!--end of #header-->
             <!--start of #top-menu-->
@@ -18,7 +20,7 @@
                             </li>
                         </ItemTemplate>
                     </asp:Repeater>
-                    <li><a href="http://xevaphongcach.net/#">Liên hệ</a></li>
+                    <li><a href="/">Liên hệ</a></li>
                 </ul>
             </div>
             <!--end of #top-menu-->

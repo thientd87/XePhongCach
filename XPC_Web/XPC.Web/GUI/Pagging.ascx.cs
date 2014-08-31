@@ -133,7 +133,7 @@ namespace XPC.Web.GUI
             }
             else
             {
-                buildLink = "<a class=\"{4}\" href='/news/p{0}c{1}/{2}/trang-{3}.htm'><span>{5}</span></a> &nbsp;";
+                buildLink = "<li class=\"{4}\"><a href='/news/{2}-p{0}c{1}/trang-{3}.htm'><span>{5}</span></a></li>";
                 return String.Format(buildLink, Lib.QueryString.ParentCategory, Lib.QueryString.CategoryID, Lib.QueryString.CategoryName, page, css, TextDisplay);
             }
         }

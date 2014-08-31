@@ -54,6 +54,9 @@ namespace XPC.Web.Pages
                     rptData.DataSource = dtData;
                     rptData.DataBind();
                 }
+
+                Pagging1.TotalPage = XpcHelper.GetDanhSachTinCount(_catID);
+                Pagging1.DoPagging(_pageIndex);
                 //Paging1.TotalPage = GVietNamHelper.GetDanhSachTin_Count(_catID, _pageSize);
                 //Paging1.DoPagging(_pageIndex);
             }

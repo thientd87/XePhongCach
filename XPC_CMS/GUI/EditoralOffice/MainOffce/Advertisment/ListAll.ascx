@@ -30,7 +30,7 @@
                             <td width="70" style="vertical-align: middle; padding: 10px 0">
                                 <asp:DropDownList ID="ddlPages" runat="server" DataTextField="Cat_Name" DataValueField="Cat_ID"
                                     CssClass="ddlPages">
-                                    <asp:ListItem Value="0">Chọn trang</asp:ListItem>
+                                    
                                 </asp:DropDownList>
                             </td>
                             <td width="70" style="vertical-align: middle; padding: 10px 0; text-align: center;">
@@ -39,7 +39,7 @@
                             <td width="70" style="vertical-align: middle; padding: 10px 0">
                                 <asp:DropDownList ID="ddlPosition" runat="server" DataTextField="PosName" DataValueField="PosID"
                                     CssClass="ddlPoss">
-                                    <asp:ListItem Value="0">Chọn</asp:ListItem>
+                                    
                                 </asp:DropDownList>
                             </td>
                             <td width="70" style="vertical-align: middle; padding: 10px 10px">
@@ -92,7 +92,9 @@
                             <%#Eval("EndDate", "{0:dd/MM/yyyy}")%></ItemTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Preview">
-                        <ItemTemplate><a href="/ajax/adv/advPreview.aspx?id=<%#Eval("AdvID") %>" target="_blank" rel="preview">Preview</a></ItemTemplate>
+                        <ItemTemplate>
+                            <img src="/<%# Eval("FilePath") %>" height="80px"/>
+                        </ItemTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Status">
                         <HeaderStyle CssClass="sorting_disabled"></HeaderStyle>

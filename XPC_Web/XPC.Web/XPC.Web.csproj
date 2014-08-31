@@ -56,6 +56,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="GUI\Adv.ascx" />
     <Content Include="GUI\Footer.ascx" />
     <Content Include="GUI\HomeAnhDep.ascx" />
     <Content Include="GUI\HomeBonBaiNoiBat.ascx" />
@@ -144,6 +145,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Adv.ascx.cs">
+      <DependentUpon>Adv.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Adv.ascx.designer.cs">
+      <DependentUpon>Adv.ascx</DependentUpon>
     </Compile>
     <Compile Include="GUI\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>

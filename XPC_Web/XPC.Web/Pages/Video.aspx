@@ -1,4 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Video.aspx.cs" Inherits="XPC.Web.Pages.Video" %>
+
+<%@ Register Src="~/GUI/Pagging.ascx" TagPrefix="uc1" TagName="Pagging" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
          <div id="video">
@@ -50,9 +53,13 @@
                             </div>
                         </div>
                     </ItemTemplate>
+                    <FooterTemplate>
+                        <div class="clearfix"></div>           
+                    </FooterTemplate>
                 </asp:Repeater>
             </div><!--end of #list-video-style-->
-            <ul class="pagination"><li class="active"><a>1</a></li><li><a href="http://xevaphongcach.net/videos/index/0/18">2</a></li><li><a href="http://xevaphongcach.net/videos/index/0/18">Sau</a></li></ul>    
+            <uc1:Pagging runat="server" ID="Pagging" />
+              <div class="clearfix"></div>           
         </div>
     </div>
    

@@ -1,6 +1,13 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="AddBanner.ascx.cs" Inherits="DFISYS.GUI.EditoralOffice.MainOffce.Advertisment.AddBanner" %>
 <script language="javascript" type="text/javascript" src="/Scripts/Newsedit.js?ver=1"></script>
-
+<style>
+    table.radioProductType{}
+    table.radioProductType label{display: inline-block}
+    table.radioProductType .radio input[type="radio"]{margin-left: 0}
+    div.checker{float:left}
+    .CheckBoxList{ width: 250px;}
+    .CheckBoxList label{font-size: 12px; color: #555555}
+</style>
 <div class="container-fluid">
 				<!-- BEGIN PAGE HEADER-->   
 				<div class="row-fluid">
@@ -29,8 +36,7 @@
 										    <div class="span12 hide">
 										        <div style="float:left">
                                                    <label>Trang</label>
-                                                    <asp:CheckBoxList ID="cblPages" runat="server" DataTextField="Cat_Name" DataValueField="Cat_ID">
-                                                    </asp:CheckBoxList>
+                                                    
                                                 </div>
                                                 <div style="float:left;margin-left:15px">
                                                     <span class="left">Vị trí</span>
@@ -47,7 +53,13 @@
                                                 </div>
                                                 <label>Tự động chuyển</label><asp:CheckBox ID="adv_isRotate" ClientIDMode="Static" runat="server" Checked="false" />
 										    </div>
-										 
+										        <div class="control-group hide">
+													<label class="control-label">Trang</label>
+													<div class="controls CheckBoxList">
+													    <asp:CheckBoxList ID="cblPages" runat="server" DataTextField="Cat_Name" DataValueField="Cat_ID">
+                                                    </asp:CheckBoxList>
+													</div>
+												</div>
 										        <div class="control-group">
 													<label class="control-label">Banner name</label>
 													<div class="controls">

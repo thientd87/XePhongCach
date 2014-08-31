@@ -13,15 +13,6 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.Advertisment {
     public partial class AddBanner {
         
         /// <summary>
-        /// cblPages control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList cblPages;
-        
-        /// <summary>
         /// ddlPos control.
         /// </summary>
         /// <remarks>
@@ -47,6 +38,15 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.Advertisment {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox adv_isRotate;
+        
+        /// <summary>
+        /// cblPages control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList cblPages;
         
         /// <summary>
         /// adv_name control.

@@ -86,8 +86,8 @@ namespace XPC.Web.Pages
                         rptListVideo.DataSource = objVideoTongHop;
                         rptListVideo.DataBind();
                     }
-                    //Paging1.TotalPage = GVietNamHelper.GetDanhSachTin_Count(_catID, _pageSize);
-                    //Paging1.DoPagging(_pageIndex);
+                    Pagging.TotalPage = XpcHelper.GetDanhSachTinCount(_catID);
+                    Pagging.DoPagging(_pageIndex);
                 }
 
             }
