@@ -361,7 +361,7 @@ namespace BO
                             tbl.Rows[i]["PublishDate"] = Convert.ToDateTime(tbl.Rows[i]["News_PublishDate"]).ToString("dd/MM/yyyy | HH:mm");
                         }
                         tbl.AcceptChanges();
-                        Utility.SaveToCacheDependency(TableName.DATABASE_NAME, TableName.NEWSPUBLISHED, CacheName, tbl);
+                      //  Utility.SaveToCacheDependency(TableName.DATABASE_NAME, TableName.NEWSPUBLISHED, CacheName, tbl);
                     }
                 }
             }

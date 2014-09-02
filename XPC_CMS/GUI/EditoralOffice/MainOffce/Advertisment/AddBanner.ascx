@@ -68,19 +68,18 @@
 												</div>
 												<div class="control-group">
 													 <div class="control-group">
-													<label class="control-label">Avatar</label>
+													<label class="control-label">Image</label>
 													<div class="controls">
-														<input ID="txtSelectedFile" runat="server" class="m-wrap medium"></input>&nbsp;
-                                                        <img src="/images/icons/folder.gif" onclick="chooseFile('avatar', '<%=txtSelectedFile.ClientID %>')" style="cursor: pointer; padding: 0px 3px" />
+														<input ID="txtSelectedFile" runat="server" class="m-wrap large"></input>&nbsp;
+                                                        <img src="/images/icons/folder.gif"onclick="openInfo('/FileManager/index.html?field_name=<%=txtSelectedFile.ClientID %>',900,700)" style="cursor: pointer; padding: 0px 3px" />
                                                         <%--<img src="/images/img_preview.png" class="tooltips" id="imgPreview" style="cursor: pointer;" data-original-title="Image preview" />--%>
 													</div>
 												</div>
 												</div>
                                                 <div class="control-group">
-													<label class="control-label">Ảnh nhỏ</label>
+													<label class="control-label">Link</label>
                                                     <div class="controls">
-                                                        <input ID="txtIcon" runat="server" class="m-wrap medium"></input>&nbsp;
-                                                        <img src="/images/icons/folder.gif" onclick="chooseFile('icon', '<%=txtIcon.ClientID %>')" style="cursor: pointer; padding: 0px 3px" />
+                                                        <input ID="txtIcon" runat="server" class="m-wrap large"></input>
 													</div>
                                                  </div>
 												<div class="control-group">

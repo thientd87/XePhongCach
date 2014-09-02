@@ -10,8 +10,8 @@ function showImage(index) {
                 $(currentImage).css('z-index', 2);
                 clearTimeout(myTimer);
                 $(currentImage).fadeOut(250, function () {
-                    myTimer = setTimeout("showNext()", 3000);
-                    $(this).css({ 'display': 'none', 'z-index': 1 })
+                    myTimer = setTimeout("showNext()", 5000);
+                    $(this).css({ 'display': 'none', 'z-index': 1 });
                 });
             }
         }
@@ -32,7 +32,7 @@ function showNext() {
 var myTimer;
 
 $(document).ready(function () {
-    myTimer = setTimeout("showNext()", 3000);
+    myTimer = setTimeout("showNext()", 5000);
     showNext(); //loads first image
     $('#thumbs li').bind('mouseenter', function (e) {
         var count = $(this).attr('rel');
