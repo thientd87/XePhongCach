@@ -80,7 +80,7 @@ namespace XPC.Web.Pages
                         rptData.DataBind();
                     }
 
-                    DataTable objVideoTongHop = XpcHelper.displayGetDanhSachTin(_catID, 1, 18, 120);
+                    DataTable objVideoTongHop = XpcHelper.displayGetDanhSachTin(_catID, _pageIndex, _pageSize, 120);
                     if (objVideoTongHop != null && objVideoTongHop.Rows.Count > 0)
                     {
                         rptListVideo.DataSource = objVideoTongHop;

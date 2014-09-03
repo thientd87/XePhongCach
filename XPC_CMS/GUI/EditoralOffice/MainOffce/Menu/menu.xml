@@ -30,6 +30,29 @@
         <path>~/GUI/EditoralOffice/MainOffce/editnews/editnews3.ascx</path>
       </row>
       <row>
+				<Permission_ID>19</Permission_ID>
+				<MenuName>Danh sách bài nhận duyệt</MenuName>
+				<Cpmode>approvinglist</Cpmode>
+				<IsCount>false</IsCount>
+				<path>~/GUI/EditoralOffice/MainOffce/Newslist/Newslist2.ascx</path>
+				<ShortCutKey>Ctrl+Shift+A</ShortCutKey>
+			</row>
+			<row>
+				<Permission_ID>19</Permission_ID>
+				<MenuName>Danh sách bài chờ duyệt</MenuName>
+				<Cpmode>approvalwaitlist</Cpmode>
+				<IsCount>false</IsCount>
+				<path>~/GUI/EditoralOffice/MainOffce/Newslist/Newslist2.ascx</path>
+				<ShortCutKey>Ctrl+Shift+D</ShortCutKey>
+			</row>
+      	<row>
+				<Permission_ID>17</Permission_ID>
+				<MenuName>Danh sách bài đã gửi chờ duyệt</MenuName>
+				<Cpmode>sendapprovallist</Cpmode>
+				<IsCount>false</IsCount>
+				<path>~/GUI/EditoralOffice/MainOffce/Newslist/Newslist2.ascx</path>
+			</row>
+      <row>
         <Permission_ID>20</Permission_ID>
         <MenuName>Danh sách bài đã xuất bản</MenuName>
         <Cpmode>publishedlist</Cpmode>

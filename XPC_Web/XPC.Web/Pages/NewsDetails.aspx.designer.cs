@@ -31,6 +31,15 @@ namespace XPC.Web.Pages {
         protected global::System.Web.UI.WebControls.Literal ltrPublishDate;
         
         /// <summary>
+        /// imgBigImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgBigImage;
+        
+        /// <summary>
         /// ltrSapo control.
         /// </summary>
         /// <remarks>
@@ -47,6 +56,42 @@ namespace XPC.Web.Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal ltrContent;
+        
+        /// <summary>
+        /// divTags control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divTags;
+        
+        /// <summary>
+        /// ltrTags control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltrTags;
+        
+        /// <summary>
+        /// divTinMoiCapNhat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divTinMoiCapNhat;
+        
+        /// <summary>
+        /// rptTinMoiCapNhat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptTinMoiCapNhat;
         
         /// <summary>
         /// rptTinKhac control.
@@ -83,5 +128,14 @@ namespace XPC.Web.Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::XPC.Web.GUI.ListTinDocNhieu ListTinDocNhieu;
+        
+        /// <summary>
+        /// HomeThongTinDoanhNghiep control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::XPC.Web.GUI.HomeThongTinDoanhNghiep HomeThongTinDoanhNghiep;
     }
 }

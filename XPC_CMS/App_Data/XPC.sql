@@ -402,3 +402,49 @@ begin
 select Top(@Top) t1.*,t2.Name from [MediaObject] t1 
 inner join [Gallery] t2 on t1.[GalleryID]=t2.[ID] where t1.GalleryID=@GalleryId order by t1.Object_Type,t1.STT
 end
+
+Go
+
+Create PROCEDURE [dbo].[Web_Get_TinMoiCapNhat] --33,10,2009090509023663
+	-- Add the parameters for the stored procedure here
+	@Cat_ID int,
+	@Top int,
+	@News_Id bigint
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+	Declare @NewsPublishDate datetime
+	set @NewsPublishDate = (select News_PublishDate from NewsPublished Where News_Id = @News_Id)
+    SELECT TOP (@Top) 
+		News_ID,C.Cat_ID,News_Title,News_Subtitle,News_Image,News_ImageNote,C.Cat_ParentID,
+		News_InitContent,News_PublishDate
+	FROM	NewsPublished N Inner join Category C on N.Cat_Id = C.Cat_Id 
+	WHERE (C.Cat_ID = @Cat_ID OR C.Cat_ParentID = @Cat_ID)	
+	AND News_Status = 3 AND News_ID <> @News_Id
+	AND News_PublishDate <= GetDate()
+	And News_PublishDate >= @NewsPublishDate
+	ORDER BY News_PublishDate DESC	
+END
+
+
+GO
+
+ALTER procedure [dbo].[Web_GetDetail] --20110825105730357
+(
+	@News_Id bigint
+)
+as
+begin
+-- Bai noi bat
+Declare @SQL nvarchar(2000)
+Declare @Relation nvarchar(200)
+Set @Relation = (select Top 1 News_Relation From NewsPublished Where News_Id = @News_Id)
+Set @Relation = replace(@Relation,',,',',0,')
+Set @SQL = 'select News_ID, News_Title,c.Cat_Name, News_SubTitle, News_PublishDate, News_Image,News_ImageNote,Extension3,Extension4,News_Source, c.Cat_Id, c.Cat_ParentId,Icon from category c inner join NewsPublished N on c.cat_id = n.cat_id where News_Id In (' + @Relation + ') and n.News_Publishdate <=getdate()'
+select Top 1 News_ID, n.News_Title,c.Cat_Name, News_SubTitle, News_PublishDate, News_InitContent, News_Image,News_ImageNote,Extension4,Extension3,News_Source, c.Cat_Id, c.Cat_ParentId, News_Content, News_Relation,isComment,Icon from category c inner join NewsPublished N on c.cat_id = n.cat_id
+where News_Id = @News_Id and n.News_Publishdate <=getdate()
+exec(@SQL)
+--SELECT Tags.Tags FROM Tags WHERE NewsID = @News_Id
+end

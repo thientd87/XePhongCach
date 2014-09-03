@@ -276,10 +276,21 @@ namespace DAL
             DataTable table = _db.CreateDataTable(cmd);
             return table;
         }
+
         public DataTable Web_Get_TinKhac(int Cat_ID, int Top, long News_Id)
         {
 
             IDbCommand cmd = _db.CreateCommand("Web_Get_TinKhac", true);
+            _db.AddParameter(cmd, "News_Id", DbType.Int64, News_Id);
+            _db.AddParameter(cmd, "Cat_ID", DbType.Int32, Cat_ID);
+            _db.AddParameter(cmd, "Top", DbType.Int32, Top);
+            DataTable table = _db.CreateDataTable(cmd);
+            return table;
+        }
+        public DataTable Web_Get_TinMoiCapNhat(int Cat_ID, int Top, long News_Id)
+        {
+
+            IDbCommand cmd = _db.CreateCommand("Web_Get_TinMoiCapNhat", true);
             _db.AddParameter(cmd, "News_Id", DbType.Int64, News_Id);
             _db.AddParameter(cmd, "Cat_ID", DbType.Int32, Cat_ID);
             _db.AddParameter(cmd, "Top", DbType.Int32, Top);

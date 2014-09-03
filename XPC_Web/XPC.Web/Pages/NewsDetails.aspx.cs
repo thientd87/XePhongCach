@@ -29,18 +29,41 @@ namespace XPC.Web.Pages
 
                 }
                 DataTable detail = XpcHelper.displayMicrof_Detail(newsID);
-
+                string imgTo;
                 if (detail != null && detail.Rows.Count > 0)
                 {
+                    
                     DataRow row = detail.Rows[0];
-                    ltrSapo.Text = row["News_InitContent"].ToString();
+                    ltrSapo.Text = row["News_InitContent"].ToString().Replace("[xevaphongcach.net]","");
                     ltrTitle.Text = row["News_Title"].ToString();
                     ltrContent.Text = row["News_Content"] != null ? row["News_Content"].ToString() : string.Empty;
-                   // imgTo = row["News_Image"] != null ? row["News_Image"].ToString().StartsWith("http:") ? row["News_Image"].ToString() : Utility.ImagesStorageUrl + "/" + row["News_Image"].ToString() : "";
+                    imgTo = row["News_Image"] != null ? row["News_Image"].ToString().StartsWith("http:") ? row["News_Image"].ToString() : Utility.ImagesStorageUrl + "/" + row["News_Image"].ToString() : "";
                     ltrPublishDate.Text = row["PublishDate"].ToString();
-                    //imgDetail.Src = imgTo;
-                    //img.Visible = row["News_Image"].ToString().Length > 0;
+                    imgBigImage.ImageUrl = imgTo;
+                    imgBigImage.Visible = row["News_Image"].ToString().Length > 0;
 
+                    if (!string.IsNullOrEmpty(row["Icon"].ToString()))
+                    {
+                        string txtTags = string.Empty;
+                        string[] arrayTag = row["Icon"].ToString().Split(',');
+                        if (arrayTag.Length > 0)
+                        {
+                            foreach (string s in arrayTag)
+                            {
+                                txtTags +=
+                                    "<a title=\"" + s + "\" href=\"/tag/" + Utility.UnicodeToKoDauAndGach(s) + ".htm\"><strong>" + s + "</strong></a>, ";
+                            }
+                            ltrTags.Text = txtTags.TrimEnd(' ').TrimEnd(',');
+                        }
+                        else
+                        {
+                            divTags.Visible = false;    
+                        }
+                    }
+                    else
+                    {
+                        divTags.Visible = false;
+                    }
 
 
                     string Seo_Title = row["News_Title"].ToString();
@@ -71,7 +94,17 @@ namespace XPC.Web.Pages
                         rptTinKhac.DataBind();
                     }
 
-
+                    
+                    DataTable dtTinMoiCapNhat = XpcHelper.displayGetTinMoiCapNhat(10, _catID, newsID);
+                    if (dtTinMoiCapNhat != null && dtTinMoiCapNhat.Rows.Count > 0)
+                    {
+                        rptTinMoiCapNhat.DataSource = dtTinMoiCapNhat;
+                        rptTinMoiCapNhat.DataBind();
+                    }
+                    else
+                    {
+                        divTinMoiCapNhat.Visible = false;
+                    }
 
 
                 }
