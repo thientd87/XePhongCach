@@ -47,6 +47,7 @@ $(document).ready(function () {
         
     });
     
+    var mytime = setTimeout('display_ct()', 1000);
 });
 
 function LoadImage(id, src) {
@@ -129,4 +130,18 @@ function require_txt(control, msg) {
         return false;
     }
     return true;
+}
+
+
+function display_ct() {
+   // var strcount;
+    var x = new Date();
+   // var x1 = x.toUTCString();// changing the display to UTC string
+    $(".clock").html(x.toLocaleDateString() + ' | ' + x.toLocaleTimeString());
+   // tt = display_c();
+}
+
+function display_c() {
+    var refresh = 1000; // Refresh rate in milli seconds
+    mytime = setTimeout('display_ct()', refresh);
 }

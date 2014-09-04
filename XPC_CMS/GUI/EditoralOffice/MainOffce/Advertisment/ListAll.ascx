@@ -75,12 +75,12 @@
                          AutoGenerateColumns="False" EnableModelValidation="false"
                 EmptyDataText="Không có bản ghi nào!" AllowPaging="True" PageSize="20" Width="100%">
                 <Columns>
-                    <asp:TemplateField HeaderText="Name" HeaderStyle-Width="400px">
+                    <asp:TemplateField HeaderText="Name" HeaderStyle-Width="250px">
                         <ItemTemplate>
                             <%#HttpUtility.HtmlEncode(Eval("Name").ToString()) %>
                              <asp:HiddenField runat="server" ID="hiddenAdvID" Value='<%# Eval("AdvId") %>'/>
                         </ItemTemplate>
-                        <ItemStyle Width="400px" CssClass="vertical-align-top tieudelist" VerticalAlign="Top" />
+                        <ItemStyle Width="250px" CssClass="vertical-align-top tieudelist" VerticalAlign="Top" />
                         <HeaderStyle Width="50px" CssClass="valign-middle" />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Start date">
@@ -93,7 +93,7 @@
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Preview">
                         <ItemTemplate>
-                            <img src="/<%# Eval("FilePath") %>" height="80px"/>
+                            <img src="<%# Eval("FilePath") %>" height="80px"/>
                         </ItemTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Status">

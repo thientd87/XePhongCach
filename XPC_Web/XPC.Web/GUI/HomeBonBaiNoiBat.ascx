@@ -22,7 +22,7 @@
                                 <ItemTemplate>
                                     <li rel="<%# Container.ItemIndex+1 %>">
                                             <%#Eval("Image") %>
-                                        <h5><%#Eval("News_Title") %></h5>
+                                        <h5><a href="<%#Eval("URL") %>"><%#Eval("News_Title") %></a></h5>
                                     </li>
                                 </ItemTemplate>
                             </asp:Repeater>

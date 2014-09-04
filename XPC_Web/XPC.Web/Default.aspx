@@ -16,8 +16,9 @@
                 <uc1:TinDocNhieu runat="server" id="TinDocNhieu" />
                 <uc1:Adv runat="server" id="Adv" AdvID="8" ClassName="banner2" />
             </div>
+    <div class="clearfix"></div>
             <!--end of #top-news-cate-->
-            <div class="container">
+            <div class="container margin-top15">
                 <uc1:Adv runat="server" id="Adv1" AdvID="9" ClassName="banner3" />
             </div>
             
@@ -53,16 +54,23 @@
             </div>
             <div class="clearfix"></div>
             <div class="container margin-top15">
-                <uc1:HomeNoiBatHorizal runat="server" id="HomeNoiBatHorizal2" CatId="121" Top="3" /> 
-                <uc1:Adv runat="server" id="Adv3" AdvID="11" ClassName="banner5" />
+                <div class="home_left">
+                    <uc1:HomeNoiBatHorizal runat="server" id="HomeNoiBatHorizal2" CatId="121" Top="3" /> 
+                    <div style="height: 15px; width: 100%; float: left;">&nbsp;</div>
+                    <uc1:HomeNoiBatHorizal runat="server" id="HomeNoiBatHorizal3" CatId="122" Top="3" />     
+                </div>
+                <div class="home_right">
+                    <uc1:Adv runat="server" id="Adv3" AdvID="11" ClassName="banner5" />
+                    <div style="height: 15px; width: 100%; float: left;">&nbsp;</div>
+                    <uc1:Adv runat="server" id="Adv4" AdvID="12" ClassName="banner6" />
+                    <div style="height: 15px; width: 100%; float: left;">&nbsp;</div>
+                    <uc1:Adv runat="server" id="Adv5" AdvID="14" ClassName="banner6" />
+                </div>
             </div>
             <div class="clearfix"></div>
-            <div class="container margin-top15">
-                <uc1:HomeNoiBatHorizal runat="server" id="HomeNoiBatHorizal3" CatId="122" Top="3" /> 
-                <uc1:Adv runat="server" id="Adv4" AdvID="12" ClassName="banner6" />
-            </div>
         <div class="clearfix"></div>
             <uc1:HomeThongTinDoanhNghiep runat="server" id="HomeThongTinDoanhNghiep" CatId="138" Top="4" />
             <%--<uc1:HomeThongTinDoanhNghiep runat="server" id="HomeThongTinDoanhNghiep1" CatId="138" Top="4" />--%>
             <div class="clearfix"></div>
 </asp:Content>
+

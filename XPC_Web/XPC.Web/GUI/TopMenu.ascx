@@ -4,7 +4,11 @@
 <!--start of #header-->
             <div class="header">
                 <a href="/" class="logo">Xe và phong cách</a>
-                <uc1:Adv runat="server" ID="Adv" AdvID="7" />
+                <div class="bannerTop">
+                    <uc1:Adv runat="server" ID="Adv" AdvID="7" ClassName="top-left" />
+                    <uc1:Adv runat="server" ID="Adv1" AdvID="13"  ClassName="top-right" />    
+                </div>
+                
                 <%--<a href="#" style="display: block; float: right;"><img src="/images/banner_1.png"></a>--%>
             </div>
             <!--end of #header-->
@@ -27,7 +31,7 @@
             <!--start of #clock-searchbox-->
             <div class="clock-socialbutton-searchbox container">
                 <div class="clock">
-                    Thứ 2, 5/5/2014 | 21:31 
+                   
                 </div>
                 <div class="search-box">
                     <input type="text" class="txtSearch" id="txtSearchBox" onkeypress="return TDTEnterPressSearch(event);" value="Tìm kiếm" onfocus="if(this.value=='Tìm kiếm') this.value='';"
