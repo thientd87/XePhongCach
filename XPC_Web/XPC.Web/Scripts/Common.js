@@ -48,6 +48,68 @@ $(document).ready(function () {
     });
     
     var mytime = setTimeout('display_ct()', 1000);
+    
+
+    var wrapper = $("#wrapper");
+    var hidd = $("#popup img");
+    var hidd_click = $("#click img");
+    var lock = $("#lock");
+    var click = $("#click");
+    var click_1 = $("#click #span");
+    var left = $("#bannerLeft img");
+    var right = $("#bannerRight img");
+    left.click(function () {
+        wrapper.fadeTo(500, 0.5, function () {
+            lock.show(500);
+            //click.hide(); 
+        });
+    });
+    right.click(function () {
+        wrapper.fadeTo(500, 0.5, function () {
+            lock.show(500);
+            //click.hide(); 
+        });
+    });
+    hidd.click(function () {
+        wrapper.fadeTo(500, 1, function () {
+            lock.hide(500);
+            click.show();
+        });
+    });
+    hidd_click.click(function () {
+        click.animate({
+            opacity: 0.25,
+            bottom: "-=200"
+        }, 5000);
+    });
+
+    $("#buttonSubmit").click(function () {
+        fullname = $("input[name='fullname']").val();
+        address = $("input[name='address']").val();
+        email = $("input[name='email']").val();
+        phone = $("input[name='phone']").val();
+        gift = $("select[name='gift']").val();
+        var request = $.ajax({
+            url: "/Services/dangkyquatang.asmx/DangKy",
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            data: '{ fullname: ' + fullname + ', address: ' + address + ', email: ' + email + ', phone: ' + phone + ', gift: ' + gift + ' }'
+        });
+
+        request.success(function (msg) {
+            alert(msg);
+            if (msg == "Đăng ký thành công. Xin cảm ơn") {
+                lock.hide(500);
+                click.show();
+            }
+        });
+        request.error(function (request, status, error) {
+            alert("Request failed: " + request.statusText);
+        });
+
+        return false;
+    });
+
 });
 
 function LoadImage(id, src) {

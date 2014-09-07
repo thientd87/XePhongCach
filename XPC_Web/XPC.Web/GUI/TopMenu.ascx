@@ -15,16 +15,27 @@
             <!--start of #top-menu-->
             <div class="menu top-menu">
                 <ul>
-                    <li id="li0">
+                    <li id="li0" class="menuItem">
                         <a href="/">Trang chủ</a></li>
-                     <asp:Repeater runat="server" ID="rptNewsCat">
+                     <asp:Repeater runat="server" ID="rptNewsCat" OnItemDataBound="rptNewsCat_ItemDataBound">
                         <ItemTemplate>
-                             <li id="li<%#Eval("Cat_ID") %>">
+                             <li id="li<%#Eval("Cat_ID") %>" class="menuItem">
                                 <a href="<%#Eval("Cat_URL") %>"><%#Eval("Cat_Name") %></a>
+                                <asp:Repeater runat="server" ID="rptSubmenu">
+                                    <HeaderTemplate>
+                                        <ul class="submenu">
+                                    </HeaderTemplate>
+                                    <ItemTemplate>
+                                        <li class="subMenuItem"><a href="<%#Eval("Cat_URL") %>"><%#Eval("Cat_Name") %></a></li>
+                                    </ItemTemplate>
+                                    <FooterTemplate>
+                                        </ul>
+                                    </FooterTemplate>
+                                </asp:Repeater>
                             </li>
                         </ItemTemplate>
                     </asp:Repeater>
-                    <li><a href="/">Liên hệ</a></li>
+                    <li class="menuItem"><a href="/">Liên hệ</a></li>
                 </ul>
             </div>
             <!--end of #top-menu-->

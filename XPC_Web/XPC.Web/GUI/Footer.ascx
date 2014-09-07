@@ -16,16 +16,17 @@
         <div id="footer">
             <div class="col1">
                 Liên hệ quảng cáo:  <br/>
-                094.80.81.748 (Ms.Thùy)<br/>
-                Email:  quangcao@Buzzcom.vn<br/>
-                Tel: 04.37322866<br/>
-                Website: www.Buzzcom.vn
+                Hotline: 094.80.81.749 – Phạm Ngọc<br/>
+                Email:  Phamngoc@buzzcom.vn<br/>
+                Hỗ trợ & CSKH:<br/>
+                Tel: 04. 627 673 99<br/>
+                Email: Tapchixevaphongcach@gmail.com
             </div>
             <div class="col2">
-                Giấy phép hoạt động trên Internet số …..<br/>
-                Trụ sở: Số 85, TT Dược Phẩm TW1, Tôn Đức Thắng, Q.Đống Đa, Hà Nội<br/>
-                Điện thoại: 04.373 22866<br/>
-                Email: info@xevaphongcach.vn. Website: www.xevaphongcach.vn  <br/>
+                Kênh thông tin truyền thông Xe&PhongCach phát sóng trên<br/> VTV9 - Đài THVN<br/>
+                Trụ sở tại: Tầng 2, 85A Tôn Đức Thắng, Q. Đống Đa, TP Hà Nội<br/>
+                Tel: 04. 627 673 99      Fax: 04. 627 673 99<br/>
+                Ghi rõ nguồn "Xe&PhongCach" khi phát hành lại thông tin từ cổng thông tin này.<br/>
             </div>
             <div class="col3">
                 <img src="/Images/logoBUzzCom.png"/> <br/>

@@ -13,18 +13,55 @@ namespace BO
             DataTable dtAlbum = new DataTable();
             using (MainDB objDb = new MainDB())
             {
-                dtAlbum = objDb.StoredProcedures.Web_GetLastestGallery();
+                dtAlbum = objDb.StoredProcedures.Web_GetTopLastestGallery(1000);
                 if (dtAlbum != null && dtAlbum.Rows.Count > 0)
                 {
                     if (!dtAlbum.Columns.Contains("Image")) dtAlbum.Columns.Add("Image");
+                    if (!dtAlbum.Columns.Contains("URL")) dtAlbum.Columns.Add("URL");
                     
                     for (int i = 0; i < dtAlbum.Rows.Count; i++)
                     {
-                        DataTable dtAlbumDetail = objDb.StoredProcedures.Web_GetImageByGalleryID(Convert.ToInt32(dtAlbum.Rows[0]["ID"]), 1);
+                        DataTable dtAlbumDetail = objDb.StoredProcedures.Web_GetImageByGalleryID(Convert.ToInt32(dtAlbum.Rows[i]["ID"]), 1);
                         if(dtAlbumDetail!=null && dtAlbumDetail.Rows.Count > 0)
-                            dtAlbum.Rows[i]["Image"] = dtAlbumDetail.Rows[i]["Object_URL"] != null
-                                ? Utility.GetThumbNail(dtAlbumDetail.Rows[i]["Object_Note"].ToString(),
-                                   "/album/" + Utility.UnicodeToKoDauAndGach(dtAlbum.Rows[0]["Name"].ToString()) + "-" + dtAlbum.Rows[0]["ID"] +".htm", dtAlbumDetail.Rows[i]["Object_URL"].ToString(), imgWitdth)
+                            dtAlbum.Rows[i]["Image"] = dtAlbumDetail.Rows[0]["Object_URL"] != null
+                                ? Utility.GetThumbNail(dtAlbumDetail.Rows[0]["Object_Note"].ToString(),
+                                   "/album/" + Utility.UnicodeToKoDauAndGach(dtAlbum.Rows[i]["Name"].ToString()) + "-" + dtAlbum.Rows[i]["ID"] +".htm", dtAlbumDetail.Rows[0]["Object_URL"].ToString(), imgWitdth)
+                                : String.Empty;
+
+                        dtAlbum.Rows[i]["URL"] = "/album/" +
+                                                 Utility.UnicodeToKoDauAndGach(dtAlbum.Rows[i]["Name"].ToString()) + "-" +
+                                                 dtAlbum.Rows[i]["ID"] + ".htm";
+
+                    }
+                    dtAlbum.AcceptChanges();
+                }
+            }
+            return dtAlbum;
+        }
+        public static void DangKyQuaTang(string fullname, string email, string address, string phone, string gift)
+        {
+            using (MainDB objDb = new MainDB())
+            {
+                objDb.StoredProcedures.InsertDangKyQuangTang(fullname, email, address, phone, gift);
+            }
+        }
+        public static DataTable GetTopLastestAlbum(int Top,int imgWitdth)
+        {
+            DataTable dtAlbum = new DataTable();
+            using (MainDB objDb = new MainDB())
+            {
+                dtAlbum = objDb.StoredProcedures.Web_GetTopLastestGallery(Top);
+                if (dtAlbum != null && dtAlbum.Rows.Count > 0)
+                {
+                    if (!dtAlbum.Columns.Contains("Image")) dtAlbum.Columns.Add("Image");
+
+                    for (int i = 0; i < dtAlbum.Rows.Count; i++)
+                    {
+                        DataTable dtAlbumDetail = objDb.StoredProcedures.Web_GetImageByGalleryID(Convert.ToInt32(dtAlbum.Rows[i]["ID"]), 1);
+                        if (dtAlbumDetail != null && dtAlbumDetail.Rows.Count > 0)
+                            dtAlbum.Rows[i]["Image"] = dtAlbumDetail.Rows[0]["Object_URL"] != null
+                                ? Utility.GetThumbNail(dtAlbumDetail.Rows[0]["Object_Note"].ToString(),
+                                   "/album/" + Utility.UnicodeToKoDauAndGach(dtAlbum.Rows[i]["Name"].ToString()) + "-" + dtAlbum.Rows[i]["ID"] + ".htm", dtAlbumDetail.Rows[0]["Object_URL"].ToString(), imgWitdth)
                                 : String.Empty;
 
                     }
@@ -33,8 +70,6 @@ namespace BO
             }
             return dtAlbum;
         }
-
-
         public static DataTable GetAlbumDetail(int AlbumID,int imgWidth)
         {
             DataTable dtAlbumDetail = new DataTable();

@@ -3,8 +3,8 @@
                 <h2>
                     <asp:Literal runat="server" ID="ltrCatName"></asp:Literal>
                     <span>
-                        <button id="left">&nbsp;</button>
-                        <button id="right">&nbsp;</button>
+                        <button id="leftVideo">&nbsp;</button>
+                        <button id="rightVideo">&nbsp;</button>
                     </span>
                 </h2>
                 <div id="list-video">
@@ -27,8 +27,8 @@
             <script>
                 $(function () {
                     var over = $("#list-video-overflow");
-                    var left = $("#left");
-                    var right = $("#right");
+                    var left = $("#leftVideo");
+                    var right = $("#rightVideo");
                     var count_over = 0;
                     var total_video = <%=_TotalVideo%>;
                     left.click(function () {
@@ -49,19 +49,6 @@
                         }
                         return false;
                     });
-                    /*window.setInterval(function(){
-                        if(count_over<5){
-                          over.animate({
-                            marginLeft: "-=185px"
-                          });
-                          count_over++;
-                        }else{
-                           over.animate({
-                            marginLeft: "+=925px"
-                          },"slow");
-                          count_over=0;
-                        }
-                    }, 5000);*/
                 });
 
                 

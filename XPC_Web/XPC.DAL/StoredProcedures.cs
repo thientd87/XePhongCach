@@ -178,6 +178,14 @@ namespace DAL
             return table;
         }
 
+        public DataTable Web_GetTopLastestGallery(int Top)
+        {
+            IDbCommand cmd = _db.CreateCommand("Web_GetTopLastestGallery", true);
+            _db.AddParameter(cmd, "Top", DbType.Int32, Top);
+            DataTable table = _db.CreateDataTable(cmd);
+            return table;
+        }
+
         public DataTable Web_GetImageByGalleryID(int GalleryId, int Top)
         {
             IDbCommand cmd = _db.CreateCommand("Web_GetImageByGalleryID", true);
@@ -218,6 +226,18 @@ namespace DAL
             DataTable table = _db.CreateDataTable(cmd);
             return table;
         }
+        public DataTable InsertDangKyQuangTang(string fullname, string email, string address, string phone, string gift)
+        {
+            IDbCommand cmd = _db.CreateCommand("InsertDangKyQuangTang", true);
+            _db.AddParameter(cmd, "fullname", DbType.String, fullname);
+            _db.AddParameter(cmd, "email", DbType.String, email);
+            _db.AddParameter(cmd, "address", DbType.String, address);
+            _db.AddParameter(cmd, "phone", DbType.String, phone);
+            _db.AddParameter(cmd, "gift", DbType.String, gift);
+            DataTable table = _db.CreateDataTable(cmd);
+            return table;
+        }
+        
         public DataTable Web_GetCategoryByParent(int parentID, bool Cat_isColumn, int Edition_type,int Channel_ID)
         {
             IDbCommand cmd = _db.CreateCommand("Web_GetCategoryByParent", true);

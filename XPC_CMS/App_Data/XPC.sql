@@ -448,3 +448,27 @@ where News_Id = @News_Id and n.News_Publishdate <=getdate()
 exec(@SQL)
 --SELECT Tags.Tags FROM Tags WHERE NewsID = @News_Id
 end
+go
+
+Create  proc InsertDangKyQuangTang
+			@fullname nvarchar(100)
+           ,@email varchar(100)
+           ,@address nvarchar(255)
+           ,@phone varchar(45)
+           ,@gift nvarchar(100)
+as
+INSERT INTO [dangky]
+           ([fullname]
+           ,[email]
+           ,[address]
+           ,[phone]
+           ,[gift]
+           )
+     VALUES
+           (@fullname
+           ,@email
+           ,@address
+           ,@phone
+           ,@gift
+          )
+GO

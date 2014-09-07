@@ -1,6 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="XPC.Web.Site" %>
 <%@ Register Src="~/GUI/TopMenu.ascx" TagPrefix="uc1" TagName="TopMenu" %>
 <%@ Register Src="~/GUI/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
+<%@ Register Src="~/GUI/Adv.ascx" TagPrefix="uc1" TagName="Adv" %>
+
 
 
 
@@ -24,6 +26,18 @@
     <script src="/Scripts/jquery-1.8.2.min.js"></script>
     <script src="/Scripts/jquery.ellipsis.js"></script>
     <script src="/Scripts/Common.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-54538459-1', 'auto');
+        ga('send', 'pageview');
+
+</script>
 </head>
 <body>
     <div id="fb-root"></div>
@@ -34,17 +48,38 @@
         js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=237127563023836";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-    
+    <div id="lock">
+        <div id="popup">
+            <img src="/public/popup/Close.png" title="Ẩn">
+            <div id="form">
+                <form action="" method="POST">
+                    <input type="text" name="fullname">
+                    <input type="text" name="address">
+                    <input type="email" name="email">
+                    <input type="tel" name="phone">
+                    <select name="gift">
+                        <option value="Áo phông, móc chìa khóa">Áo phông, móc chìa khóa</option>
+                        <option value="Áo mưa, móc chìa khóa">Áo mưa, móc chìa khóa</option>
+                        <option value="Tạp chí, móc chìa khóa">Tạp chí, móc chìa khóa</option>
+                        <option value="Mũ, móc chìa khóa">Mũ, móc chìa khóa</option>
+                    </select>
+                    <button name="submit" id="buttonSubmit"></button>
+                </form>
+            </div>
+        </div>
+    </div>
     <form id="form1" runat="server">
         <div id="wrapperBanner">
 	        <div id="bannerLeft">
-	          <img src="http://xevaphongcach.net/public/popup/banner_left.gif" title="">
+                <uc1:Adv runat="server" ID="Adv" AdvID="15" />
+                <img src="http://xevaphongcach.net/public/popup/banner_left.gif" title="">
 	        </div>
 	        <div id="bannerRight">
-	          <img src="http://xevaphongcach.net/public/popup/banner_right.gif" title="">
+	          <uc1:Adv runat="server" ID="Adv1" AdvID="16" />
+                <img src="http://xevaphongcach.net/public/popup/banner_left.gif" title="">
 	        </div>
             </div>
-        <div class="wrapper">
+        <div id="wrapper" class="wrapper">
             <uc1:TopMenu runat="server" id="TopMenu" />
              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>

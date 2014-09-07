@@ -46,16 +46,15 @@ h1,h2,h3,h4{ margin: 0; padding: 0}
     background: linear-gradient(to bottom,  rgba(252,255,244,1) 0%,rgba(209,209,209,1) 0%,rgba(159,159,159,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#9f9f9f',GradientType=0 ); /* IE6-8 */
 }
-.menu ul li {
+.menu ul li.menuItem {
     float:left;
-    overflow: hidden;
-    height: 100%;
-    background: url('/images/line_ver_menu.gif') no-repeat top right;
+    height: 37px;
+    background: url('/images/line_ver_menu.gif') no-repeat top right;position: relative;
 }
-.menu ul li:last-child {
+.menu ul li.menuItem:last-child {
     background: none;
 }
-.menu li a{
+.menu li.menuItem > a{
     padding: 14px 20px 13px 22px;
     display: block;
     font-size: 13px;
@@ -63,12 +62,24 @@ h1,h2,h3,h4{ margin: 0; padding: 0}
     text-transform: uppercase;
     font-weight: bold;
 }
-.menu li.active a{
+.menu li.active,.menu  li.menuItem:hover{border-bottom:solid 3px #d20000}
+
+.menu li.active > a{
     color:#d20000;
 }
-.menu li a:hover{
+.menu li.menuItem a:hover{
     color:#d20000;
 }
+.submenu {
+    position: absolute;width: 150px;z-index: 1000;background: #3b393c; top: 40px
+}
+.subMenuItem {
+    width: 140px;padding: 5px;border-top: 1px solid #5e595a;left: -1px; display:none
+}
+.subMenuItem a {
+    display: inline;color: #fff;line-height: 30px;text-transform: uppercase;font-weight: bold;font-size: 11px;
+}
+.menu  li.menuItem:hover .subMenuItem{display:block}
 /******menu-bottom***********/
 .bottom-menu {
     border-bottom: solid 3px #979797; margin: 0 auto
@@ -291,6 +302,7 @@ ul#thumbs img{
     margin:0px 0px 10px 10px;
     background-color: #fff;
     position: relative;
+    overflow: hidden
 }
 #top-video #list-video{
     float: left;
@@ -307,8 +319,8 @@ ul#thumbs img{
     height: 45px;
 }
  #list-video{width: 934px;background: #f1f1f1; padding: 10px 0}
- #list-video-overflow{width:1850px;}
- #left, #right{
+ #list-video-overflow,#list-ttdn-overflow{width:185000px;}
+ #leftVideo, #rightVideo, #leftTTDN, #rightTTDN{
           border-radius: 50%;
 	  background-color: #e6e6e6;
 	  background-image: url(/images/pre_next_video.png);
@@ -321,10 +333,10 @@ ul#thumbs img{
 	  line-height: 20px;
 	  margin-top: -5px;
         }
-        #left{
+        #leftVideo,#leftTTDN{
           background-position: -1px -2px;
         }
-        #right{
+        #rightVideo,#rightTTDN{
           background-position: -33px -2px;
         }
 
@@ -476,9 +488,9 @@ font-weight: bold;
 .cate_vertical_home .news .title-news{padding: 0}
 .cate_vertical_thamdo{
     width:245px; 
-    height: 192px; 
+    height: 185px; 
     background-color: #f1f1f1; 
-    margin-bottom: 15px;         
+    margin-bottom: 0px;         
     float: right;
  }
  .cate_vertical_thamdo .list-news{
@@ -890,9 +902,9 @@ opacity: 0.7;
 }
 
 .list-doanh-nghiep {
-    background: #f1f1f1;padding: 10px;
+    background: #f1f1f1;padding: 10px; overflow: hidden
 }
-.doanh-nghiep{ width: 219px;float: left; margin-right: 10px}
+.doanh-nghiep{ width: 222px;float: left; margin-right: 10px}
 
 
 .doanh-nghiep img{ float: left; margin-right: 5px}
@@ -903,31 +915,99 @@ opacity: 0.7;
 .banner4{float: right;}
 
 .banner5,.banner6,.fbLikebox{float: right}
-.fbLikebox{ width: 245px; height: 145px}
+.fbLikebox{ width: 245px; height: 165px}
 
-
-            #wrapperBanner{
-                min-width:1288px;
-                width:100%;
-                position:fixed;
-                z-index:1;
-            }
-            #bannerLeft{
-                position:absolute;
-                left:0;
-                top:100px;
-                width:120px;
-                height:430px;
-                cursor: pointer;
-            }
-            #bannerRight{
-                position:absolute;
-                right:0;
-                top:100px;
-                width:120px;
-                height:430px;
-                cursor: pointer;
-            }
+#lock{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index:9998;
+    display: none;
+}
+#popup{
+    background: url("/public/popup/Form_Dangky.jpg");
+    width:701px;
+    height:443px;
+    margin:100px auto;
+    z-index:9999;
+    position: relative;
+}
+#popup img:hover{
+    cursor: pointer;
+}
+#popup #form{
+    position: absolute;
+    top: 160px;
+    left: 270px;
+    width:300px;
+    height: 100px;
+}
+#popup #form input{
+    width:100%;
+    height:20px;
+    padding:5px;
+    border:none;
+    margin:5px;
+}
+#popup #form select{
+    width:103%;
+    padding:0 5px;
+    height:30px;
+    border:none;
+    margin:5px;
+}
+#popup button#buttonSubmit{
+    background-color: transparent;
+    background-image: url("/public/popup/Dangky.png");                
+    width:227px;
+    height: 50px;
+    border:none;
+    cursor: pointer;
+}
+#click{
+    position: fixed;
+    bottom:0px;
+    right:0px;
+    background-image: url("/public/popup/click.png");
+    width:471px;
+    height: 144px;
+    z-index:9997;
+    cursor: pointer;
+}
+#click img:hover{
+    cursor: pointer;
+}
+#click #span{
+    height: 100%;
+    width:90%;
+    float:right;
+}
+#wrapper{
+    position:relative;
+    z-index:2;
+}
+#wrapperBanner{
+    min-width:1288px;
+    width:100%;
+    position:fixed;
+    z-index:1;
+}
+#bannerLeft{
+    position:absolute;
+    left:0;
+    top:100px;
+    width:120px;
+    height:430px;
+    cursor: pointer;
+}
+#bannerRight{
+    position:absolute;
+    right:0;
+    top:100px;
+    width:120px;
+    height:430px;
+    cursor: pointer;
+}
 
             .banner8 {
                 padding-bottom: 10px; float: right
@@ -993,3 +1073,4 @@ margin: 0 0 10px;
 padding: 10px;
 width: 578px;
 }
+.list-anh.album{ width: 187px;overflow: hidden; height: 155px}

@@ -23,7 +23,7 @@
             </div>
             
             <div class="clearfix"></div>
-            <uc1:HomeVideo runat="server" id="HomeVideo" CatId="117" Top="10" />
+            <uc1:HomeVideo runat="server" id="HomeVideo" CatId="117" Top="100" />
             <div class="clearfix"></div>
             <div class="container margin-top15">
                 <uc1:HomeNoiBatHorizal runat="server" id="HomeNoiBatHorizal" CatId="116" Top="3" />    
@@ -43,7 +43,7 @@
                 <!--end of #top-nhanvat-->        
                 <uc1:HomeVote runat="server" id="HomeVote" />
                 <div class="fbLikebox">
-                <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FXe-V%25C3%25A0-Phong-C%25C3%25A1ch%2F1436551616572633&amp;width=245&amp;height=145&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:245px; height:145px;" allowTransparency="true"></iframe>    
+                <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FXe-V%25C3%25A0-Phong-C%25C3%25A1ch%2F1436551616572633&amp;width=245&amp;height=200&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:245px; height:165px;" allowTransparency="true"></iframe>    
                 </div>
                 
                 <script type="text/javascript">
@@ -69,7 +69,7 @@
             </div>
             <div class="clearfix"></div>
         <div class="clearfix"></div>
-            <uc1:HomeThongTinDoanhNghiep runat="server" id="HomeThongTinDoanhNghiep" CatId="138" Top="4" />
+            <uc1:HomeThongTinDoanhNghiep runat="server" id="HomeThongTinDoanhNghiep" CatId="138" Top="100" />
             <%--<uc1:HomeThongTinDoanhNghiep runat="server" id="HomeThongTinDoanhNghiep1" CatId="138" Top="4" />--%>
             <div class="clearfix"></div>
 </asp:Content>

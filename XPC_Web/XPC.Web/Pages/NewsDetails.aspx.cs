@@ -39,8 +39,8 @@ namespace XPC.Web.Pages
                     ltrContent.Text = row["News_Content"] != null ? row["News_Content"].ToString() : string.Empty;
                     imgTo = row["News_Image"] != null ? row["News_Image"].ToString().StartsWith("http:") ? row["News_Image"].ToString() : Utility.ImagesStorageUrl + "/" + row["News_Image"].ToString() : "";
                     ltrPublishDate.Text = row["PublishDate"].ToString();
-                    imgBigImage.ImageUrl = imgTo;
-                    imgBigImage.Visible = row["News_Image"].ToString().Length > 0;
+                    //imgBigImage.ImageUrl = imgTo;
+                    //imgBigImage.Visible = row["News_Image"].ToString().Length > 0;
 
                     if (!string.IsNullOrEmpty(row["Icon"].ToString()))
                     {

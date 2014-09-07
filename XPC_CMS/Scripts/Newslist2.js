@@ -128,7 +128,7 @@ function checkMultiAction(action) {
     }
 
     hdNewsID.value = newsIDs.join(',');
-    hdArgs.Value = newsIDs.join(',');
+    hdArgs.value = newsIDs.join(',');
 
     switch (action) {
         case 'send': return confirm('Bạn có muốn gửi tin đã chọn hay không?'); break;

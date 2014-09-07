@@ -24,5 +24,21 @@ namespace XPC.Web.GUI
                 CatID = Lib.QueryString.CategoryID;
             ltrActiveMenu.Text = "<script>ActiveMenu('li" + CatID + "');</script>";
         }
+
+        protected void rptNewsCat_ItemDataBound(object sender, RepeaterItemEventArgs e)
+        {
+            Repeater rptSubmenu = (Repeater)e.Item.FindControl("rptSubmenu");
+            if (rptSubmenu != null)
+            {
+                DataTable subMenu =
+                    XpcHelper.GetCategoryByParentV2(Convert.ToInt32(DataBinder.Eval(e.Item.DataItem, "Cat_ID")), false,
+                        1, 1);
+                if (subMenu != null && subMenu.Rows.Count > 0)
+                {
+                    rptSubmenu.DataSource = subMenu;
+                    rptSubmenu.DataBind();
+                }
+            }
+        }
     }
 }
