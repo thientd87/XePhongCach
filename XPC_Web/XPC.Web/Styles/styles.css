@@ -1074,3 +1074,34 @@ padding: 10px;
 width: 578px;
 }
 .list-anh.album{ width: 187px;overflow: hidden; height: 155px}
+.top3-other-news {
+    margin-bottom: 25px;
+}
+
+.top3-other-news ul {
+    padding: 0;
+    margin: 0;
+}
+
+.top3-other-news ul li {
+    list-style: none !important;
+    float: left;
+    margin-right: 13px;
+    width: 200px;
+    height: 60px;
+    overflow: hidden
+}
+
+.top3-other-news li a {
+    color: #555;
+    font: 12px/14px arial;
+}
+
+.top3-other-news li a:hover {
+    color: #C00;
+}
+
+.top3-other-news li img {
+    float: left;
+    margin-right: 8px;
+}

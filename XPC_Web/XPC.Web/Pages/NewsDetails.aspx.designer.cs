@@ -76,22 +76,13 @@ namespace XPC.Web.Pages {
         protected global::System.Web.UI.WebControls.Literal ltrTags;
         
         /// <summary>
-        /// divTinMoiCapNhat control.
+        /// rpt3TinKhac control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divTinMoiCapNhat;
-        
-        /// <summary>
-        /// rptTinMoiCapNhat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptTinMoiCapNhat;
+        protected global::System.Web.UI.WebControls.Repeater rpt3TinKhac;
         
         /// <summary>
         /// rptTinKhac control.

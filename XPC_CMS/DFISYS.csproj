@@ -626,6 +626,13 @@
     <Compile Include="GUI\EditoralOffice\MainOffce\Product_Category\ListCategories.ascx.designer.cs">
       <DependentUpon>ListCategories.ascx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\EditoralOffice\MainOffce\Product_Category\ListCategory2.ascx.cs">
+      <DependentUpon>ListCategory2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\EditoralOffice\MainOffce\Product_Category\ListCategory2.ascx.designer.cs">
+      <DependentUpon>ListCategory2.ascx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\EditoralOffice\MainOffce\QuanLyBaiNoiBat\quanlytopnew2.ascx.cs">
       <DependentUpon>quanlytopnew2.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1293,6 +1300,7 @@
     <Content Include="GUI\EditoralOffice\MainOffce\ProductManager\LayoutListProduct.ascx" />
     <Content Include="GUI\EditoralOffice\MainOffce\ProductManager\ListProduct.ascx" />
     <Content Include="GUI\EditoralOffice\MainOffce\Product_Category\ListCategories.ascx" />
+    <Content Include="GUI\EditoralOffice\MainOffce\Product_Category\ListCategory2.ascx" />
     <Content Include="GUI\EditoralOffice\MainOffce\QuanLyBaiNoiBat\quanlytopnew2.ascx" />
     <Content Include="Ajax\DifferentOfContent.aspx" />
     <Content Include="DLLs\AdvSearching.dll" />

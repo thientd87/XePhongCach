@@ -834,7 +834,7 @@ namespace BO
 
             return tblTop;
         }
-        public static DataTable displayGetTinKhac(int Top, int Cat_ID, long News_Id)
+        public static DataTable displayGetTinKhac(int Top, int Cat_ID, long News_Id,int imgWidth)
         {
             string CacheName = "stGet_TinKhac" + Top + Cat_ID + News_Id;
             DataTable tbl = Utility.GetFromCache<DataTable>(CacheName);
@@ -854,7 +854,7 @@ namespace BO
                     {
 
                         tbl.Rows[i]["URL"] = Utility.NewsDetailLinkV2(tbl.Rows[i]["News_Title"].ToString(), tbl.Rows[i]["Cat_ID"].ToString(), tbl.Rows[i]["Cat_ParentID"].ToString(), tbl.Rows[i]["News_ID"].ToString(),"1");
-                        // tbl.Rows[i]["Image"] = tbl.Rows[i]["News_Image"] != null ? Utility.GetThumbNail(tbl.Rows[i]["News_Title"].ToString(), tbl.Rows[i]["URL"].ToString(), tbl.Rows[i]["News_Image"].ToString(), imgWidth) : String.Empty;
+                        tbl.Rows[i]["Image"] = tbl.Rows[i]["News_Image"] != null ? Utility.GetThumbNail(tbl.Rows[i]["News_Title"].ToString(), tbl.Rows[i]["URL"].ToString(), tbl.Rows[i]["News_Image"].ToString(), imgWidth) : String.Empty;
                         tbl.Rows[i]["PublishDate"] = Convert.ToDateTime(tbl.Rows[i]["News_PublishDate"]).ToString("dd/MM/yyyy | HH:mm");
                     }
                     tbl.AcceptChanges();

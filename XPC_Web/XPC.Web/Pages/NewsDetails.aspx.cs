@@ -87,24 +87,37 @@ namespace XPC.Web.Pages
                     Utility.SetFaceBookSEO(this.Page, Seo_Title, Seo_Des, "", System.Configuration.ConfigurationManager.AppSettings["WebDomain"] + row["NewsURL"].ToString());
 
 
-                    DataTable dtTinKhac = XpcHelper.displayGetTinKhac(10, _catID, newsID);
+                    DataTable dtTinKhac = XpcHelper.displayGetTinKhac(10, _catID, newsID,100);
                     if (dtTinKhac != null && dtTinKhac.Rows.Count > 0)
                     {
-                        rptTinKhac.DataSource = dtTinKhac;
+                        DataTable dt1 = dtTinKhac.Clone(), dt2 = dtTinKhac.Clone();
+                        for (int i = 0; i < dtTinKhac.Rows.Count; i++)
+                        {
+                            if(i<=2)
+                                dt1.ImportRow(dtTinKhac.Rows[i]);
+                            else
+                                dt2.ImportRow(dtTinKhac.Rows[i]);
+                        }
+                        dt1.AcceptChanges();dt2.AcceptChanges();
+
+
+                        rpt3TinKhac.DataSource = dt1;
+                        rpt3TinKhac.DataBind();
+                        rptTinKhac.DataSource = dt2;
                         rptTinKhac.DataBind();
                     }
 
                     
-                    DataTable dtTinMoiCapNhat = XpcHelper.displayGetTinMoiCapNhat(10, _catID, newsID);
-                    if (dtTinMoiCapNhat != null && dtTinMoiCapNhat.Rows.Count > 0)
-                    {
-                        rptTinMoiCapNhat.DataSource = dtTinMoiCapNhat;
-                        rptTinMoiCapNhat.DataBind();
-                    }
-                    else
-                    {
-                        divTinMoiCapNhat.Visible = false;
-                    }
+                    //DataTable dtTinMoiCapNhat = XpcHelper.displayGetTinMoiCapNhat(10, _catID, newsID);
+                    //if (dtTinMoiCapNhat != null && dtTinMoiCapNhat.Rows.Count > 0)
+                    //{
+                    //    rptTinMoiCapNhat.DataSource = dtTinMoiCapNhat;
+                    //    rptTinMoiCapNhat.DataBind();
+                    //}
+                    //else
+                    //{
+                    //    divTinMoiCapNhat.Visible = false;
+                    //}
 
 
                 }

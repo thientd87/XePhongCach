@@ -89,24 +89,22 @@ $(document).ready(function () {
         email = $("input[name='email']").val();
         phone = $("input[name='phone']").val();
         gift = $("select[name='gift']").val();
-        var request = $.ajax({
+        $.ajax({
             url: "/Services/dangkyquatang.asmx/DangKy",
             type: "POST",
-            contentType: "application/json; charset=utf-8",
-            data: '{ fullname: ' + fullname + ', address: ' + address + ', email: ' + email + ', phone: ' + phone + ', gift: ' + gift + ' }'
-        });
-
-        request.success(function (msg) {
-            alert(msg);
-            if (msg == "Đăng ký thành công. Xin cảm ơn") {
-                lock.hide(500);
-                click.show();
+            contentType: 'application/json; charset=UTF-8',
+            dataType: 'json',
+            data: '{ "fullname":"' + fullname + '", "address":"' + address + '", "email":"' + email + '", "phone":"' + phone + '","gift":"' + gift + '" }',
+            success: function (msg) {
+                if (msg.d == "Đăng ký thành công. Xin cảm ơn") {
+                    lock.hide(500);
+                    click.show();
+                }
+            },
+            error: function (msg) {
+                alert("Request failed: " + msg);
             }
         });
-        request.error(function (request, status, error) {
-            alert("Request failed: " + request.statusText);
-        });
-
         return false;
     });
 

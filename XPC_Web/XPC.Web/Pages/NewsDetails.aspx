@@ -55,7 +55,7 @@
                              <fb:comments href="<% = Request.Url.DnsSafeHost+ Request.RawUrl%>" num_posts="100" width="610" ></fb:comments>
                         </div>
         
-                         <fieldset runat="server" id="divTinMoiCapNhat">
+<%--                         <fieldset runat="server" id="divTinMoiCapNhat">
                             <legend>Tin mới cập nhật</legend>
                             <ul>
                                 <asp:Repeater runat="server" ID="rptTinMoiCapNhat">
@@ -66,10 +66,25 @@
                                             
                                 
                             </ul>
-                        </fieldset>         
+                        </fieldset>   --%>      
 
                         <fieldset>
                             <legend>Các tin đã đăng</legend>
+                            <div class="top3-other-news">
+                                <asp:Repeater runat="server" ID="rpt3TinKhac">
+                                    <HeaderTemplate><ul></HeaderTemplate>
+                                    <ItemTemplate>
+                                        <li>
+                                            <%#Eval("Image") %>
+                                            <a href="<%#Eval("URL") %>"><%#Eval("News_Title") %></a>
+                                    </li>
+                                    </ItemTemplate>
+                                    <FooterTemplate>
+                                        </ul>
+                                    </FooterTemplate>
+                                </asp:Repeater>                               
+                                <div class="clear"></div>
+                            </div>
                             <ul>
                                 <asp:Repeater runat="server" ID="rptTinKhac">
                                     <ItemTemplate>

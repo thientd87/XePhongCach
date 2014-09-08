@@ -72,11 +72,9 @@
         <div id="wrapperBanner">
 	        <div id="bannerLeft">
                 <uc1:Adv runat="server" ID="Adv" AdvID="15" />
-                <img src="http://xevaphongcach.net/public/popup/banner_left.gif" title="">
 	        </div>
 	        <div id="bannerRight">
 	          <uc1:Adv runat="server" ID="Adv1" AdvID="16" />
-                <img src="http://xevaphongcach.net/public/popup/banner_left.gif" title="">
 	        </div>
             </div>
         <div id="wrapper" class="wrapper">
