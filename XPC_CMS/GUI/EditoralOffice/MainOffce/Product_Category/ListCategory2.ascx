@@ -36,33 +36,52 @@
                              <Columns>
                                  <asp:TemplateField HeaderText="#">
                                     <HeaderStyle CssClass="sorting_disabled bold"></HeaderStyle>
+                                     <ItemStyle Width="30px"></ItemStyle>
                                     <ItemTemplate>
                                         <%# Container.DataItemIndex + 1 %>
                                          <asp:HiddenField runat="server" ID="hiddenColorID" Value='<%# Eval("Id") %>'/>
                                     </ItemTemplate>
                                 </asp:TemplateField>
-                                <asp:TemplateField HeaderText="ColorName">
+                                <asp:TemplateField HeaderText="Shopping Name" >
                                     <HeaderStyle CssClass="sorting_disabled"></HeaderStyle>
+                                    <ItemStyle Width="300px"></ItemStyle>
                                     <ItemTemplate >
-                                        <div style="width: 15px; height: 15px; display: inline-block; background: <%#Eval("ColorCode").ToString()%>"></div> &nbsp; <%#Eval("ColorName").ToString() %> 
+                                        <%#Eval("Product_Category_Name").ToString() %> 
                                     </ItemTemplate>
                                     <EditItemTemplate>
-                                        <input type="text" runat="server" id="txt_ColorName" class="m-wrap small" value='<%#Eval("ColorName").ToString() %>'/>
+                                        <input type="text" runat="server" id="txt_Product_Category_Name" class="m-wrap large" value='<%#Eval("Product_Category_Name").ToString() %>'/>
                                     </EditItemTemplate>
                                     <FooterTemplate>
-                                        <input type="text" runat="server" id="txt_NewColorName" class="m-wrap small" />
+                                        <input type="text" runat="server" id="txt_New_Product_Category_Name" class="m-wrap large" />
                                     </FooterTemplate>
                                 </asp:TemplateField>
-                                <asp:TemplateField HeaderText="ColorCode">
+                                <asp:TemplateField HeaderText="Image">
                                     <HeaderStyle CssClass="sorting_disabled"></HeaderStyle>
+                                      <ItemStyle Width="300px"></ItemStyle>
                                     <ItemTemplate >
-                                        <%#Eval("ColorCode").ToString()%>
+                                        <img src="<%#Eval("Product_Category_Image") %>" />
                                     </ItemTemplate>
                                     <EditItemTemplate>
-                                        <input type="text" runat="server" id="txt_ColorCode" class="m-wrap small color {hash:true}" value='<%#Eval("ColorCode").ToString() %>'/>
+                                        <input type="text" runat="server" id="txt_Product_Category_Image" ClientIDMode="Static" class="m-wrap large" value='<%#Eval("Product_Category_Image") %>'/>
+                                         <img src="/images/icons/folder.gif" onclick="openInfo('/FileManager/index.html?field_name=txt_Product_Category_Image',900,700)" style="cursor: pointer;" />
                                     </EditItemTemplate>
                                     <FooterTemplate>
-                                        <input type="text" runat="server" id="txt_NewColorCode" class="m-wrap small color {hash:true}"/>
+                                        <input type="text" runat="server" id="txt_New_Product_Category_Image" class="m-wrap large"/>
+                                          <img src="/images/icons/folder.gif" onclick="openInfo('/FileManager/index.html?field_name=txt_New_Product_Category_Image',900,700)" style="cursor: pointer;" />
+                                    </FooterTemplate>
+                                </asp:TemplateField>
+                                   <asp:TemplateField HeaderText="Description">
+                                    <HeaderStyle CssClass="sorting_disabled"></HeaderStyle>
+                                      <ItemStyle Width="300px"></ItemStyle>
+                                    <ItemTemplate >
+                                        <img src="<%#Eval("Product_Category_Desc") %>" />
+                                    </ItemTemplate>
+                                    <EditItemTemplate>
+                                        <asp:TextBox runat="server" ID="txt_Product_Category_Desc" CssClass="m-wrap large" TextMode="MultiLine" Rows="5" Text='<%#Eval("Product_Category_Desc").ToString() %>' ></asp:TextBox>
+                                        
+                                    </EditItemTemplate>
+                                    <FooterTemplate>
+                                         <asp:TextBox runat="server" ID="txt_New_Product_Category_Desc" TextMode="MultiLine" Rows="5"  CssClass="m-wrap large"  ></asp:TextBox>
                                     </FooterTemplate>
                                 </asp:TemplateField>
                                 <asp:TemplateField HeaderText="IsActive">

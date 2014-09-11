@@ -880,11 +880,11 @@ namespace BO
         public static void SaveToCacheDependency(string database, string tableName, string cacheName, object data)
         {
 
-            SqlCacheDependency sqlDep = new SqlCacheDependency(database, tableName);
-            if (data != null)
-            {
-                HttpContext.Current.Cache.Insert(cacheName, data, sqlDep);
-            }
+            //SqlCacheDependency sqlDep = new SqlCacheDependency(database, tableName);
+            //if (data != null)
+            //{
+            //    HttpContext.Current.Cache.Insert(cacheName, data, sqlDep);
+            //}
         }
 
         /// <summary>

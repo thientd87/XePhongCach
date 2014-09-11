@@ -181,12 +181,12 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.Tool
                     {
                         Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
                                                                     "<script type=\"text/javascript\">alert('" +
-                                                                    strReturn + "')</script>");
+                                                                    strReturn + "'); window.location.href='/office/addgallery.aspx?id=" + Id + "'</script>");
                     }
                     else
                     {
                         Page.RegisterClientScriptBlock("alert",
-                                                       "<script type=\"text/javascript\">alert('Thêm mới thành công')</script>");
+                                                       "<script type=\"text/javascript\">alert('Thêm mới thành công'); window.location.href='/office/addgallery.aspx?id=" + Id + "'</script>");
                     }
                 }
             }

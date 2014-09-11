@@ -4,7 +4,7 @@
 	<div class="row-fluid">
 		<div class="span12">
 			<h3 class="page-title">
-				Gallery Manager <small>Quản lý sản phẩm</small>
+				Gallery Manager <small>Quản lý album</small>
 			</h3>
 		</div>
 	</div>
