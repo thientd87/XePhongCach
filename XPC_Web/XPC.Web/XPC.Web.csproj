@@ -95,6 +95,7 @@
     <Content Include="Images\Xe-hoi-bn-tm.jpg" />
     <Content Include="Pages\Album.aspx" />
     <Content Include="Pages\AlbumDetail.aspx" />
+    <Content Include="Pages\ListCategory.aspx" />
     <Content Include="Pages\ListNews.aspx" />
     <Content Include="Pages\NewsDetails.aspx" />
     <Content Include="Pages\Video.aspx" />
@@ -254,6 +255,13 @@
     </Compile>
     <Compile Include="Pages\AlbumDetail.aspx.designer.cs">
       <DependentUpon>AlbumDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ListCategory.aspx.cs">
+      <DependentUpon>ListCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ListCategory.aspx.designer.cs">
+      <DependentUpon>ListCategory.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\ListNews.aspx.cs">
       <DependentUpon>ListNews.aspx</DependentUpon>

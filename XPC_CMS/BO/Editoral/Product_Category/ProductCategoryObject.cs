@@ -22,7 +22,7 @@ namespace DFISYS.BO.Editoral
         public ProductCategory()
         {
         }
-
+       
         public ProductCategory(int iD, string product_Category_Name, string product_Category_Name_En,
                                 string product_Category_Desc, string product_Category_Desc_En,
                                 int product_Category_CatParent_ID, bool isActive, int menuType,

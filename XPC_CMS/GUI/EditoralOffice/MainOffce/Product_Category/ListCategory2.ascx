@@ -59,14 +59,14 @@
                                     <HeaderStyle CssClass="sorting_disabled"></HeaderStyle>
                                       <ItemStyle Width="300px"></ItemStyle>
                                     <ItemTemplate >
-                                        <img src="<%#Eval("Product_Category_Image") %>" />
+                                        <img src="<%#Eval("Product_Category_Image") %>" style="height: 80px" />
                                     </ItemTemplate>
                                     <EditItemTemplate>
                                         <input type="text" runat="server" id="txt_Product_Category_Image" ClientIDMode="Static" class="m-wrap large" value='<%#Eval("Product_Category_Image") %>'/>
                                          <img src="/images/icons/folder.gif" onclick="openInfo('/FileManager/index.html?field_name=txt_Product_Category_Image',900,700)" style="cursor: pointer;" />
                                     </EditItemTemplate>
                                     <FooterTemplate>
-                                        <input type="text" runat="server" id="txt_New_Product_Category_Image" class="m-wrap large"/>
+                                        <input type="text" runat="server" id="txt_New_Product_Category_Image" ClientIDMode="Static"  class="m-wrap large"/>
                                           <img src="/images/icons/folder.gif" onclick="openInfo('/FileManager/index.html?field_name=txt_New_Product_Category_Image',900,700)" style="cursor: pointer;" />
                                     </FooterTemplate>
                                 </asp:TemplateField>
@@ -74,7 +74,7 @@
                                     <HeaderStyle CssClass="sorting_disabled"></HeaderStyle>
                                       <ItemStyle Width="300px"></ItemStyle>
                                     <ItemTemplate >
-                                        <img src="<%#Eval("Product_Category_Desc") %>" />
+                                        <%#Eval("Product_Category_Desc") %>
                                     </ItemTemplate>
                                     <EditItemTemplate>
                                         <asp:TextBox runat="server" ID="txt_Product_Category_Desc" CssClass="m-wrap large" TextMode="MultiLine" Rows="5" Text='<%#Eval("Product_Category_Desc").ToString() %>' ></asp:TextBox>

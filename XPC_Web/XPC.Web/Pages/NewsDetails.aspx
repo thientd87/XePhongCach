@@ -17,14 +17,16 @@
                            
                             <p class="datetime"><asp:Literal runat="server" ID="ltrPublishDate"></asp:Literal> | <a class="print sprite" title="In bài viết" rel="nofollow" onclick="window.print(); return false;" href="#">In bài viết</a></p>
                             <div class="auto-share-new">
-                                <a style="display: block; float: left; margin-right: 5px;  text-decoration: none; width: 67px;" target="_blank" href="http://embed2.linkhay.com/actions/link/post/embed.php?source_url=<%=Request.Url.DnsSafeHost + Request.RawUrl %>">
-                                    <img height="20" src="http://linkhay2.vcmedia.vn/live//templates/images/new_version/link/post/embed-btn.png" style="margin: 0; padding: 0; float: none;">
-                                    </a>
+                                <div class="fb-like fb_iframe_widget" data-href="//<%=Request.Url.DnsSafeHost + Request.RawUrl %>" data-layout="button" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;href=//<%=Request.Url.DnsSafeHost + Request.RawUrl %>&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true">
+                                    <span style="vertical-align: bottom; width: 96px; height: 20px;"><iframe name="f282a499b4" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like Facebook Social Plugin" src="//<%=Request.Url.DnsSafeHost + Request.RawUrl %>" style="border: none; visibility: visible; width: 96px; height: 20px;" class=""></iframe></span>
+                                </div>
+                                <a href="https://twitter.com/share" class="twitter-share-button" style="float:left; display: inline">Tweet</a>
+<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+                                <!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 
-
-                                <div class="fb-like fb_iframe_widget" data-href="<%=Request.Url.DnsSafeHost + Request.RawUrl %>" data-layout="button" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;href=<%=Request.Url.DnsSafeHost + Request.RawUrl %>&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true">
-                                <span style="vertical-align: bottom; width: 96px; height: 20px;"><iframe name="f282a499b4" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./Xe và phong cách - Gía mềm cho mẫu Bajaj Discover 150_files/like.htm" style="border: none; visibility: visible; width: 96px; height: 20px;" class=""></iframe></span>
-                            </div>
+<!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="120"  style="float:left; display: inline"></div>
                             </div>
                             
                            
@@ -40,15 +42,17 @@
                             <asp:Literal runat="server" ID="ltrTags"></asp:Literal>
                         </div>
                         
-                          <div class="auto-share-new">
-                                <a style="display: block; float: left; margin-right: 5px;  text-decoration: none; width: 67px;" target="_blank" href="http://embed2.linkhay.com/actions/link/post/embed.php?source_url=<%=Request.Url.DnsSafeHost + Request.RawUrl %>">
-                                    <img height="20" src="http://linkhay2.vcmedia.vn/live//templates/images/new_version/link/post/embed-btn.png" style="margin: 0; padding: 0; float: none;">
-                                    </a>
+                         <div class="auto-share-new">
+                                <div class="fb-like fb_iframe_widget" data-href="//<%=Request.Url.DnsSafeHost + Request.RawUrl %>" data-layout="button" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;href=//<%=Request.Url.DnsSafeHost + Request.RawUrl %>&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true">
+                                    <span style="vertical-align: bottom; width: 96px; height: 20px;"><iframe name="f282a499b4" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like Facebook Social Plugin" src="//<%=Request.Url.DnsSafeHost + Request.RawUrl %>" style="border: none; visibility: visible; width: 96px; height: 20px;" class=""></iframe></span>
+                                </div>
+                                <a href="https://twitter.com/share" class="twitter-share-button" style="float:left; display: inline">Tweet</a>
+<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+                                <!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 
-
-                                <div class="fb-like fb_iframe_widget" data-href="<%=Request.Url.DnsSafeHost + Request.RawUrl %>" data-layout="button" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;href=<%=Request.Url.DnsSafeHost + Request.RawUrl %>&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true">
-                                <span style="vertical-align: bottom; width: 96px; height: 20px;"><iframe name="f282a499b4" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./Xe và phong cách - Gía mềm cho mẫu Bajaj Discover 150_files/like.htm" style="border: none; visibility: visible; width: 96px; height: 20px;" class=""></iframe></span>
-                            </div>
+<!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="120"  style="float:left; display: inline"></div>
                             </div>
 
                         <div class="micropost">

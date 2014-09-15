@@ -51,7 +51,7 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager
                     txt_Name.Value = productObj.ProductName;
                     txt_Name_En.Value = productObj.ProductName_En;
                     txt_Summary.Value = productObj.ProductSumary;
-                    txt_Sum_En.Value = productObj.ProductSumary_En;
+                    txt_Sum_En.Text = productObj.ProductSumary_En;
                     txtSelectedFile.Value = productObj.ProductAvatar;
                     NewsContent.Text = productObj.ProductDescription;
                     NewsContent_En.Text = productObj.ProductDescription_En;
@@ -150,7 +150,7 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager
             productObj.ProductName = txt_Name.Value;
             productObj.ProductName_En = txt_Name_En.Value;
             productObj.ProductSumary = txt_Summary.Value;
-            productObj.ProductSumary_En = txt_Sum_En.Value;
+            productObj.ProductSumary_En = txt_Sum_En.Text;
             productObj.ProductTag = txt_tags.Value;
             productObj.IsActive = cb_IsActive.Checked;
             productObj.ProductType = Convert.ToInt32(productType.SelectedValue);

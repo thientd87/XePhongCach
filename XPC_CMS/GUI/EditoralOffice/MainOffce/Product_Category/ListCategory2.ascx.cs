@@ -40,14 +40,18 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.Product_Category
             if (e.CommandName == "AddNew")
             {
                 GridViewRow editRow = grvColor.FooterRow;
+                ProductCategory newProductCategory = new ProductCategory(
+                     0,
+                     (editRow.FindControl("txt_New_Product_Category_Name") as HtmlInputText).Value,
+                     (editRow.FindControl("txt_New_Product_Category_Name") as HtmlInputText).Value,
+                     (editRow.FindControl("txt_New_Product_Category_Desc") as TextBox).Text,
+                     (editRow.FindControl("txt_New_Product_Category_Desc") as TextBox).Text, 0,
+                     (editRow.FindControl("chkNewIsHidden") as CheckBox).Checked, 1,
+                     (editRow.FindControl("txt_New_Product_Category_Image") as HtmlInputText).Value, 0
+                     );
 
-                pcc.UpdateProductColor(new ProductColorObject()
-                {
-                    Id = 0,
-                    ColorCode = (editRow.FindControl("txt_NewColorCode") as HtmlInputText).Value,
-                    ColorName = (editRow.FindControl("txt_NewColorName") as HtmlInputText).Value,
-                    IsActive = (editRow.FindControl("chkNewIsHidden") as CheckBox).Checked
-                });
+                ch.InsertCategory(newProductCategory);
+                
                 grvColor.ShowFooter = false;
                 BindData();
             }
@@ -61,14 +65,18 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.Product_Category
         protected void grvCategories_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
             GridViewRow editRow = grvColor.Rows[grvColor.EditIndex];
+            ProductCategory newProductCategory = new ProductCategory(
+                Convert.ToInt32((editRow.FindControl("hiddenColorID") as HiddenField).Value),
+                (editRow.FindControl("txt_Product_Category_Name") as HtmlInputText).Value,
+                (editRow.FindControl("txt_Product_Category_Name") as HtmlInputText).Value,
+                (editRow.FindControl("txt_Product_Category_Desc") as TextBox).Text,
+                (editRow.FindControl("txt_Product_Category_Desc") as TextBox).Text, 0,
+                (editRow.FindControl("chkIsHidden") as CheckBox).Checked, 1,
+                (editRow.FindControl("txt_Product_Category_Image") as HtmlInputText).Value, 0
+                );
 
-            pcc.UpdateProductColor(new ProductColorObject()
-            {
-                Id = Convert.ToInt32((editRow.FindControl("hiddenColorID") as HiddenField).Value),
-                ColorCode = (editRow.FindControl("txt_ColorCode") as HtmlInputText).Value,
-                ColorName = (editRow.FindControl("txt_ColorName") as HtmlInputText).Value,
-                IsActive = (editRow.FindControl("chkIsHidden") as CheckBox).Checked
-            });
+            ch.UpdateCategory(newProductCategory);
+          
             grvColor.EditIndex = -1;
             BindData();
         }
@@ -76,7 +84,7 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.Product_Category
         protected void grvCategories_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             GridViewRow editRow = grvColor.Rows[e.RowIndex];
-            pcc.DeleteProductColor(new ProductColorObject() { Id = Convert.ToInt32((editRow.FindControl("hiddenColorID") as HiddenField).Value) });
+            ch.DeleteCategory(Convert.ToInt32((editRow.FindControl("hiddenColorID") as HiddenField).Value));
             BindData();
 
 

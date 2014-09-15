@@ -49,15 +49,6 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager {
         protected global::System.Web.UI.HtmlControls.HtmlTextArea txt_Summary;
         
         /// <summary>
-        /// txt_Sum_En control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea txt_Sum_En;
-        
-        /// <summary>
         /// productType control.
         /// </summary>
         /// <remarks>
@@ -65,24 +56,6 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList productType;
-        
-        /// <summary>
-        /// ddlGift control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlGift;
-        
-        /// <summary>
-        /// txt_Video control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea txt_Video;
         
         /// <summary>
         /// ddlCategory control.
@@ -94,15 +67,6 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager {
         protected global::System.Web.UI.WebControls.DropDownList ddlCategory;
         
         /// <summary>
-        /// lstOtherCat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList lstOtherCat;
-        
-        /// <summary>
         /// txtSelectedFile control.
         /// </summary>
         /// <remarks>
@@ -110,24 +74,6 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtSelectedFile;
-        
-        /// <summary>
-        /// ddlLayout control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlLayout;
-        
-        /// <summary>
-        /// cboMedia control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox cboMedia;
         
         /// <summary>
         /// txt_tags control.
@@ -146,6 +92,15 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox cb_IsActive;
+        
+        /// <summary>
+        /// txt_Sum_En control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::CKEditor.NET.CKEditorControl txt_Sum_En;
         
         /// <summary>
         /// NewsContent control.
@@ -173,6 +128,51 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton btnSave;
+        
+        /// <summary>
+        /// ddlGift control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlGift;
+        
+        /// <summary>
+        /// txt_Video control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea txt_Video;
+        
+        /// <summary>
+        /// lstOtherCat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList lstOtherCat;
+        
+        /// <summary>
+        /// ddlLayout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlLayout;
+        
+        /// <summary>
+        /// cboMedia control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox cboMedia;
         
         /// <summary>
         /// hdMedia control.

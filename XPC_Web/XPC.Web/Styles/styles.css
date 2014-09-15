@@ -55,7 +55,7 @@ h1,h2,h3,h4{ margin: 0; padding: 0}
     background: none;
 }
 .menu li.menuItem > a{
-    padding: 14px 20px 13px 22px;
+    padding: 14px 19px 13px;
     display: block;
     font-size: 13px;
     color: #464646;

@@ -84,7 +84,7 @@ namespace XPC.Web.Pages
                     }
 
                     //Đặt SEO cho Facebook
-                    Utility.SetFaceBookSEO(this.Page, Seo_Title, Seo_Des, "", System.Configuration.ConfigurationManager.AppSettings["WebDomain"] + row["NewsURL"].ToString());
+                    Utility.SetFaceBookSEO(this.Page, Seo_Title, Seo_Des, imgTo, System.Configuration.ConfigurationManager.AppSettings["WebDomain"] + row["NewsURL"].ToString());
 
 
                     DataTable dtTinKhac = XpcHelper.displayGetTinKhac(10, _catID, newsID,100);

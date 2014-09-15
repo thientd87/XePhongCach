@@ -138,13 +138,13 @@
         <IsCount>False</IsCount>
         <path>~/GUI/EditoralOffice/MainOffce/Product_Category/ListCategory2.ascx</path>
       </row>
-      <row>
+      <!--<row>
         <Permission_ID>14</Permission_ID>
         <MenuName>Danh sách loại quà tặng</MenuName>
         <Cpmode>gifttypemanager</Cpmode>
         <IsCount>False</IsCount>
         <path>~/GUI/EditoralOffice/MainOffce/ProductGiftManager/List.ascx</path>
-      </row>
+      </row>-->
       <row>
         <Permission_ID>14</Permission_ID>
         <MenuName>Thêm sản phẩm</MenuName>
