@@ -68,7 +68,17 @@ namespace DAL
         }
         #endregion
 
-
+        public DataTable DangKyMuaHang_Insert(string CusName, string CusAddress, string CusMobile, string CusEmail, int ProductId)
+        {
+            IDbCommand cmd = _db.CreateCommand("DangKyMuaHang_Insert", true);
+            _db.AddParameter(cmd, "CusName", DbType.String, CusName);
+            _db.AddParameter(cmd, "CusAddress", DbType.String, CusAddress);
+            _db.AddParameter(cmd, "CusMobile", DbType.String, CusMobile);
+            _db.AddParameter(cmd, "CusEmail", DbType.String, CusEmail);
+            _db.AddParameter(cmd, "ProductId", DbType.Int32, ProductId);
+            DataTable table = _db.CreateDataTable(cmd);
+            return table;
+        }
         public DataTable Web_NewsPublished_GetFocus(int iTop)
         {
             IDbCommand cmd = _db.CreateCommand("Web_NewsPublished_GetFocus", true);
@@ -194,7 +204,24 @@ namespace DAL
             DataTable dataTable = CreateDataTable(cmd);
             return dataTable;
         }
-        
+
+        public DataTable Web_ListProductCatCount()
+        {
+            IDbCommand cmd = _db.CreateCommand("Web_ListProductCatCount", true);
+           
+            DataTable dataTable = CreateDataTable(cmd);
+            return dataTable;
+        }
+
+        public DataTable Web_ListProductCatPagging(int pageIndex, int pageSize)
+        {
+            IDbCommand cmd = _db.CreateCommand("Web_ListProductCatPagging", true);
+           
+            _db.AddParameter(cmd, "pageIndex", DbType.Int32, pageIndex);
+            _db.AddParameter(cmd, "pageSize", DbType.Int32, pageSize);
+            DataTable dataTable = CreateDataTable(cmd);
+            return dataTable;
+        }
         public DataTable Web_SearchProducts(string key, int pageIndex, int pageSize)
         {
             IDbCommand cmd = _db.CreateCommand("Web_SearchProducts", true);

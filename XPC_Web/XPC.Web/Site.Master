@@ -67,10 +67,41 @@
             </div>
         </div>
     </div>
+    <div class="lock2">
+    <div class="dangkymuahang">
+        <div class="headerBox">
+            đăng ký thông tin mua hàng
+            <a href=""></a>
+        </div>
+        <div class="registerForm">
+            <div class="oh">
+                <div class="text-field">Họ và tên:</div>
+                <div class="input-field"><input type="text" id="txtHoTen"/></div>
+            </div>
+            <div class="oh">
+            <div class="text-field">Địa chỉ: </div>
+            <div class="input-field"><input type="text" id="txtAddress"/></div>
+                </div>
+            <div class="oh">
+            <div class="text-field">Email:</div>
+            <div class="input-field"><input type="text" id="txtEmail"/></div>
+                </div>
+            <div class="oh">
+            <div class="text-field">Điện thoại:</div>
+            <div class="input-field"><input type="text" id="txtTel"/></div>
+                </div>
+            <div class="oh" style="text-align: center">
+                <a href="javascript:void(0)" id="btnDangKyNgay"><img src="/Images/btnDangKyNgay.png"/></a>
+                &nbsp;&nbsp;
+                <a href="javascript:void(0)" id="btnCancel"><img src="/Images/btnCancel.png" style="margin-top: 3px"/></a>
+            </div>
+        </div>
+    </div>
+        </div>
     <form id="form1" runat="server">
         <div id="wrapperBanner">
 	        <div id="bannerLeft">
-                <uc1:Adv runat="server" ID="Adv" AdvID="15" />
+                <uc1:Adv runat="server" ID="Adv" AdvID="15"  />
 	        </div>
 	        <div id="bannerRight">
 	          <uc1:Adv runat="server" ID="Adv1" AdvID="16" />

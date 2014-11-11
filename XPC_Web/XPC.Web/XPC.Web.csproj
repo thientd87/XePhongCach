@@ -70,11 +70,15 @@
     <Content Include="GUI\Pagging.ascx" />
     <Content Include="GUI\TopMenu.ascx" />
     <Content Include="Images\banner_1.png" />
+    <Content Include="Images\btnCancel.png" />
+    <Content Include="Images\btnDangKyNgay.png" />
     <Content Include="Images\btnFb.png" />
+    <Content Include="Images\btnMuaHang.jpg" />
     <Content Include="Images\btnRSS.jpg" />
     <Content Include="Images\Bui-Th-Son-Gp-g-Hoang-t-xu-Han-Genesis-Coupe-2009.jpg" />
     <Content Include="Images\Car-Passion-va-thc-hu-cau-chuyn-thoai-trao.jpg" />
     <Content Include="Images\iconSearch.png" />
+    <Content Include="Images\iconViewMore.png" />
     <Content Include="Images\iconWheel.png" />
     <Content Include="Images\line_ver_menu.gif" />
     <Content Include="Images\line_video.png" />
@@ -88,16 +92,23 @@
     <Content Include="Images\Nguyn-Minh-Quang-Zife-design-Steed-400-d-Bobber.jpg" />
     <Content Include="Images\play_ico.png" />
     <Content Include="Images\pre_next_video.png" />
+    <Content Include="Images\product1.png" />
+    <Content Include="Images\product2.png" />
     <Content Include="Images\sprite.png" />
     <Content Include="Images\star_ico.png" />
+    <Content Include="Images\store1.jpg" />
     <Content Include="Images\Xe-hoi-bn-tm%281%29.jpg" />
     <Content Include="Images\Xe-hoi-bn-tm%282%29.jpg" />
     <Content Include="Images\Xe-hoi-bn-tm.jpg" />
+    <Content Include="Images\XPCMap.png" />
     <Content Include="Pages\Album.aspx" />
     <Content Include="Pages\AlbumDetail.aspx" />
+    <Content Include="Pages\LienHe.aspx" />
     <Content Include="Pages\ListCategory.aspx" />
     <Content Include="Pages\ListNews.aspx" />
+    <Content Include="Pages\ListProduct.aspx" />
     <Content Include="Pages\NewsDetails.aspx" />
+    <Content Include="Pages\ProductDetail.aspx" />
     <Content Include="Pages\Video.aspx" />
     <Content Include="Pages\SearchResult.aspx" />
     <Content Include="Scripts\Common.js" />
@@ -120,6 +131,7 @@
     <Content Include="Scripts\fancybox\jquery.fancybox.css" />
     <Content Include="Scripts\fancybox\jquery.fancybox.js" />
     <Content Include="Scripts\fancybox\jquery.fancybox.pack.js" />
+    <Content Include="Services\dangkymuahang.asmx" />
     <Content Include="Services\dangkyquatang.asmx" />
     <Content Include="Styles\styles.css" />
     <Content Include="Web.config">
@@ -256,6 +268,13 @@
     <Compile Include="Pages\AlbumDetail.aspx.designer.cs">
       <DependentUpon>AlbumDetail.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\LienHe.aspx.cs">
+      <DependentUpon>LienHe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LienHe.aspx.designer.cs">
+      <DependentUpon>LienHe.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ListCategory.aspx.cs">
       <DependentUpon>ListCategory.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -270,12 +289,26 @@
     <Compile Include="Pages\ListNews.aspx.designer.cs">
       <DependentUpon>ListNews.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ListProduct.aspx.cs">
+      <DependentUpon>ListProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ListProduct.aspx.designer.cs">
+      <DependentUpon>ListProduct.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\NewsDetails.aspx.cs">
       <DependentUpon>NewsDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\NewsDetails.aspx.designer.cs">
       <DependentUpon>NewsDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ProductDetail.aspx.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ProductDetail.aspx.designer.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Video.aspx.cs">
       <DependentUpon>Video.aspx</DependentUpon>
@@ -292,6 +325,10 @@
       <DependentUpon>SearchResult.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\dangkymuahang.asmx.cs">
+      <DependentUpon>dangkymuahang.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Services\dangkyquatang.asmx.cs">
       <DependentUpon>dangkyquatang.asmx</DependentUpon>
       <SubType>Component</SubType>

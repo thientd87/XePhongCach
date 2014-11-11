@@ -92,5 +92,50 @@ namespace XPC.Web.Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::XPC.Web.GUI.ListTinDocNhieu ListTinDocNhieu;
+        
+        /// <summary>
+        /// Adv3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::XPC.Web.GUI.Adv Adv3;
+        
+        /// <summary>
+        /// Adv4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::XPC.Web.GUI.Adv Adv4;
+        
+        /// <summary>
+        /// Adv5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::XPC.Web.GUI.Adv Adv5;
+        
+        /// <summary>
+        /// Adv1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::XPC.Web.GUI.Adv Adv1;
+        
+        /// <summary>
+        /// Adv2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::XPC.Web.GUI.Adv Adv2;
     }
 }

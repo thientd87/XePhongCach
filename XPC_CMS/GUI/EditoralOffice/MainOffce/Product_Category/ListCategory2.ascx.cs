@@ -31,9 +31,20 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.Product_Category
         private void BindData()
         {
             List<ProductCategory> dtParent = ch.GetCatParent();
-            grvColor.DataSource = dtParent;
-            grvColor.DataBind();
-
+         
+            if (dtParent!=null && dtParent.Any())
+            {
+                grvColor.DataSource = dtParent;
+                grvColor.DataBind();
+               
+            }
+            else
+            {
+                dtParent.Add(new ProductCategory(0, string.Empty, string.Empty, string.Empty, string.Empty, 0, false, 0, string.Empty, 0));
+                grvColor.DataSource = dtParent;
+                grvColor.DataBind();
+                grvColor.Rows[0].Visible = false;
+            }
         }
         protected void grvCategories_RowCommand(object sender, GridViewCommandEventArgs e)
         {

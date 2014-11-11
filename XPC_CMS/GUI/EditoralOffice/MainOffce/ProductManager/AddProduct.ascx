@@ -113,7 +113,7 @@
 													<label class="control-label">Mô tả</label>
 													<div class="controls">
 														
-                                                         <CKEditor:CKEditorControl FilebrowserBrowseUrl="/FileManager/index.html" BasePath="/ckeditor/" runat="server" Width="800px" ID="txt_Sum_En"
+                                                         <CKEditor:CKEditorControl FilebrowserBrowseUrl="/FileManager/index.html" BasePath="/ckeditor/" runat="server" Width="800px" ID="txt_Video"
                                                             runat="server" />
 													</div>
 												</div>
@@ -165,7 +165,7 @@
     <div class="control-group">
 		<label class="control-label">Video</label>
 		<div class="controls">
-			<textarea runat="server" id="txt_Video" class="large m-wrap" rows="3"></textarea>
+			<textarea runat="server" id="txt_Sum_En" class="large m-wrap" rows="3"></textarea>
 		</div>
 	</div>
     <div class="control-group ">

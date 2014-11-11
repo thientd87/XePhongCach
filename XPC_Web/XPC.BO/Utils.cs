@@ -750,7 +750,7 @@ namespace BO
         }
         public static void SetPageHeaderDetail(Page p, string Title, string CatName, string Description, string Keywords)
         {
-            string _tmp = "{0} - {1} - TripCare4U.com";
+            string _tmp = "{0} - {1} - " + ConfigurationManager.AppSettings["PageTitle"];
 
             HtmlTitle title = (HtmlTitle)p.Master.FindControl("title");
             HtmlMeta metaDesc = (HtmlMeta)p.Master.FindControl("description");
@@ -1158,7 +1158,7 @@ namespace BO
             return String.Format("<a title=\"{3}\" href=\"{2}\"><img src=\"{0}/{1}\" alt=\"{3}\" border=\"0\"/></a>", ImagesStorageUrl, img, url, HttpUtility.HtmlEncode(title));
         }
 
-        public static string GetThumbNail(string title, string url, string img, int width)
+        public static string GetThumbNail(string title, string url, string img, int width,bool targetBlank = false)
         {
             if (img == null || String.IsNullOrEmpty(img) || img.IndexOf(".") == -1) return String.Empty;
             string error;
@@ -1178,7 +1178,7 @@ namespace BO
                 img = img.Replace(ImagesStorageUrl, "").TrimStart('/');
 
             thumb = String.Format("{0}/ThumbImages/{1}", ImagesThumbUrl, img.Insert(img.LastIndexOf("."), "_" + width));
-            return String.Format("<a title=\"{2}\" href=\"{0}\"><img src=\"{1}\" onerror=\"LoadImage(this,'{3}');\" title=\"{2}\" alt=\"{4}\" border=\"0\"/></a>", url, thumb, HttpUtility.HtmlEncode(title), error, UnicodeToKoDau(title));
+            return String.Format("<a title=\"{2}\" href=\"{0}\" target=\"{5}\"><img src=\"{1}\" onerror=\"LoadImage(this,'{3}');\" title=\"{2}\" alt=\"{4}\" border=\"0\"/></a>", url, thumb, HttpUtility.HtmlEncode(title), error, UnicodeToKoDau(title),targetBlank?"_blank":string.Empty);
         }
         public static string GetThumbNail(string title, string url, string img, int width,string rel)
         {

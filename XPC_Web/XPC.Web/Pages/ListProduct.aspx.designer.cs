@@ -10,15 +10,15 @@
 namespace XPC.Web.Pages {
     
     
-    public partial class ListCategory {
+    public partial class ListProduct {
         
         /// <summary>
-        /// rptListStore control.
+        /// rptListPro control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptListStore;
+        protected global::System.Web.UI.WebControls.Repeater rptListPro;
     }
 }

@@ -12,6 +12,8 @@ namespace BO
         {
         }
 
+
+        
         public static DataTable SearchProductByNameAndCode(string Key, int PageIndex, int PageSize, int imgWidth)
         {
            // string CacheName = "tdt_SearchFullText" + Key + PageSize + PageIndex + imgWidth;

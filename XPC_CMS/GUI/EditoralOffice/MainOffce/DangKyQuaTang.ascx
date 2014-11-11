@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="FeedbackManger.ascx.cs" Inherits="Portal.GUI.EditoralOffice.MainOffce.Feedback.FeedbackManger" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="DangKyQuaTang.ascx.cs" Inherits="DFISYS.GUI.EditoralOffice.MainOffce.DangKyQuaTang" %>
 <script type="text/javascript" language="javascript" src="/scripts/checkvalid.js"></script>
 <div class="container-fluid">
     <!-- BEGIN PAGE HEADER-->
@@ -6,7 +6,7 @@
         <div class="span12">
             <!-- BEGIN PAGE TITLE & BREADCRUMB-->
             <h3 class="page-title">
-                Feedback manager <small>Ý kiến khách hàng</small>
+                Đăng ký quà tặng
             </h3>
             <!-- END PAGE TITLE & BREADCRUMB-->
         </div>
@@ -19,7 +19,7 @@
             <div class="portlet box blue">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="icon-edit"></i>List feedback</div>
+                        <i class="icon-edit"></i>Danh sách đăng ký quà tặng</div>
                     <div class="tools">
                         <a href="javascript:;" class="collapse"></a><a href="javascript:location.reload();" class="reload">
                         </a>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="portlet-body">
                     <div class="dataTables_wrapper form-inline" role="grid">
-                          <asp:ObjectDataSource ID="objSupport" runat="server" TypeName="DFISYS.BO.Editoral.FeedbackManagement.FeedbackHelper" DeleteMethod="DeleteFeedback"  SelectMethod="SelectFeedBack" >
+                          <asp:ObjectDataSource ID="objSupport" runat="server" TypeName="DFISYS.BO.Editoral.DangKyQuaTangHelper" SelectMethod="SelectDangKyQuaTang" >
             
                             <DeleteParameters>
                                 <asp:Parameter Name="ID" DbType="String" />
@@ -37,7 +37,7 @@
                         AutoGenerateColumns="False" AllowPaging="True" AllowSorting="true"  CssClass="table table-striped table-hover table-bordered dataTable"
                           PageSize="20" DataSourceID="objSupport">
                         <Columns>
-                          <asp:TemplateField>
+                         <%-- <asp:TemplateField>
                             <HeaderTemplate>              
                             </HeaderTemplate>
                             <ItemTemplate>
@@ -47,40 +47,60 @@
                    
                             <HeaderStyle Width="20px" />
                             <ItemStyle Width="20px" />
-                          </asp:TemplateField>
-                          <asp:TemplateField HeaderText="Người gửi" ItemStyle-CssClass="text">
+                          </asp:TemplateField>--%>
+                          <asp:TemplateField HeaderText="Họ tên" ItemStyle-CssClass="text">
                             <ItemTemplate>
-                              <b>Họ tên: </b><%#HttpUtility.HtmlEncode(Convert.ToString(Eval("Name")))%>
-                              <br />
-                              <b>Email: </b><%#HttpUtility.HtmlEncode(Convert.ToString(Eval("Email")))%>
-                              <br />
-                              <b>Tel: </b><%#HttpUtility.HtmlEncode(Convert.ToString(Eval("Tel")))%>
+                              <%#HttpUtility.HtmlEncode(Convert.ToString(Eval("Fullname")))%>
+                             
+                            </ItemTemplate>          
+                            <ItemStyle Width="300px" VerticalAlign="Top" />
+                          </asp:TemplateField> 
+                                    <asp:TemplateField HeaderText="Email" ItemStyle-CssClass="text">
+                            <ItemTemplate>
+                              
+                              <%#HttpUtility.HtmlEncode(Convert.ToString(Eval("Email")))%>
+                            
                             </ItemTemplate>          
                             <ItemStyle Width="300px" VerticalAlign="Top" />
                           </asp:TemplateField>          
-                          <asp:TemplateField HeaderText="Nội dung" >
-                            <ItemStyle HorizontalAlign="left" />
+                                 <asp:TemplateField HeaderText="Điện thoại" ItemStyle-CssClass="text">
                             <ItemTemplate>
-                             <%--<b>Tiêu đề: </b><%#HttpUtility.HtmlEncode(Convert.ToString(Eval("Title")))%>
-                             <br /><br />--%>
-                             <b>Nội dung: </b><%# Eval("Content")%>
-                            </ItemTemplate>            
-                          </asp:TemplateField>
-         
-         
+                              <%#HttpUtility.HtmlEncode(Convert.ToString(Eval("Phone")))%>
+                            </ItemTemplate>          
+                            <ItemStyle Width="300px" VerticalAlign="Top" />
+                          </asp:TemplateField> 
+              <asp:TemplateField HeaderText="Địa chỉ" ItemStyle-CssClass="text">
+                            <ItemTemplate>
+                              <%#HttpUtility.HtmlEncode(Convert.ToString(Eval("Address")))%>
+                            </ItemTemplate>          
+                            <ItemStyle Width="300px" VerticalAlign="Top" />
+                          </asp:TemplateField> 
+                <asp:TemplateField HeaderText="Loại qua" ItemStyle-CssClass="text">
+                            <ItemTemplate>
+                              <%#HttpUtility.HtmlEncode(Convert.ToString(Eval("Gift")))%>
+                            </ItemTemplate>          
+                            <ItemStyle Width="300px" VerticalAlign="Top" />
+                          </asp:TemplateField> 
+                            <asp:TemplateField HeaderText="Ngày đăng ký" ItemStyle-CssClass="text">
+                            <ItemTemplate>
+                              <%#HttpUtility.HtmlEncode(Convert.ToString(Eval("Createtime")))%>
+                            </ItemTemplate>          
+                            <ItemStyle Width="300px" VerticalAlign="Top" />
+                          </asp:TemplateField> 
                         </Columns>
-                       
+                       <PagerStyle CssClass="dataTables_paginate" HorizontalAlign="Right"  />
+                             <PagerSettings Mode="NumericFirstLast" FirstPageText="← First" LastPageText="Last →" PageButtonCount="3"/>  
                       </asp:GridView>
  
                     </div>
                     
                     <div></div>
-                    <div class="table-toolbar">
+                  <%--  <div class="table-toolbar hidden">
                         <div class="btn-group">
                             <asp:LinkButton ID="LinkDelete" OnClientClick="return getCheckedIDs();" runat="server"
                                         CssClass="btn green" OnClick="LinkDelete_Click"><i class="icon-trash"></i> Xóa các Feedback đã chọn</asp:LinkButton>
                         </div>
-                    </div>
+                    </div>--%>
                 </div>
             </div>
             <!-- END EXAMPLE TABLE PORTLET-->

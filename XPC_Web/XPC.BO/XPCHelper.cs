@@ -45,6 +45,13 @@ namespace BO
                 objDb.StoredProcedures.InsertDangKyQuangTang(fullname, email, address, phone, gift);
             }
         }
+        public static void DangKyMuaHang(string CusName, string CusAddress, string CusMobile, string CusEmail, int ProductId)
+        {
+            using (MainDB objDb = new MainDB())
+            {
+                objDb.StoredProcedures.DangKyMuaHang_Insert(CusName, CusAddress, CusMobile, CusEmail, ProductId);
+            }
+        }
         public static DataTable GetTopLastestAlbum(int Top,int imgWitdth)
         {
             DataTable dtAlbum = new DataTable();
@@ -61,7 +68,7 @@ namespace BO
                         if (dtAlbumDetail != null && dtAlbumDetail.Rows.Count > 0)
                             dtAlbum.Rows[i]["Image"] = dtAlbumDetail.Rows[0]["Object_URL"] != null
                                 ? Utility.GetThumbNail(dtAlbumDetail.Rows[0]["Object_Note"].ToString(),
-                                   "/album/" + Utility.UnicodeToKoDauAndGach(dtAlbum.Rows[i]["Name"].ToString()) + "-" + dtAlbum.Rows[i]["ID"] + ".htm", dtAlbumDetail.Rows[0]["Object_URL"].ToString(), imgWitdth)
+                                   "/album/" + Utility.UnicodeToKoDauAndGach(dtAlbum.Rows[i]["Name"].ToString()) + "-" + dtAlbum.Rows[i]["ID"] + ".htm", dtAlbumDetail.Rows[0]["Object_URL"].ToString(), imgWitdth,true)
                                 : String.Empty;
 
                     }
@@ -263,6 +270,7 @@ namespace BO
                         if (!ds.Tables[0].Columns.Contains("NewsURL")) ds.Tables[0].Columns.Add("NewsURL");
 
                         if (!ds.Tables[0].Columns.Contains("PublishDate")) ds.Tables[0].Columns.Add("PublishDate");
+                        if (!ds.Tables[0].Columns.Contains("NewsRelated")) ds.Tables[0].Columns.Add("NewsRelated");
                         
 
                         ds.Tables[0].Rows[0]["News_Subtitle"] = ds.Tables[0].Rows[0]["News_Subtitle"].ToString() != ""
@@ -358,7 +366,7 @@ namespace BO
                 DataTable tbl = null;
                 using (MainDB db = new MainDB())
                 {
-                    tbl = db.StoredProcedures.Microf_DanhSachTin_Count(catID);
+                    tbl = db.StoredProcedures.Web_DanhSachTin_Count(catID);
                     if (tbl != null)
                     {
                         totalPage = Utility.ConvertToInt(tbl.Rows[0][0]);
@@ -370,7 +378,7 @@ namespace BO
                     }
 
                 }
-                Utility.SaveToCacheDependency(TableName.DATABASE_NAME, TableName.NEWSPUBLISHED, CachName, totalPage);
+               // Utility.SaveToCacheDependency(TableName.DATABASE_NAME, TableName.NEWSPUBLISHED, CachName, totalPage);
             }
             return totalPage;
         }

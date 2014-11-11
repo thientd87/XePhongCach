@@ -291,6 +291,7 @@
     <Compile Include="BO\ChannelUsers.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="BO\Editoral\DangKyQuaTangHelper.cs" />
     <Compile Include="BO\Editoral\FeedbackManagement\FeedbackHelper.cs" />
     <Compile Include="BO\Editoral\Media\AlbumImage.cs" />
     <Compile Include="BO\Editoral\ProductColor\ProductColorController.cs" />
@@ -436,6 +437,13 @@
     </Compile>
     <Compile Include="GUI\EditoralOffice\MainOffce\Comments\List.ascx.designer.cs">
       <DependentUpon>List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\EditoralOffice\MainOffce\DangKyQuaTang.ascx.cs">
+      <DependentUpon>DangKyQuaTang.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\EditoralOffice\MainOffce\DangKyQuaTang.ascx.designer.cs">
+      <DependentUpon>DangKyQuaTang.ascx</DependentUpon>
     </Compile>
     <Compile Include="GUI\EditoralOffice\MainOffce\editnews\MediaObjectList.aspx.cs">
       <DependentUpon>MediaObjectList.aspx</DependentUpon>
@@ -1272,6 +1280,7 @@
     <Content Include="GUI\EditoralOffice\MainOffce\Advertisment\ListAll.ascx" />
     <Content Include="GUI\EditoralOffice\MainOffce\BanTinVang\ListBanTinVang.ascx" />
     <Content Include="GUI\EditoralOffice\MainOffce\Comments\List.ascx" />
+    <Content Include="GUI\EditoralOffice\MainOffce\DangKyQuaTang.ascx" />
     <Content Include="GUI\EditoralOffice\MainOffce\editnews\MediaObjectList.aspx" />
     <Content Include="GUI\EditoralOffice\MainOffce\editnews\newsassign.aspx" />
     <Content Include="GUI\EditoralOffice\MainOffce\editnews\thread.aspx" />

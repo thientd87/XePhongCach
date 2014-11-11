@@ -15,7 +15,7 @@ namespace XPC.Web.GUI
         {
             if (!IsPostBack)
             {
-                DataTable dtAnhDep = XpcHelper.GetTopLastestAlbum(9,89);
+                DataTable dtAnhDep = XpcHelper.GetTopLastestAlbum(12,89);
                 if (dtAnhDep != null && dtAnhDep.Rows.Count > 0)
                 {
                     rptAnhDep.DataSource = dtAnhDep;

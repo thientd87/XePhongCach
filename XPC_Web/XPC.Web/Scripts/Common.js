@@ -54,19 +54,30 @@ $(document).ready(function () {
     var hidd = $("#popup img");
     var hidd_click = $("#click img");
     var lock = $("#lock");
+    var dangkymuahang = $(".lock2");
+    var btnMuaHang = $(".btnMuaHang");
     var click = $("#click");
     var click_1 = $("#click #span");
-    var left = $("#bannerLeft img");
-    var right = $("#bannerRight img");
+    var left = $("#bannerLeft a");
+    var right = $("#bannerRight a");
+    var btnDangKyNgay = $("#btnDangKyNgay img");
+    var btnCancel = $("#btnCancel img");
+    
     left.click(function () {
         wrapper.fadeTo(500, 0.5, function () {
             lock.show(500);
-            //click.hide(); 
+            return false;
         });
     });
     right.click(function () {
         wrapper.fadeTo(500, 0.5, function () {
             lock.show(500);
+            return false;
+        });
+    });
+    btnMuaHang.click(function () {
+        wrapper.fadeTo(500, 0.5, function () {
+            dangkymuahang.show(500);
             //click.hide(); 
         });
     });
@@ -74,6 +85,11 @@ $(document).ready(function () {
         wrapper.fadeTo(500, 1, function () {
             lock.hide(500);
             click.show();
+        });
+    });
+    btnCancel.click(function () {
+        wrapper.fadeTo(500, 1, function () {
+            dangkymuahang.hide(500);
         });
     });
     hidd_click.click(function () {
@@ -107,7 +123,39 @@ $(document).ready(function () {
         });
         return false;
     });
-
+    $("#btnDangKyNgay").click(function () {
+        fullname = $("#txtHoTen").val();
+        address = $("#txtAddress").val();
+        email = $("#txtEmail").val();
+        phone = $("#txtTel").val();
+        gift = $("#hidProductID").val();
+        if (gift && gift!="0") {
+            $.ajax({
+                url: "/Services/dangkymuahang.asmx/DangKy",
+                type: "POST",
+                contentType: 'application/json; charset=UTF-8',
+                dataType: 'json',
+                data: '{ "CusName":"' + fullname + '", "CusAddress":"' + address + '", "CusMobile":"' + phone + '", "CusEmail":"' + email + '","ProductId":"' + gift + '" }',
+                success: function (msg) {
+                    if (msg.d == "Đăng ký thành công. Xin cảm ơn") {
+                        alert("Đăng ký thành công. Xin cảm ơn");
+                        wrapper.fadeTo(500, 1, function () {
+                            dangkymuahang.hide(500);
+                        });
+                    }
+                },
+                error: function (msg) {
+                    alert("Request failed: " + msg);
+                    wrapper.fadeTo(500, 1, function () {
+                        dangkymuahang.hide(500);
+                    });
+                }
+            });
+        }
+       
+        return false;
+       
+    });
 });
 
 function LoadImage(id, src) {
@@ -197,7 +245,7 @@ function display_ct() {
    // var strcount;
     var x = new Date();
    // var x1 = x.toUTCString();// changing the display to UTC string
-    $(".clock").html(x.toLocaleDateString() + ' | ' + x.toLocaleTimeString());
+    $(".clock").html(x.getDate()+'/' + x.getMonth() + '/'+ x.getFullYear()+ ' | ' + x.toLocaleTimeString());
    // tt = display_c();
 }
 

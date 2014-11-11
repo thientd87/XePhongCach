@@ -35,7 +35,7 @@
                             </li>
                         </ItemTemplate>
                     </asp:Repeater>
-                    <li class="menuItem"><a href="/">Liên hệ</a></li>
+                    <li class="menuItem"><a href="/lienhe.htm">Liên hệ</a></li>
                 </ul>
             </div>
             <!--end of #top-menu-->

@@ -51,13 +51,13 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager
                     txt_Name.Value = productObj.ProductName;
                     txt_Name_En.Value = productObj.ProductName_En;
                     txt_Summary.Value = productObj.ProductSumary;
-                    txt_Sum_En.Text = productObj.ProductSumary_En;
+                    txt_Sum_En.Value = productObj.ProductSumary_En;
                     txtSelectedFile.Value = productObj.ProductAvatar;
                     NewsContent.Text = productObj.ProductDescription;
                     NewsContent_En.Text = productObj.ProductDescription_En;
                     txt_Cost.Value = productObj.ProductCost.ToString();
                     ddlCategory.SelectedValue = productObj.ProductCategory.ToString();
-                    txt_Video.Value = productObj.ProductVideo;
+                    txt_Video.Text = productObj.ProductVideo;
                     txt_tags.Value = productObj.ProductTag;
                     ddlLayout.SelectedValue = productObj.ProductLayout.ToString();
                     cb_IsActive.Checked = productObj.IsActive;
@@ -142,7 +142,7 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager
             productObj.Id = ID;
             productObj.ProductAvatar = txtSelectedFile.Value;
             productObj.ProductCategory = Convert.ToInt32(ddlCategory.SelectedValue);
-            productObj.ProductVideo = txt_Video.Value;
+            productObj.ProductVideo = txt_Video.Text;
             productObj.ProductCost = Convert.ToInt64(txt_Cost.Value);
             productObj.ProductDescription = NewsContent.Text;
             productObj.ProductDescription_En = NewsContent_En.Text;
@@ -150,7 +150,7 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager
             productObj.ProductName = txt_Name.Value;
             productObj.ProductName_En = txt_Name_En.Value;
             productObj.ProductSumary = txt_Summary.Value;
-            productObj.ProductSumary_En = txt_Sum_En.Text;
+            productObj.ProductSumary_En = txt_Sum_En.Value;
             productObj.ProductTag = txt_tags.Value;
             productObj.IsActive = cb_IsActive.Checked;
             productObj.ProductType = Convert.ToInt32(productType.SelectedValue);

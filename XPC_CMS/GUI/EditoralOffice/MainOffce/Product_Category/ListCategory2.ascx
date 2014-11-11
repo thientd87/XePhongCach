@@ -5,7 +5,7 @@
         <div class="span12">
             <!-- BEGIN PAGE TITLE & BREADCRUMB-->
             <h3 class="page-title">
-                Product Color manager <small>quản lý màu sắc sản phẩm</small>
+                Quản lý gian hàng <small></small>
             </h3>
             <!-- END PAGE TITLE & BREADCRUMB-->
         </div>
@@ -18,7 +18,7 @@
             <div class="portlet box blue">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="icon-edit"></i>List colors</div>
+                        <i class="icon-edit"></i>List stores</div>
                     <div class="tools">
                         <a href="javascript:;" class="collapse"></a><a href="javascript:location.reload();" class="reload">
                         </a>
@@ -41,6 +41,7 @@
                                         <%# Container.DataItemIndex + 1 %>
                                          <asp:HiddenField runat="server" ID="hiddenColorID" Value='<%# Eval("Id") %>'/>
                                     </ItemTemplate>
+                                    
                                 </asp:TemplateField>
                                 <asp:TemplateField HeaderText="Shopping Name" >
                                     <HeaderStyle CssClass="sorting_disabled"></HeaderStyle>
@@ -117,7 +118,7 @@
                                     <ItemStyle Width="150px"></ItemStyle>
                                 </asp:TemplateField>
                              </Columns>
-                             
+                           
                         </asp:GridView>
                     </div>
                     

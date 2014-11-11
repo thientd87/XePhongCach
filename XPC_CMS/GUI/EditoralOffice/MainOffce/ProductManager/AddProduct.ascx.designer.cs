@@ -94,13 +94,13 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager {
         protected global::System.Web.UI.WebControls.CheckBox cb_IsActive;
         
         /// <summary>
-        /// txt_Sum_En control.
+        /// txt_Video control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::CKEditor.NET.CKEditorControl txt_Sum_En;
+        protected global::CKEditor.NET.CKEditorControl txt_Video;
         
         /// <summary>
         /// NewsContent control.
@@ -139,13 +139,13 @@ namespace DFISYS.GUI.EditoralOffice.MainOffce.ProductManager {
         protected global::System.Web.UI.WebControls.DropDownList ddlGift;
         
         /// <summary>
-        /// txt_Video control.
+        /// txt_Sum_En control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea txt_Video;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea txt_Sum_En;
         
         /// <summary>
         /// lstOtherCat control.

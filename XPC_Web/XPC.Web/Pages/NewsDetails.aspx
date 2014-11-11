@@ -16,6 +16,9 @@
                             <h2><asp:Literal runat="server" ID="ltrTitle"></asp:Literal></h2>   
                            
                             <p class="datetime"><asp:Literal runat="server" ID="ltrPublishDate"></asp:Literal> | <a class="print sprite" title="In bài viết" rel="nofollow" onclick="window.print(); return false;" href="#">In bài viết</a></p>
+                            
+                            <asp:Literal runat="server" ID="ltrRelatedNews"></asp:Literal>
+
                             <div class="auto-share-new">
                                 <div class="fb-like fb_iframe_widget" data-href="//<%=Request.Url.DnsSafeHost + Request.RawUrl %>" data-layout="button" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;href=//<%=Request.Url.DnsSafeHost + Request.RawUrl %>&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true">
                                     <span style="vertical-align: bottom; width: 96px; height: 20px;"><iframe name="f282a499b4" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like Facebook Social Plugin" src="//<%=Request.Url.DnsSafeHost + Request.RawUrl %>" style="border: none; visibility: visible; width: 96px; height: 20px;" class=""></iframe></span>
@@ -103,9 +106,19 @@
                 </div>
             </div>
             <div class="colRight">
-                <uc1:Adv runat="server" id="Adv" AdvID="13" ClassName="banner8"  />
+                <uc1:Adv runat="server" id="Adv" AdvID="17"/>
                 <uc1:HomeAnhDep runat="server" ID="HomeAnhDep" />
                 <uc1:ListTinDocNhieu runat="server" id="ListTinDocNhieu" />
+                <div style="height: 15px; width: 100%; float: left;">&nbsp;</div>
+                <uc1:Adv runat="server" id="Adv3" AdvID="18" />
+                <div style="height: 15px; width: 100%; float: left;">&nbsp;</div>
+                <uc1:Adv runat="server" id="Adv4" AdvID="19" />
+                <div style="height: 15px; width: 100%; float: left;">&nbsp;</div>
+                <uc1:Adv runat="server" id="Adv5" AdvID="20" />
+                 <div style="height: 15px; width: 100%; float: left;">&nbsp;</div>
+                <uc1:Adv runat="server" id="Adv1" AdvID="21" />
+                 <div style="height: 15px; width: 100%; float: left;">&nbsp;</div>
+                <uc1:Adv runat="server" id="Adv2" AdvID="22" />
             </div>
         </div>
      <div class="clearfix"></div>

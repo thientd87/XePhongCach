@@ -29,7 +29,7 @@
         <HeadCpmode>add</HeadCpmode>
         <path>~/GUI/EditoralOffice/MainOffce/editnews/editnews3.ascx</path>
       </row>
-      <row>
+      <!--<row>
 				<Permission_ID>19</Permission_ID>
 				<MenuName>Danh sách bài nhận duyệt</MenuName>
 				<Cpmode>approvinglist</Cpmode>
@@ -51,7 +51,7 @@
 				<Cpmode>sendapprovallist</Cpmode>
 				<IsCount>false</IsCount>
 				<path>~/GUI/EditoralOffice/MainOffce/Newslist/Newslist2.ascx</path>
-			</row>
+			</row>-->
       <row>
         <Permission_ID>20</Permission_ID>
         <MenuName>Danh sách bài đã xuất bản</MenuName>
@@ -104,13 +104,20 @@
         <IsCount>False</IsCount>
         <path>~/GUI/EditoralOffice/MainOffce/Votes/VoteList.ascx</path>
       </row>
-      <!--<row>
+      <row>
         <Permission_ID>14</Permission_ID>
         <MenuName>Khách hàng liên hệ</MenuName>
         <Cpmode>feedbacklist</Cpmode>
         <IsCount>False</IsCount>
         <path>~/GUI/EditoralOffice/MainOffce/Feedback/FeedbackManger.ascx</path>
-      </row>-->
+      </row>
+      <row>
+        <Permission_ID>14</Permission_ID>
+        <MenuName>Đăng ký quà tặng</MenuName>
+        <Cpmode>giftregistionlist</Cpmode>
+        <IsCount>False</IsCount>
+        <path>~/GUI/EditoralOffice/MainOffce/DangKyQuaTang.ascx</path>
+      </row>
       <row>
         <Permission_ID>14</Permission_ID>
         <MenuName>Hỗ trợ online</MenuName>

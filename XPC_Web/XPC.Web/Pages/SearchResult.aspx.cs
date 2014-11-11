@@ -22,7 +22,7 @@ namespace XPC.Web.Pages
                 strKeyword = strKeyword.Replace("'", " ");
                // string[] strKeys = strKeyword.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
                 //string strWhere = getAndCond(strKeys);
-                DataTable objTintuc = XpcHelper.SearchNews(strKeyword, 0, 10, 240);
+                DataTable objTintuc = XpcHelper.SearchNews(strKeyword, 1, 10, 240);
                 int Count = 0;
                 if (objTintuc != null && objTintuc.Rows.Count > 0)
                 {

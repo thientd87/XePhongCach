@@ -41,6 +41,9 @@ namespace XPC.Web.Pages
                     ltrPublishDate.Text = row["PublishDate"].ToString();
                     //imgBigImage.ImageUrl = imgTo;
                     //imgBigImage.Visible = row["News_Image"].ToString().Length > 0;
+                    ltrRelatedNews.Text = row["NewsRelated"] != null && !string.IsNullOrEmpty(row["NewsRelated"].ToString())
+                        ? "<div class=\"news-relate\">" + row["NewsRelated"] + "</div>"
+                        : string.Empty;
 
                     if (!string.IsNullOrEmpty(row["Icon"].ToString()))
                     {

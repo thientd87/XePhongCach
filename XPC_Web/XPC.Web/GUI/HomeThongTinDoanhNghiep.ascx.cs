@@ -34,7 +34,7 @@ namespace XPC.Web.GUI
                 DataTable dtCategory = XpcHelper.GetCategoryDetail(_Cat_ID);
                 if (dtCategory != null && dtCategory.Rows.Count > 0)
                 {
-                    ltrCatName.Text = "<a class=\"tab-video\" href=\"" + dtCategory.Rows[0]["Cat_URL"] + "\">" + dtCategory.Rows[0]["Cat_Name"] + "</a>";
+                    ltrCatName.Text = "<a class=\"tab-video\" href=\"" + dtCategory.Rows[0]["Cat_URL"] + "\" target=\"_blank\">" + dtCategory.Rows[0]["Cat_Name"] + "</a>";
                 }
                 DataTable dtNoiBatMuc = XpcHelper.GetNewsNoiBatMuc(CatId, Top, 115);
                 if (dtNoiBatMuc != null && dtNoiBatMuc.Rows.Count > 0)

@@ -45,9 +45,19 @@
 </div>
     </div>
     <div class="colRight">
-        <uc1:Adv runat="server" id="Adv" AdvID="13" ClassName="banner8" />
+        <uc1:Adv runat="server" id="Adv" AdvID="17"/>
         <uc1:HomeAnhDep runat="server" ID="HomeAnhDep" />
         <uc1:ListTinDocNhieu runat="server" id="ListTinDocNhieu" />
+        <div style="height: 15px; width: 100%; float: left;">&nbsp;</div>
+        <uc1:Adv runat="server" id="Adv3" AdvID="18" />
+        <div style="height: 15px; width: 100%; float: left;">&nbsp;</div>
+        <uc1:Adv runat="server" id="Adv4" AdvID="19" />
+        <div style="height: 15px; width: 100%; float: left;">&nbsp;</div>
+        <uc1:Adv runat="server" id="Adv5" AdvID="20" />
+         <div style="height: 15px; width: 100%; float: left;">&nbsp;</div>
+        <uc1:Adv runat="server" id="Adv1" AdvID="21" />
+         <div style="height: 15px; width: 100%; float: left;">&nbsp;</div>
+        <uc1:Adv runat="server" id="Adv2" AdvID="22" />
     </div>
         <div class="clearfix"></div>
  </div>

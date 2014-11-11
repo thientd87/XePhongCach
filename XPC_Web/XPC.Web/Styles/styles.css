@@ -55,7 +55,7 @@ h1,h2,h3,h4{ margin: 0; padding: 0}
     background: none;
 }
 .menu li.menuItem > a{
-    padding: 14px 19px 13px;
+    padding: 14px 24px 13px;
     display: block;
     font-size: 13px;
     color: #464646;
@@ -415,7 +415,7 @@ font-weight: bold;
     height: 38px;
     width: 312px;
     border: 1px solid #dbdbdb; 
-    margin-bottom: 10px;
+    margin-bottom: 0;
     background: rgb(222,222,222); /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RlZGVkZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM0JSIgc3RvcC1jb2xvcj0iI2YxZjFmMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
@@ -443,7 +443,7 @@ font-weight: bold;
 .anhdep .list-anh{float:left; overflow: hidden;}
 .list-anh a{
     display: block; float: left;
-    margin:0px 0px 12px 11px;
+    margin:0px 0px 7px 11px;
 }
 
 /***********top-news -vertical**************/
@@ -924,6 +924,13 @@ opacity: 0.7;
     z-index:9998;
     display: none;
 }
+.lock2 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index:9998;
+    display: none;
+}
 #popup{
     background: url("/public/popup/Form_Dangky.jpg");
     width:701px;
@@ -1073,6 +1080,8 @@ margin: 0 0 10px;
 padding: 10px;
 width: 578px;
 }
+.fb-like{ width: 100px; float: left}
+.twitter-share-button{ width: 110px; float: left}
 .list-anh.album{ width: 187px;overflow: hidden; height: 155px}
 .top3-other-news {
     margin-bottom: 25px;
@@ -1105,3 +1114,88 @@ width: 578px;
     float: left;
     margin-right: 8px;
 }
+.storeItem {
+    width: 225px;float: left;
+    margin: 0 12px 15px 0;
+}
+.storeTitle{ font: bold 20px Arial;color: #242424;margin: 5px 0;display: inline-block;height: 50px; overflow: hidden}
+.storeItem .viewmore{ font: bold 12px Arial;color: #000;}
+.mr0{margin-right: 0}
+
+.productItem {
+    width: 170px;float: left;
+    margin: 0 17px 25px 0;
+}
+
+.productItem .productTitle {
+    font: normal 13px Arial;color: #242424;margin: 10px 0;display: inline-block;height: 50px; overflow: hidden
+}
+
+
+.productMainInfo .productLeft{ width: 530px;float: left;}
+.productMainInfo .productRight{ width: 370px;float: right;}
+.productName{ font: bold 20px Arial;margin-bottom: 15px; color: #4a4a4a}
+.productCode{font: normal 14px Arial; color: #4a4a4a}
+.btnMuaHang{ display: block; margin: 15px 0}
+.hotLine{font: bold 18px Arial;color: #e30000}
+.productMainInfo .productRight .auto-share-new{ width: 350px;background: #fff;border:none}
+
+.product-tab{padding: 0 10px;margin: 0;height: 21px;border-bottom: solid 1px #898989;position: relative;list-style-position: inside; list-style-type: none}
+.product-tab li{ float: left;list-style-position: inside;list-style-type: none;font: 13px/20px Arial;color: #898989;padding: 0 15px;cursor: pointer; border: solid 1px #898989;margin: 0 5px;background: #ebebeb;
+                 -webkit-border-top-left-radius: 3px;
+-webkit-border-top-right-radius: 3px;
+-moz-border-radius-topleft: 3px;
+-moz-border-radius-topright: 3px;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+
+}
+.product-tab li.active{ border: solid 1px #898989;border-bottom: 0 none;line-height: 20px;height: 20px;background: #fff; border-bottom: solid 1px #fff}
+.product-des,.product-how-to-use,.product-specification{ font: 14px Arial;color: #3d3d3d;padding:20px;text-align: justify;display: none; border:solid 1px #898989; border-top:none}
+.dangkymuahang{ width: 560px;height: 350px;z-index: 1000;   margin:100px auto;
+    z-index:9999;}
+.dangkymuahang .headerBox{ text-align: center;height: 50px;font: bold 20px/50px Arial;color: #fff;text-transform: uppercase; background: #28529c}
+.dangkymuahang .registerForm{ height: 298px;border: solid 1px #898989;border-top: none;background: #f8f8f8;padding-top: 30px;}
+.text-field{ width: 155px;float: left;text-align: right;padding-right: 5px;font: bold 12px Arial; line-height: 28px}
+.input-field{ width: 390px;float: left;text-align: left;padding-left: 5px; }
+.input-field input{width: 300px}
+.oh{ width: 100%;float: left; padding: 5px 0}
+
+.news-relate {
+    float: left;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.news-relate ul {
+    
+    margin-left: 0;
+  /*  padding-left: 25px;*/
+    width: 420px;
+}
+
+.news-relate li {
+    list-style: square;
+    color: #BB3914;
+    border-bottom: 1px solid #EDEDED;
+    list-style-position: inside
+}
+
+.news-relate li a {
+    color: #999;
+    font: 500 12px/18px Arial;
+}
+
+.news-relate li a:hover {
+    color: #004276;
+}
+.lienhe-left{ float: left; padding: 10px}
+.lienhe-right{ width: 446px;height: 352px;border: solid 1px #d2d2d2;float: right; margin: 10px 10px 10px 0}
+.form-lienhe .header-lienhe{ font: normal 12px Arial;text-align: center; padding-top: 20px}
+
+.form-lienhe .form-row{ margin-bottom: 10px;width: 100%; float: left}
+.form-lienhe .form-label{ width: 80px;float: left;padding-left: 20px; line-height: 27px}
+.form-lienhe .form-input{ width: 310px; float: left}
+.form-lienhe .form-input input[type=text]{ width: 308px;height: 25px; border:solid 1px #d2d2d2 }
+.form-lienhe .form-input textarea{ width: 304px; border:solid 1px #d2d2d2 }
+.form-lienhe .btnGui{ padding: 3px 15px;font: bold 12px Arial;color: #fff;background: orange;border: none;text-transform: uppercase; cursor: pointer}
